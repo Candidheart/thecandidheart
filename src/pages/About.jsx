@@ -58,18 +58,16 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-                The Brand Story of The Candid Heart
+                This work chose me
               </h1>
               <p className="font-sans text-xl text-muted-foreground mb-8 leading-relaxed">
-                I spent years trying to separate what I love into categories—Teaching, sewing, photography, 
-                coaching, copywriting, apps, books, motherhood, ministry. ALL THE THINGS! But compartmentalized.
-              </p>
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
-                Because that's what the world told me to do. Pick a lane. Stick to it. Be more polished. Be less… everything.
+                I'm Samantha Josette — poet, strategist, and mirror holder for women 
+                who are rebuilding their lives from the ground up.
               </p>
               <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
-                But my brain doesn't work that way. My heart doesn't either. I'm not linear. I'm layered. 
-                So I built a home for all of me. Not a brand. A garden. Where systems meet soul. Where poetry holds hands with planning.
+                I didn't plan to become a trauma coach or a business strategist. 
+                But when my world fell apart, I discovered that healing is a system, 
+                growth is a strategy, and poetry is a framework for feeling seen.
               </p>
               <Button 
                 asChild 
@@ -77,7 +75,7 @@ const About = () => {
                 className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
               >
                 <Link to="/work-with-me">
-                  Explore The Garden <ArrowRight className="ml-2 h-5 w-5" />
+                  Work With Me <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
             </div>
@@ -295,6 +293,21 @@ const About = () => {
               <Link to="/poetry">
                 Read My Poetry
               </Link>
+            </Button>
+          </div>
+          
+          <div className="mt-12 pt-8 border-t border-border">
+            <p className="font-sans text-muted-foreground mb-4">
+              To explore the woman behind the work, visit my personal storytelling sanctuary:
+            </p>
+            <Button 
+              asChild 
+              variant="ghost"
+              className="text-accent hover:text-primary font-sans"
+            >
+              <a href="https://samanthajosette.me" target="_blank" rel="noopener noreferrer">
+                SamanthaJosette.me →
+              </a>
             </Button>
           </div>
         </div>

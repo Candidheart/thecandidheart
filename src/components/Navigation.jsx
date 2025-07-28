@@ -9,8 +9,11 @@ const Navigation = () => {
 
   const navItems = [
     { name: 'Home', path: '/' },
-    { name: 'Work With Me', path: '/work-with-me' },
-    { name: 'Poetry & Devotionals', path: '/poetry' },
+    { name: 'Healing', path: '/healing' },
+    { name: 'Building', path: '/building' },
+    { name: 'Creating', path: '/creating' },
+    { name: 'For Organizations', path: '/organizations' },
+    { name: 'Speaking & Workshops', path: '/speaking' },
     { name: 'About', path: '/about' },
     { name: 'Contact', path: '/contact' },
   ];
@@ -29,10 +32,10 @@ const Navigation = () => {
             </div>
             <div className="flex flex-col">
               <span className="font-serif text-lg font-semibold text-foreground">
-                The Candid Heart
+                Samantha Josette
               </span>
               <span className="font-sans text-xs text-muted-foreground -mt-1">
-                with Samantha Josette
+                The Candid Heart
               </span>
             </div>
           </Link>
@@ -52,6 +55,15 @@ const Navigation = () => {
                 {item.name}
               </Link>
             ))}
+            <Button 
+              asChild 
+              variant="outline"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans"
+            >
+              <a href="https://samanthajosette.me" target="_blank" rel="noopener noreferrer">
+                Meet Samantha
+              </a>
+            </Button>
             <Button 
               asChild 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
@@ -92,6 +104,16 @@ const Navigation = () => {
                 </Link>
               ))}
               <div className="px-3 py-2">
+                <Button 
+                  asChild 
+                  variant="outline"
+                  className="w-full border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans mb-2"
+                  onClick={() => setIsOpen(false)}
+                >
+                  <a href="https://samanthajosette.me" target="_blank" rel="noopener noreferrer">
+                    Meet Samantha
+                  </a>
+                </Button>
                 <Button 
                   asChild 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans"

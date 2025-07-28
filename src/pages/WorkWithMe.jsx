@@ -22,84 +22,84 @@ const WorkWithMe = () => {
   };
   const healingServices = [
     {
-      title: "Shattered Into One Framework",
-      description: "Comprehensive healing program for women rebuilding after betrayal trauma, integrating identity work with practical systems.",
+      title: "Betrayal Trauma Recovery",
+      description: "1:1 coaching for women navigating the aftermath of betrayal, rebuilding trust in themselves and their intuition.",
       duration: "12-week program",
       price: "Investment: $2,997",
       features: [
         "Weekly 60-minute sessions",
         "Personalized healing framework",
-        "Morning Pages for the Healing Heart",
+        "Journaling prompts and exercises",
         "Email support between sessions",
-        "Say It Brave community access"
+        "Resource library access"
       ]
     },
     {
-      title: "Empathy Audits",
-      description: "Deep-dive assessment for organizations ready to build trauma-informed, neurodivergent-friendly systems and culture.",
-      duration: "3-week intensive",
-      price: "Investment: $4,997",
+      title: "Identity Rebuilding Intensive",
+      description: "A deep-dive session for women ready to reclaim their voice and redefine who they are becoming.",
+      duration: "3-hour intensive",
+      price: "Investment: $497",
       features: [
-        "Comprehensive system analysis",
-        "Team empathy mapping",
-        "Trauma-informed recommendations",
-        "Implementation roadmap",
-        "Follow-up optimization sessions"
+        "Comprehensive identity mapping",
+        "Values clarification exercise",
+        "Personal mission statement",
+        "90-day action plan",
+        "Follow-up check-in session"
       ]
     },
     {
-      title: "Candid Copy & Automation Studio",
-      description: "Brand voice development and ethical AI automation that honors your authentic voice while scaling your impact.",
+      title: "Poetry for Healing Workshop",
+      description: "Group workshop using poetry and creative expression as tools for processing trauma and finding voice.",
+      duration: "4-week series",
+      price: "Investment: $297",
+      features: [
+        "Weekly 90-minute group sessions",
+        "Poetry writing exercises",
+        "Safe sharing space",
+        "Take-home workbook",
+        "Private community access"
+      ]
+    }
+  ];
+
+  const strategyServices = [
+    {
+      title: "Soulful Copy Strategy",
+      description: "Website copy, email sequences, and sales pages that convert without compromising your authentic voice.",
       duration: "4-6 weeks",
       price: "Starting at $3,500",
       features: [
         "Brand voice development",
         "Website copy (5-7 pages)",
-        "Ethical AI automation setup",
-        "Email sequences that convert",
+        "Email welcome sequence",
+        "Sales page copy",
         "2 rounds of revisions"
       ]
-    }
-  ];
-
-  const creatingServices = [
+    },
     {
-      title: "CustodyAnchor & Family Apps",
-      description: "Family-centered digital tools and apps designed to support co-parenting, custody transitions, and child wellbeing.",
-      duration: "Custom timeline",
-      price: "Contact for pricing",
+      title: "AI Automation Setup",
+      description: "Custom AI workflows and systems that save time while maintaining your personal touch.",
+      duration: "2-3 weeks",
+      price: "Starting at $1,997",
       features: [
-        "Custom app development",
-        "Family-centered design",
-        "Trauma-informed features",
-        "Ongoing support & updates",
-        "Training for family use"
+        "Workflow analysis and mapping",
+        "Custom AI tool setup",
+        "Training and documentation",
+        "30-day optimization period",
+        "Ongoing support package"
       ]
     },
     {
-      title: "Speaking & Workshops",
-      description: "Keynotes and creative team intensives on ethical AI, brand voice, trauma-informed systems, and legacy work.",
-      duration: "1-3 days",
-      price: "Starting at $2,500",
+      title: "Clarity Mapping Session",
+      description: "Strategic planning session to align your business goals with your values and vision.",
+      duration: "2-hour session",
+      price: "Investment: $397",
       features: [
-        "Customized keynote presentations",
-        "Interactive workshop facilitation",
-        "Team intensive sessions",
-        "Follow-up resources",
-        "Implementation support"
-      ]
-    },
-    {
-      title: "SNUG & Creative Tools",
-      description: "Digital products and creative tools designed for neurodivergent creators, overwhelmed parents, and conscious entrepreneurs.",
-      duration: "Ongoing access",
-      price: "Starting at $97",
-      features: [
-        "Digital product suite",
-        "Creative templates & tools",
-        "Neurodivergent-friendly design",
-        "Community access",
-        "Regular updates & additions"
+        "Business vision clarification",
+        "Goal setting and prioritization",
+        "Strategic roadmap creation",
+        "Resource recommendations",
+        "Follow-up action plan"
       ]
     }
   ];
@@ -110,15 +110,15 @@ const WorkWithMe = () => {
       <section className="py-20 lg:py-32 bg-gradient-to-br from-secondary/20 via-background to-accent/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-            Explore The Garden
+            Choose Your Path
           </h1>
           <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            From healing and building to creating and speaking—everything grows from the same soil. 
-            Choose what calls to you right now.
+            Whether you're seeking healing and clarity or building systems for growth, 
+            I meet you where you are and guide you where you're going.
           </p>
           <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
-            You're not too much. You're just too whole for a template. 
-            Not just strategy—it's stewardship.
+            You don't have to choose between structure and softness. 
+            Healing is a strategy. So is clarity.
           </p>
         </div>
       </section>
@@ -130,12 +130,12 @@ const WorkWithMe = () => {
             <div className="flex justify-center items-center mb-6">
               <Heart className="h-12 w-12 text-primary mr-4" />
               <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground">
-                Healing & Building
+                Healing & Clarity Coaching
               </h2>
             </div>
             <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              Books, courses, and coaching for rebuilding identity and business with integrity. 
-              From trauma recovery to ethical AI automation—all rooted in lived experience.
+              For the woman who's ready to rebuild her identity, reclaim her voice, 
+              and create systems that honor her healing journey.
             </p>
           </div>
 
@@ -193,24 +193,24 @@ const WorkWithMe = () => {
         </div>
       </section>
 
-      {/* Creating & Speaking Services */}
-      <section id="creating" className="py-16 lg:py-24 bg-card/50">
+      {/* Strategy Services */}
+      <section id="strategy" className="py-16 lg:py-24 bg-card/50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <div className="flex justify-center items-center mb-6">
               <Lightbulb className="h-12 w-12 text-accent mr-4" />
               <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground">
-                Creating & Speaking
+                Soulful Strategy Services
               </h2>
             </div>
             <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              Apps, tools, and keynotes for organizations ready to embrace ethical AI, 
-              trauma-informed systems, and values-aligned growth.
+              For the business owner who wants to scale with integrity, 
+              automate without abandoning voice, and build systems that honor soul.
             </p>
           </div>
 
           <div className="grid lg:grid-cols-3 gap-8">
-            {creatingServices.map((service, index) => (
+            {strategyServices.map((service, index) => (
               <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30">
                 <CardHeader>
                   <CardTitle className="font-serif text-xl text-foreground mb-2">

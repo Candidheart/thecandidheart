@@ -1,8 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Navigation from './components/Navigation';
 import Home from './pages/Home';
-import WorkWithMe from './pages/WorkWithMe';
-import Poetry from './pages/Poetry';
+import Healing from './pages/Healing';
+import Building from './pages/Building';
+import Creating from './pages/Creating';
+import Organizations from './pages/Organizations';
+import Speaking from './pages/Speaking';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import Footer from './components/Footer';
@@ -16,8 +19,11 @@ function App() {
         <main>
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/work-with-me" element={<WorkWithMe />} />
-            <Route path="/poetry" element={<Poetry />} />
+            <Route path="/healing" element={<Healing />} />
+            <Route path="/building" element={<Building />} />
+            <Route path="/creating" element={<Creating />} />
+            <Route path="/organizations" element={<Organizations />} />
+            <Route path="/speaking" element={<Speaking />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
           </Routes>

@@ -15,16 +15,16 @@ const Footer = () => {
               </div>
               <div className="flex flex-col">
                 <span className="font-serif text-lg font-semibold text-foreground">
-                  The Candid Heart
+                  Samantha Josette
                 </span>
                 <span className="font-sans text-xs text-muted-foreground -mt-1">
-                  with Samantha Josette
+                  The Candid Heart
                 </span>
               </div>
             </div>
             <p className="font-sans text-muted-foreground mb-6 max-w-md leading-relaxed">
-              Built for the ones who don't fit in boxes. A digital garden where systems meet soul, 
-              and poetry holds hands with planning. All of you is welcome here.
+              Where strategy meets self-worth. Healing is a system. So is growth. 
+              Structure for your soul-led story.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -59,18 +59,42 @@ const Footer = () => {
             <ul className="space-y-2">
               <li>
                 <Link 
-                  to="/work-with-me" 
+                  to="/healing" 
                   className="font-sans text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Work With Me
+                  Healing
                 </Link>
               </li>
               <li>
                 <Link 
-                  to="/poetry" 
+                  to="/building" 
                   className="font-sans text-muted-foreground hover:text-primary transition-colors"
                 >
-                  Poetry & Devotionals
+                  Building
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/creating" 
+                  className="font-sans text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Creating
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/organizations" 
+                  className="font-sans text-muted-foreground hover:text-primary transition-colors"
+                >
+                  For Organizations
+                </Link>
+              </li>
+              <li>
+                <Link 
+                  to="/speaking" 
+                  className="font-sans text-muted-foreground hover:text-primary transition-colors"
+                >
+                  Speaking & Workshops
                 </Link>
               </li>
               <li>
@@ -89,6 +113,16 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <a 
+                  href="https://samanthajosette.me" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                  className="font-sans text-accent hover:text-primary transition-colors"
+                >
+                  Meet Samantha →
+                </a>
+              </li>
             </ul>
           </div>
 
@@ -98,25 +132,23 @@ const Footer = () => {
               Services
             </h3>
             <ul className="space-y-2">
-              <li>
-                <span className="font-sans text-muted-foreground">
-                  Empathy Audits
-                </span>
+              <li className="font-sans text-muted-foreground">
+                Betrayal Trauma Coaching
               </li>
-              <li>
-                <span className="font-sans text-muted-foreground">
-                  Candid Copy & Automation
-                </span>
+              <li className="font-sans text-muted-foreground">
+                Strategic Copywriting
               </li>
-              <li>
-                <span className="font-sans text-muted-foreground">
-                  Speaking & Workshops
-                </span>
+              <li className="font-sans text-muted-foreground">
+                AI Automation Systems
               </li>
-              <li>
-                <span className="font-sans text-muted-foreground">
-                  Creative Tools & Apps
-                </span>
+              <li className="font-sans text-muted-foreground">
+                Clarity Mapping
+              </li>
+              <li className="font-sans text-muted-foreground">
+                Empathy Audits
+              </li>
+              <li className="font-sans text-muted-foreground">
+                Speaking & Workshops
               </li>
             </ul>
           </div>
@@ -124,9 +156,9 @@ const Footer = () => {
 
         <div className="border-t border-border mt-8 pt-8 text-center">
           <p className="font-sans text-muted-foreground">
-            © 2025 The Candid Heart. All rights reserved. 
+            © 2025 Samantha Josette. All rights reserved. 
             <span className="block sm:inline sm:ml-2 mt-2 sm:mt-0 italic">
-              You're not too much. You're just too whole for a template.
+              Let it feel like home. Let it move like breath. Let it convert, but never coerce.
             </span>
           </p>
         </div>

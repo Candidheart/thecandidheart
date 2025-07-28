@@ -124,7 +124,7 @@ const Home = () => {
                   asChild 
                   className="w-full bg-primary hover:bg-primary/90 text-primary-foreground group-hover:bg-primary/80"
                 >
-                  <Link to="/work-with-me#healing">Start Healing</Link>
+                  <Link to="/healing">Start Healing</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -135,7 +135,7 @@ const Home = () => {
                 <div className="flex items-center mb-6">
                   <Lightbulb className="h-8 w-8 text-accent mr-3" />
                   <h3 className="font-serif text-2xl font-semibold text-foreground">
-                    The Candid Heart Strategy
+                    Soulful Strategy
                   </h3>
                 </div>
                 <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
@@ -152,7 +152,7 @@ const Home = () => {
                   asChild 
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground group-hover:bg-accent/80"
                 >
-                  <Link to="/work-with-me#strategy">Build Systems</Link>
+                  <Link to="/building">Build Systems</Link>
                 </Button>
               </CardContent>
             </Card>
