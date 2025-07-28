@@ -31,7 +31,7 @@ const About = () => {
     {
       year: "2023",
       title: "The Shattering",
-      description: "Betrayal trauma. The end of everything I thought I knew about my life, my marriage, and myself."
+      description: "Betrayal trauma. The end of everything I thought I knew about my life, my long term relationship, and myself."
     },
     {
       year: "2023-2024",
@@ -61,8 +61,7 @@ const About = () => {
                 This work chose me
               </h1>
               <p className="font-sans text-xl text-muted-foreground mb-8 leading-relaxed">
-                I'm Samantha Josette — poet, strategist, and mirror holder for women 
-                who are rebuilding their lives from the ground up.
+                I’m Samantha Josette — poet, strategist, and mirror holder for those rebuilding their lives from the ground up.
               </p>
               <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
                 I didn't plan to become a trauma coach or a business strategist. 
@@ -239,12 +238,12 @@ const About = () => {
                 What Fills My Cup
               </h3>
               <ul className="font-sans text-muted-foreground space-y-2">
-                <li>• Morning coffee and journal pages</li>
+                <li>• Morning Tea and journal pages</li>
                 <li>• Long walks with my thoughts</li>
                 <li>• Books that change how I see the world</li>
                 <li>• Conversations that go deeper than small talk</li>
                 <li>• Building systems that actually work</li>
-                <li>• Watching women discover their own power</li>
+                <li>• Watching people discover their own power</li>
               </ul>
             </div>
             <div>
