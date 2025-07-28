@@ -160,25 +160,6 @@ const Building = () => {
               Every service is designed to meet you where you are—whether you're just beginning, 
               rebuilding from scratch, or ready to scale with soul.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-accent hover:bg-accent/90 text-accent-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/start-here">
-                  Find Your Fit <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/about">My Approach</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
