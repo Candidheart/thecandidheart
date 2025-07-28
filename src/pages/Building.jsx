@@ -1,41 +1,147 @@
+import React from 'react';
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Lightbulb, BookOpen, Zap, ArrowRight } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Badge } from '../components/ui/badge';
+import { Lightbulb, Compass, PenTool, Bot, Moon, Sparkles, BookOpen, Heart, ArrowRight, CheckCircle } from 'lucide-react';
 
 const Building = () => {
-  const buildingOfferings = [
+  const services = [
     {
-      icon: BookOpen,
-      title: "Soulful Strategy",
-      subtitle: "Book + Mini-Course",
-      description: "The foundational framework for building a business that honors both your humanity and your goals. Strategy that doesn't sacrifice your soul.",
-      features: [
-        "Complete strategic framework",
-        "Soul-led business principles",
-        "Implementation worksheets",
-        "Video course modules",
-        "Community access"
+      id: 'clarity',
+      icon: Compass,
+      title: 'The Clarity Session',
+      subtitle: 'A one-time deep dive to get unstuck and aligned.',
+      tiers: [
+        {
+          name: 'Starter',
+          price: '$150',
+          features: [
+            '60-minute strategy call',
+            'Audit of current site or messaging',
+            'Recorded call + action recap'
+          ]
+        },
+        {
+          name: 'Signature',
+          price: '$275',
+          features: [
+            'Everything in Starter',
+            'Full brand tone/voice worksheet',
+            'Custom content prompts or automation map'
+          ],
+          popular: true
+        }
       ],
-      price: "$197",
-      available: true,
-      popular: true
+      slidingScale: 'Available for survivors, single parents, and those in transition.'
     },
     {
-      icon: Zap,
-      title: "Candid Copy & Automation Studio",
-      subtitle: "Done-With-You Service",
-      description: "Strategic copywriting and AI automation systems for business owners who want to scale with integrity and authentic voice.",
-      features: [
-        "Brand voice development",
-        "Strategic copy creation",
-        "AI automation setup",
-        "Email sequence design",
-        "Performance optimization"
+      id: 'copy',
+      icon: PenTool,
+      title: 'Done-for-You Copy Kit',
+      subtitle: 'Words that feel like you—written for conversions and connection.',
+      tiers: [
+        {
+          name: 'Starter',
+          price: '$600',
+          features: [
+            '2 core pages (Home + About OR Sales + Thank You)',
+            'Includes tone discovery questionnaire'
+          ]
+        },
+        {
+          name: 'Signature',
+          price: '$1,100',
+          features: [
+            'Full 4-page site (Home, About, Work With Me, Contact)',
+            'Custom SEO-friendly copy',
+            '1 revision round'
+          ],
+          popular: true
+        },
+        {
+          name: 'Premium',
+          price: '$1,800',
+          features: [
+            'All Signature features',
+            'Email Welcome Series (3 emails)',
+            'Optional AI-powered versioning and reuse library'
+          ]
+        }
       ],
-      price: "Starting at $3,500",
-      available: true,
-      popular: false
+      slidingScale: 'Available for community-based or survivor-led projects.'
+    },
+    {
+      id: 'automation',
+      icon: Bot,
+      title: 'Automation Alchemy',
+      subtitle: 'Let your systems carry the weight. AI + texting workflows that support without selling out.',
+      tiers: [
+        {
+          name: 'Starter',
+          price: '$350',
+          features: [
+            'Custom AI chatbot setup (e.g. Manus/Suno)',
+            '1 SMS automation (e.g. birthday or reminder text)'
+          ]
+        },
+        {
+          name: 'Signature',
+          price: '$750',
+          features: [
+            'Strategic automation plan',
+            '3 fully built SMS/email flows (e.g. onboarding, nurture, sales)',
+            'Tech stack guidance + connection help'
+          ],
+          popular: true
+        },
+        {
+          name: 'Premium',
+          price: '$1,200',
+          features: [
+            'Includes AI chatbot, full automation suite',
+            'Team training video'
+          ]
+        }
+      ],
+      slidingScale: 'Available for small offices and trauma-informed providers.'
+    },
+    {
+      id: 'monthly',
+      icon: Moon,
+      title: 'Monthly Magic',
+      subtitle: 'Ongoing support that adapts to your seasons.',
+      tiers: [
+        {
+          name: 'Starter',
+          price: '$400/month',
+          features: [
+            '2 check-in calls',
+            'Light content or tech updates',
+            'Voxer support'
+          ]
+        },
+        {
+          name: 'Signature',
+          price: '$650/month',
+          features: [
+            'Strategy, copy, and system support',
+            'Content bank creation',
+            'Monthly planning rituals'
+          ],
+          popular: true
+        },
+        {
+          name: 'Premium',
+          price: '$1,000/month',
+          features: [
+            'All Signature features',
+            'Unlimited edits / priority turnaround',
+            'Quarterly brand vision map'
+          ]
+        }
+      ],
+      slidingScale: 'Available for long-term rebuilders.'
     }
   ];
 
@@ -48,11 +154,11 @@ const Building = () => {
           <div className="text-center animate-fade-in">
             <Lightbulb className="h-16 w-16 text-accent mx-auto mb-6" />
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              The Candid Heart Strategy
+              Offerings at The Candid Heart
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
-              Copywriting, AI automation, and clarity mapping for the business owner 
-              who wants to scale with integrity and authentic voice.
+            <p className="font-sans text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Every service is designed to meet you where you are—whether you're just beginning, 
+              rebuilding from scratch, or ready to scale with soul.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
               <Button 
@@ -60,8 +166,8 @@ const Building = () => {
                 size="lg" 
                 className="bg-accent hover:bg-accent/90 text-accent-foreground font-sans text-lg px-8 py-3"
               >
-                <Link to="/contact">
-                  Build With Integrity <ArrowRight className="ml-2 h-5 w-5" />
+                <Link to="/start-here">
+                  Find Your Fit <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
               </Button>
               <Button 
@@ -77,200 +183,108 @@ const Building = () => {
         </div>
       </section>
 
-      {/* Philosophy Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Strategy Meets Soul
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              You don't have to choose between structure and softness. The most powerful systems 
-              honor both your humanity and your goals. Build a business that feels like home, 
-              moves like breath, and converts without coercing.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Clarity-First Strategy
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                Before tactics come clarity. We start with who you are and what you stand for, 
-                then build systems that amplify your authentic voice.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Zap className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Ethical Automation
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                AI and automation should enhance your humanity, not replace it. 
-                We create systems that scale your impact while preserving your heart.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <BookOpen className="h-8 w-8 text-accent" />
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Voice-Led Copy
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                Your voice is your competitive advantage. We develop copy that sounds like you 
-                on your best day, speaking to your people's deepest needs.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Offerings Section */}
+      {/* Services Section */}
       <section className="py-16 lg:py-24">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Building Offerings
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              Strategic frameworks and done-with-you services for business owners ready to scale 
-              with integrity and build systems that honor their soul.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-            {buildingOfferings.map((offering, index) => (
-              <Card key={index} className={`group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30 relative ${offering.popular ? 'ring-2 ring-accent/20' : ''}`}>
-                {offering.popular && (
-                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
-                    <span className="bg-accent text-accent-foreground px-4 py-1 rounded-full text-sm font-sans font-medium">
-                      Most Popular
-                    </span>
+          <div className="space-y-16">
+            {services.map((service, index) => {
+              const Icon = service.icon;
+              return (
+                <div key={service.id} className="max-w-6xl mx-auto">
+                  {/* Service Header */}
+                  <div className="text-center mb-12">
+                    <Icon className="h-12 w-12 text-accent mx-auto mb-6" />
+                    <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-4">
+                      {service.title}
+                    </h2>
+                    <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto">
+                      {service.subtitle}
+                    </p>
                   </div>
-                )}
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-6">
-                    <offering.icon className="h-8 w-8 text-accent mr-3" />
-                    <div>
-                      <h3 className="font-serif text-2xl font-semibold text-foreground">
-                        {offering.title}
-                      </h3>
-                      <p className="font-sans text-sm text-accent">
-                        {offering.subtitle}
+
+                  {/* Service Tiers */}
+                  <div className={`grid gap-6 mb-8 ${
+                    service.tiers.length === 2 ? 'md:grid-cols-2 max-w-4xl mx-auto' : 
+                    service.tiers.length === 3 ? 'md:grid-cols-3' : 'md:grid-cols-1'
+                  }`}>
+                    {service.tiers.map((tier, tierIndex) => (
+                      <Card 
+                        key={tierIndex} 
+                        className={`relative border-2 transition-all hover:shadow-lg ${
+                          tier.popular 
+                            ? 'border-accent shadow-md' 
+                            : 'border-border hover:border-accent/50'
+                        }`}
+                      >
+                        {tier.popular && (
+                          <Badge className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-accent text-accent-foreground">
+                            Most Popular
+                          </Badge>
+                        )}
+                        <CardContent className="p-8">
+                          <div className="text-center mb-6">
+                            <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+                              {tier.name}
+                            </h3>
+                            <div className="font-serif text-3xl font-bold text-accent mb-4">
+                              {tier.price}
+                            </div>
+                          </div>
+                          
+                          <ul className="space-y-3 mb-8">
+                            {tier.features.map((feature, featureIndex) => (
+                              <li key={featureIndex} className="flex items-start">
+                                <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                                <span className="font-sans text-sm text-foreground">
+                                  {feature}
+                                </span>
+                              </li>
+                            ))}
+                          </ul>
+                          
+                          <Button 
+                            asChild 
+                            className={`w-full ${
+                              tier.popular 
+                                ? 'bg-accent hover:bg-accent/90 text-accent-foreground' 
+                                : 'bg-primary hover:bg-primary/90 text-primary-foreground'
+                            }`}
+                          >
+                            <Link to="/start-here">
+                              Apply Here
+                            </Link>
+                          </Button>
+                        </CardContent>
+                      </Card>
+                    ))}
+                  </div>
+
+                  {/* Sliding Scale Note */}
+                  {service.slidingScale && (
+                    <div className="text-center">
+                      <p className="font-sans text-sm text-muted-foreground italic">
+                        <Heart className="h-4 w-4 text-accent inline mr-2" />
+                        Sliding Scale {service.slidingScale}
                       </p>
                     </div>
-                  </div>
-                  <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
-                    {offering.description}
-                  </p>
-                  <ul className="font-sans text-sm text-muted-foreground space-y-2 mb-8">
-                    {offering.features.map((feature, idx) => (
-                      <li key={idx}>• {feature}</li>
-                    ))}
-                  </ul>
-                  <div className="flex items-center justify-between">
-                    <span className="font-serif text-lg font-semibold text-foreground">
-                      {offering.price}
-                    </span>
-                    <Button 
-                      asChild 
-                      className="bg-accent hover:bg-accent/90 text-accent-foreground"
-                    >
-                      <Link to="/contact">
-                        Get Started
-                      </Link>
-                    </Button>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                  )}
+                </div>
+              );
+            })}
           </div>
         </div>
       </section>
 
-      {/* Process Section */}
+      {/* Pay It Forward Section */}
       <section className="py-16 lg:py-24 bg-secondary/30">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              How We Work Together
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              A proven process that honors both your vision and your values, 
-              creating systems that feel authentic and drive results.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <div className="bg-accent text-accent-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
-                1
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Clarity & Foundation
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                We start with deep clarity work — understanding your values, voice, 
-                and vision before building any systems or strategies.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent text-accent-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
-                2
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Strategy & Systems
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                Together we build the frameworks, copy, and automation systems 
-                that will scale your impact while preserving your authentic voice.
-              </p>
-            </div>
-            <div className="text-center">
-              <div className="bg-accent text-accent-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
-                3
-              </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
-                Launch & Optimize
-              </h3>
-              <p className="font-sans text-muted-foreground">
-                We implement, test, and refine your systems, ensuring they perform 
-                beautifully while feeling aligned with who you are.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonial Section */}
-      <section className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="font-serif text-2xl md:text-3xl text-foreground italic mb-8 leading-relaxed">
-            "You can automate without abandoning your voice. 
-            You can scale without sacrificing your soul."
-          </blockquote>
-          <p className="font-sans text-lg text-muted-foreground">
-            — Core Philosophy of The Candid Heart Strategy
-          </p>
-        </div>
-      </section>
-
-      {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <Sparkles className="h-12 w-12 text-accent mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Ready to Build Something Beautiful?
+            Pay It Forward
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Whether you're ready for the full strategy framework or need done-with-you support, 
-            I'm here to help you build a business that feels like home.
+          <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
+            Every month, one spot is offered at no cost to someone rebuilding their life 
+            or business after hardship.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
@@ -278,17 +292,156 @@ const Building = () => {
               size="lg" 
               className="bg-accent hover:bg-accent/90 text-accent-foreground font-sans"
             >
-              <Link to="/contact">Start Building</Link>
+              <Link to="/contact">Donate to the Pay-It-Forward Fund</Link>
             </Button>
             <Button 
               asChild 
               variant="outline" 
               size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans"
+              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans"
             >
-              <Link to="/about">Learn My Approach</Link>
+              <Link to="/contact">Apply for Sponsored Services</Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* Book + Course Section */}
+      <section className="py-16 lg:py-24">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <BookOpen className="h-12 w-12 text-accent mb-6" />
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+                Soulful Strategy: The Book + Mini Course
+              </h2>
+              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+                Not all strategy has to feel like selling your soul. <em>Soulful Strategy: A Guide to 
+                Conscious Growth in the Age of AI</em> is part manifesto, part map—a blend of systems 
+                and soul for creatives, coaches, and founders who want to scale with integrity.
+              </p>
+              
+              <div className="mb-8">
+                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
+                  What's Inside:
+                </h3>
+                <ul className="space-y-2">
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-sans text-foreground">Poetic truths + practical tools</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-sans text-foreground">A 4-part method: Clarity → Connection → Container → Conscious Scaling</span>
+                  </li>
+                  <li className="flex items-start">
+                    <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                    <span className="font-sans text-foreground">Journal prompts, ethical AI prompts, content templates, and system maps</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <Card className="border-2 border-accent/20">
+              <CardContent className="p-8">
+                <div className="text-center mb-6">
+                  <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">
+                    The Mini Course
+                  </h3>
+                  <p className="font-sans text-lg text-accent italic mb-4">
+                    "Soulful Strategy in Action"
+                  </p>
+                  <p className="font-sans text-muted-foreground">
+                    A companion 4-module course for walking it out in real time.
+                  </p>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
+                    Module Themes:
+                  </h4>
+                  <ol className="space-y-2 text-sm">
+                    <li className="font-sans text-foreground">
+                      <strong>1. Clarity</strong> – Find your truth + voice
+                    </li>
+                    <li className="font-sans text-foreground">
+                      <strong>2. Connection</strong> – Align your message + market
+                    </li>
+                    <li className="font-sans text-foreground">
+                      <strong>3. Container</strong> – Build systems that hold you
+                    </li>
+                    <li className="font-sans text-foreground">
+                      <strong>4. Conscious Scaling</strong> – Grow without the grasp
+                    </li>
+                  </ol>
+                </div>
+
+                <div className="mb-6">
+                  <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
+                    Includes:
+                  </h4>
+                  <ul className="space-y-2">
+                    <li className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="font-sans text-sm text-foreground">Printable workbook</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="font-sans text-sm text-foreground">Canva templates</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="font-sans text-sm text-foreground">Notion dashboards</span>
+                    </li>
+                    <li className="flex items-start">
+                      <CheckCircle className="h-4 w-4 text-accent mr-3 mt-0.5 flex-shrink-0" />
+                      <span className="font-sans text-sm text-foreground">Bonus: "Pricing With Purpose" matrix</span>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="text-center mb-6">
+                  <div className="font-serif text-2xl font-bold text-accent mb-2">
+                    <span className="line-through text-muted-foreground text-lg mr-2">$97</span>
+                    $67
+                  </div>
+                  <p className="font-sans text-sm text-muted-foreground">
+                    Launch special for early subscribers
+                  </p>
+                </div>
+
+                <Button 
+                  asChild 
+                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
+                >
+                  <Link to="/start-here">
+                    Get Early Access
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* Final CTA */}
+      <section className="py-16 lg:py-24 bg-primary/5">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            Ready to Build Something Beautiful?
+          </h2>
+          <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
+            Every offering is designed to meet you exactly where you are. Let's find what fits.
+          </p>
+          <Button 
+            asChild 
+            size="lg" 
+            className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+          >
+            <Link to="/start-here">
+              Start Your Journey
+            </Link>
+          </Button>
         </div>
       </section>
     </div>

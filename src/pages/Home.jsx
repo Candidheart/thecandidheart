@@ -25,25 +25,6 @@ const Home = () => {
             <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Healing is a system. So is growth. Structure for your soul-led story.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/work-with-me">
-                  Explore the Path <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/poetry">Read My Writing</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
