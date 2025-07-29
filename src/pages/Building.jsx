@@ -231,7 +231,7 @@ const Building = () => {
                                 : 'bg-primary hover:bg-primary/90 text-primary-foreground'
                             }`}
                           >
-                            <Link to="/start-here">
+                            <Link to="/contact">
                               Apply Here
                             </Link>
                           </Button>
