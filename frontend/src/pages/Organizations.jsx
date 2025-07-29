@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
-import { Button } from '@/components/ui/button';
-import { Card, CardContent } from '@/components/ui/card';
-import { Building2, Search, Bot, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Building2, Search, Cpu, Users, ArrowRight, CheckCircle } from 'lucide-react';
 
 const Organizations = () => {
   const organizationServices = [
@@ -29,7 +29,7 @@ const Organizations = () => {
       available: true
     },
     {
-      icon: Bot,
+      icon: Cpu,
       title: "Ethical AI Onboarding & Integrity Workshops",
       subtitle: "Responsible Technology Implementation",
       description: "Navigate the integration of AI tools while maintaining your organization's values, human connection, and ethical standards.",
