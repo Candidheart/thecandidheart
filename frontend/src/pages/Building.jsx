@@ -191,7 +191,7 @@ const Building = () => {
                     {service.tiers.map((tier, tierIndex) => (
                       <Card 
                         key={tierIndex} 
-                        className={`relative border-2 transition-all hover:shadow-lg bg-[#FDFBF7] ${
+                        className={`relative border-2 transition-all hover:shadow-lg bg-[#C8A25C] ${
                           tier.popular 
                             ? 'border-accent shadow-md' 
                             : 'border-border hover:border-accent/50'
@@ -323,7 +323,7 @@ const Building = () => {
               </div>
             </div>
 
-            <Card className="border-2 border-accent/20 bg-[#FDFBF7]">
+            <Card className="border-2 border-accent/20 bg-[#C8A25C]">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <h3 className="font-serif text-2xl font-semibold text-foreground mb-2">

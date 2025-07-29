@@ -78,7 +78,7 @@ const Contact = () => {
           <div className="grid md:grid-cols-3 gap-8">
             
             {/* Book a Call */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-primary/20 hover:border-primary/40 bg-[#FDFBF7]">
+            <Card className="group hover:shadow-lg transition-all border-2 border-primary/20 hover:border-primary/40 bg-[#C8A25C]">
               <CardContent className="p-8 text-center">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
                   <Calendar className="h-8 w-8 text-primary" />
@@ -106,7 +106,7 @@ const Contact = () => {
             </Card>
 
             {/* Send Message */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-accent/20 hover:border-accent/40 bg-[#FDFBF7]">
+            <Card className="group hover:shadow-lg transition-all border-2 border-accent/20 hover:border-accent/40 bg-[#C8A25C]">
               <CardContent className="p-8 text-center">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-accent/10">
                   <MessageCircle className="h-8 w-8 text-accent" />
@@ -134,7 +134,7 @@ const Contact = () => {
             </Card>
 
             {/* Email Direct */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-secondary/40 hover:border-secondary/60 bg-[#FDFBF7]">
+            <Card className="group hover:shadow-lg transition-all border-2 border-secondary/40 hover:border-secondary/60 bg-[#C8A25C]">
               <CardContent className="p-8 text-center">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/20">
                   <Mail className="h-8 w-8 text-secondary-foreground" />
@@ -177,7 +177,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <Card className="max-w-2xl mx-auto border-2 border-primary/20 bg-[#FDFBF7]">
+          <Card className="max-w-2xl mx-auto border-2 border-primary/20 bg-[#C8A25C]">
             <CardHeader className="text-center">
               <CardTitle className="font-serif text-2xl text-foreground">
                 Let's Start the Conversation

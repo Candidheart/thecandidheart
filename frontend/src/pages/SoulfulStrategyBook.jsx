@@ -141,7 +141,7 @@ const SoulfulStrategyBook = () => {
 
           <div className="space-y-6">
             {modules.map((module, index) => (
-              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg">
+              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg bg-[#C8A25C]">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
@@ -191,7 +191,7 @@ const SoulfulStrategyBook = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {bonuses.map((bonus, index) => (
-              <Card key={index} className="border border-primary/20 text-center">
+              <Card key={index} className="border border-primary/20 text-center bg-[#C8A25C]">
                 <CardContent className="p-8">
                   <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
                     <bonus.icon className="h-8 w-8 text-primary" />
@@ -217,7 +217,7 @@ const SoulfulStrategyBook = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border border-primary/20">
+            <Card className="border border-primary/20 bg-[#C8A25C]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -234,7 +234,7 @@ const SoulfulStrategyBook = () => {
               </CardContent>
             </Card>
 
-            <Card className="border border-primary/20">
+            <Card className="border border-primary/20 bg-[#C8A25C]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -263,7 +263,7 @@ const SoulfulStrategyBook = () => {
             </h2>
           </div>
           
-          <Card className="border-2 border-primary/20">
+          <Card className="border-2 border-primary/20 bg-[#C8A25C]">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">

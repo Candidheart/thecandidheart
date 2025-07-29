@@ -115,7 +115,7 @@ const About = () => {
                     {item.year}
                   </div>
                 </div>
-                <Card className="flex-1 hover:shadow-lg transition-all-smooth bg-[#FDFBF7]">
+                <Card className="flex-1 hover:shadow-lg transition-all-smooth bg-[#C8A25C]">
                   <CardContent className="p-6">
                     <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                       {item.title}
@@ -148,7 +148,7 @@ const About = () => {
             {values.map((value, index) => {
               const IconComponent = value.icon;
               return (
-                <Card key={index} className="text-center hover:shadow-lg transition-all-smooth bg-[#FDFBF7]">
+                <Card key={index} className="text-center hover:shadow-lg transition-all-smooth bg-[#C8A25C]">
                   <CardContent className="p-8">
                     <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
                       <IconComponent className="h-8 w-8 text-primary" />

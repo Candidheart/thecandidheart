@@ -171,7 +171,7 @@ const Creating = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {creativeProjects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30">
+              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#C8A25C]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <project.icon className="h-8 w-8 text-primary mr-3" />

@@ -177,7 +177,7 @@ const Coaching = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {approach.map((item, index) => (
-              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg text-center">
+              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg text-center bg-[#C8A25C]">
                 <CardContent className="p-8">
                   <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
                     <item.icon className="h-8 w-8 text-primary" />
@@ -209,10 +209,10 @@ const Coaching = () => {
 
           <div className="grid lg:grid-cols-3 gap-8">
             {coachingOptions.map((option, index) => (
-              <Card key={index} className={`border-2 ${
-                option.color === 'primary' ? 'border-primary/30 bg-primary/5' :
-                option.color === 'accent' ? 'border-accent/30 bg-accent/5' :
-                'border-secondary/50 bg-secondary/10'
+              <Card key={index} className={`border-2 bg-[#C8A25C] ${
+                option.color === 'primary' ? 'border-primary/30' :
+                option.color === 'accent' ? 'border-accent/30' :
+                'border-secondary/50'
               } hover:shadow-lg transition-all relative`}>
                 {option.badge && (
                   <Badge className={`absolute -top-3 left-6 ${
@@ -299,7 +299,7 @@ const Coaching = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border border-primary/20">
+              <Card key={index} className="border border-primary/20 bg-[#C8A25C]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-4">
                     {[...Array(testimonial.rating)].map((_, i) => (

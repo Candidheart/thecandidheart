@@ -77,7 +77,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Healing Path */}
-            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
+            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#C8A25C]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Heart className="h-8 w-8 text-primary mr-3" />
@@ -105,7 +105,7 @@ const Home = () => {
             </Card>
 
             {/* Strategy Path */}
-            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30 bg-[#FDFBF7]">
+            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30 bg-[#C8A25C]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Lightbulb className="h-8 w-8 text-accent mr-3" />
