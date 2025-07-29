@@ -215,7 +215,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {speakingServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-orange-300">
+              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-orange-300 bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <service.icon className="h-8 w-8 text-orange-600 mr-3" />
@@ -291,7 +291,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {speakingTopics.map((topic, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all-smooth">
+              <Card key={index} className="hover:shadow-lg transition-all-smooth bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
@@ -338,7 +338,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-2 border-orange-100">
+              <Card key={index} className="border-2 border-orange-100 bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <blockquote className="font-serif text-lg text-foreground italic mb-6 leading-relaxed">
                     "{testimonial.quote}"

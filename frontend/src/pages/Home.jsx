@@ -7,7 +7,7 @@ const Home = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-accent/10"></div>
         <div className="absolute inset-0 opacity-10">
           <img 
@@ -25,31 +25,12 @@ const Home = () => {
             <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Healing is a system. So is growth. Structure for your soul-led story.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                <Button 
-                  asChild 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-                >
-                  <Link to="/start-here">
-                    Start Healing
-                  </Link>
-                </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/poetry">Read My Writing</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Introduction Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
@@ -102,7 +83,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {/* Healing Path */}
-            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30">
+            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Heart className="h-8 w-8 text-primary mr-3" />
@@ -130,7 +111,7 @@ const Home = () => {
             </Card>
 
             {/* Strategy Path */}
-            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30">
+            <Card className="group hover:shadow-lg transition-all-smooth border-2 hover:border-accent/30 bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
                   <Lightbulb className="h-8 w-8 text-accent mr-3" />
@@ -152,7 +133,7 @@ const Home = () => {
                   asChild 
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground group-hover:bg-accent/80"
                 >
-                  <Link to="/start-here">Build Systems</Link>
+                  <Link to="/building">Build Systems</Link>
                 </Button>
               </CardContent>
             </Card>
@@ -190,7 +171,7 @@ const Home = () => {
               size="lg" 
               className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
             >
-              <Link to="/start-here">Start Here</Link>
+              <Link to="/contact">Start Here</Link>
             </Button>
             <Button 
               asChild 
