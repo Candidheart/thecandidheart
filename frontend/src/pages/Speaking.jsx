@@ -161,8 +161,8 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Heart className="h-8 w-8 text-orange-600" />
+              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Story-Driven Content
@@ -173,8 +173,8 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Lightbulb className="h-8 w-8 text-orange-600" />
+              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Lightbulb className="h-8 w-8 text-accent" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Practical Implementation
@@ -185,8 +185,8 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-orange-100 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Users className="h-8 w-8 text-orange-600" />
+              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                <Users className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Interactive Experience
@@ -215,15 +215,15 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {speakingServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-orange-300 bg-[#FDFBF7]">
+              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <service.icon className="h-8 w-8 text-orange-600 mr-3" />
+                    <service.icon className="h-8 w-8 text-primary mr-3" />
                     <div>
                       <h3 className="font-serif text-2xl font-semibold text-foreground">
                         {service.title}
                       </h3>
-                      <p className="font-sans text-sm text-orange-600">
+                      <p className="font-sans text-sm text-accent">
                         {service.subtitle}
                       </p>
                     </div>
@@ -262,7 +262,7 @@ const Speaking = () => {
                     </span>
                     <Button 
                       asChild 
-                      className="bg-orange-600 hover:bg-orange-700 text-white"
+                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
                     >
                       <Link to="/contact">
                         Book Now
@@ -277,7 +277,7 @@ const Speaking = () => {
       </section>
 
       {/* Topics Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-orange-50 to-red-50">
+      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -294,8 +294,8 @@ const Speaking = () => {
               <Card key={index} className="hover:shadow-lg transition-all-smooth bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="bg-orange-100 rounded-full w-12 h-12 flex items-center justify-center mr-4">
-                      <topic.icon className="h-6 w-6 text-orange-600" />
+                    <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                      <topic.icon className="h-6 w-6 text-primary" />
                     </div>
                     <h3 className="font-serif text-xl font-semibold text-foreground">
                       {topic.title}
@@ -338,7 +338,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-2 border-orange-100 bg-[#FDFBF7]">
+              <Card key={index} className="border-2 border-primary/20 bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <blockquote className="font-serif text-lg text-foreground italic mb-6 leading-relaxed">
                     "{testimonial.quote}"
@@ -350,7 +350,7 @@ const Speaking = () => {
                     <p className="font-sans text-sm text-muted-foreground">
                       {testimonial.title}
                     </p>
-                    <p className="font-sans text-sm text-orange-600">
+                    <p className="font-sans text-sm text-accent">
                       {testimonial.company}
                     </p>
                   </div>
@@ -375,7 +375,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             <div className="text-center">
-              <Calendar className="h-8 w-8 text-orange-600 mx-auto mb-4" />
+              <Calendar className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Advance Booking
               </h3>
@@ -384,7 +384,7 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <MapPin className="h-8 w-8 text-orange-600 mx-auto mb-4" />
+              <MapPin className="h-8 w-8 text-accent mx-auto mb-4" />
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Location Flexibility
               </h3>
@@ -393,7 +393,7 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <Users className="h-8 w-8 text-orange-600 mx-auto mb-4" />
+              <Users className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Custom Content
               </h3>
@@ -411,7 +411,7 @@ const Speaking = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-orange-600 hover:bg-orange-700 text-white font-sans"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
             >
               <Link to="/contact">
                 Discuss Your Event
@@ -435,7 +435,7 @@ const Speaking = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-orange-600 hover:bg-orange-700 text-white font-sans"
+              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
             >
               <Link to="/contact">Book Speaking Engagement</Link>
             </Button>

@@ -26,7 +26,7 @@ const Home = () => {
       {/* Introduction Section */}
       <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
                 I'm a writer, strategist, and survivor of betrayal trauma.

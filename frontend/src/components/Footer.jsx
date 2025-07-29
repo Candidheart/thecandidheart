@@ -6,18 +6,18 @@ const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="bg-[#363B47] text-white">
+    <footer className="bg-gray-50 text-foreground">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid md:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="md:col-span-1">
             <div className="flex items-center space-x-2 mb-4">
               <Heart className="h-5 w-5 text-[#C8A25C]" />
-              <span className="font-serif text-lg font-semibold text-white">
+              <span className="font-serif text-lg font-semibold text-foreground">
                 The Candid Heart
               </span>
             </div>
-            <p className="font-sans text-sm text-gray-300 leading-relaxed mb-4">
+            <p className="font-sans text-sm text-muted-foreground leading-relaxed mb-4">
               Where strategy meets self-worth. A sacred creative studio for entrepreneurs 
               healing from betrayal trauma while building values-aligned businesses.
             </p>
@@ -28,10 +28,10 @@ const Footer = () => {
 
           {/* Services */}
           <div>
-            <h3 className="font-serif text-base font-semibold text-white mb-4">
+            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Services
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-gray-300">
+            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
               <li><Link to="/healing" className="hover:text-[#C8A25C] transition-colors">Healing & Coaching</Link></li>
               <li><Link to="/building" className="hover:text-[#C8A25C] transition-colors">Strategy & Systems</Link></li>
               <li><Link to="/creating" className="hover:text-[#C8A25C] transition-colors">Creative Projects</Link></li>
@@ -42,10 +42,10 @@ const Footer = () => {
 
           {/* Resources */}
           <div>
-            <h3 className="font-serif text-base font-semibold text-white mb-4">
+            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Resources
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-gray-300">
+            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
               <li><Link to="/soulful-strategy-book" className="hover:text-[#C8A25C] transition-colors">Soulful Strategy Book</Link></li>
               <li><Link to="/say-it-brave" className="hover:text-[#C8A25C] transition-colors">Say It Brave Assembly</Link></li>
               <li><Link to="/candid-heart-project" className="hover:text-[#C8A25C] transition-colors">Community Project</Link></li>
@@ -55,10 +55,10 @@ const Footer = () => {
 
           {/* Connect */}
           <div>
-            <h3 className="font-serif text-base font-semibold text-white mb-4">
+            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Connect
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-gray-300">
+            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
               <li><Link to="/contact" className="hover:text-[#C8A25C] transition-colors">Get in Touch</Link></li>
               <li><Link to="/book-call" className="hover:text-[#C8A25C] transition-colors">Book a Call</Link></li>
               <li>
@@ -72,15 +72,15 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="mt-4 flex items-center space-x-2 text-sm text-gray-300">
+            <div className="mt-4 flex items-center space-x-2 text-sm text-muted-foreground">
               <MapPin className="h-4 w-4" />
               <span>Bowling Green, Ohio</span>
             </div>
           </div>
         </div>
 
-        <div className="border-t border-gray-600 mt-8 pt-8 text-center">
-          <p className="font-sans text-sm text-gray-300">
+        <div className="border-t border-gray-300 mt-8 pt-8 text-center">
+          <p className="font-sans text-sm text-muted-foreground">
             © {currentYear} The Candid Heart • Made with intention.
           </p>
           <p className="font-serif text-sm text-[#C8A25C] italic mt-2">

@@ -40,40 +40,21 @@ const Contact = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-secondary/20 via-background to-primary/10">
+      <section className="py-12 lg:py-20 bg-gradient-to-br from-secondary/20 via-background to-primary/10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Heart className="h-12 w-12 text-primary mx-auto mb-6" />
           <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
             Let's Connect
           </h1>
-          <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             This is your digital front porch — a safe space where healing meets strategy 
             and every conversation begins with understanding your unique story.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-            >
-              <Link to="/book-call">
-                Book a Call <ArrowRight className="ml-2 h-5 w-5" />
-              </Link>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-            >
-              <a href="#message-form">Send a Message</a>
-            </Button>
-          </div>
         </div>
       </section>
 
       {/* Quick Connect Options */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-3 gap-8">
             
@@ -165,7 +146,7 @@ const Contact = () => {
       </section>
 
       {/* Message Form */}
-      <section id="message-form" className="py-16 lg:py-24 bg-card/30">
+      <section id="message-form" className="py-12 lg:py-20 bg-card/30">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -286,7 +267,7 @@ const Contact = () => {
       </section>
 
       {/* Final Message */}
-      <section className="py-16 lg:py-24 bg-secondary/20">
+      <section className="py-12 lg:py-20 bg-secondary/20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <blockquote className="font-serif text-2xl md:text-3xl text-foreground italic mb-8 leading-relaxed">
             "This is your digital front porch — a sacred creative studio where trauma survivors 
