@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Heart, Lightbulb, Feather, ArrowRight, Quote } from 'lucide-react';
+import { Heart, Lightbulb, Feather, ArrowRight, Quote, Sparkles, Star } from 'lucide-react';
 
 const Home = () => {
   return (
@@ -9,6 +9,13 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-accent/10"></div>
+        
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 bg-hexagons gentle-pulse"></div>
+        
+        {/* Floating decorative elements */}
+        <Heart className="decorative-element floaty top-32 left-20 text-primary/10" style={{ animationDelay: '1s' }} />
+        <Star className="decorative-element floaty bottom-32 right-20 text-accent/10" style={{ animationDelay: '2s' }} />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
@@ -24,8 +31,14 @@ const Home = () => {
       </section>
 
       {/* Introduction Section */}
-      <section className="py-12 lg:py-16 bg-card/50">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-12 lg:py-16 bg-card/50">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 bg-dots opacity-20"></div>
+        
+        {/* Decorative elements */}
+        <Lightbulb className="decorative-element floaty top-20 right-32 text-primary/8" style={{ animationDelay: '1.5s' }} />
+        
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-up">
               <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -63,8 +76,14 @@ const Home = () => {
       </section>
 
       {/* Two Paths Section */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <section className="relative py-16 lg:py-24">
+        {/* Subtle gradient background */}
+        <div className="absolute inset-0 gradient-sage-gold"></div>
+        
+        {/* Decorative elements */}
+        <Star className="decorative-element floaty top-24 left-1/3 text-primary/8" style={{ animationDelay: '2s' }} />
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Two Paths, One Journey
@@ -136,8 +155,14 @@ const Home = () => {
       </section>
 
       {/* Testimonial/Quote Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-16 lg:py-24 bg-secondary/30">
+        {/* Subtle background pattern */}
+        <div className="absolute inset-0 bg-grid opacity-15"></div>
+        
+        {/* Decorative elements */}
+        <Quote className="decorative-element floaty top-16 left-1/4 text-primary/8" style={{ animationDelay: '1.5s' }} />
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Quote className="h-12 w-12 text-primary mx-auto mb-8" />
           <blockquote className="font-serif text-2xl md:text-3xl text-foreground italic mb-8 leading-relaxed">
             "Poetry is not a luxury — it's a framework for feeling seen. 
@@ -150,8 +175,14 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <section className="relative py-16 lg:py-24">
+        {/* Subtle gradient background */}
+        <div className="absolute inset-0 gradient-blush-cream"></div>
+        
+        {/* Decorative elements */}
+        <Sparkles className="decorative-element floaty bottom-20 right-1/4 text-accent/8" style={{ animationDelay: '1s' }} />
+        
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Begin?
           </h2>

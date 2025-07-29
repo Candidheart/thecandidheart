@@ -181,3 +181,82 @@
   }
 }
 
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+@keyframes gentle-pulse {
+  0%, 100% {
+    opacity: 0.03;
+  }
+  50% {
+    opacity: 0.06;
+  }
+}
+
+/* Background patterns and decorative elements */
+.bg-hexagons {
+  background-image: url('https://www.heropatterns.com/static/media/hexagons.8c1dd1aa.svg');
+  background-repeat: repeat;
+  background-size: 200px;
+  opacity: 0.04;
+}
+
+.bg-dots {
+  background-image: url('https://www.heropatterns.com/static/media/dots.8c1dd1aa.svg');
+  background-repeat: repeat;
+  background-size: 150px;
+  opacity: 0.05;
+}
+
+.bg-grid {
+  background-image: url('https://www.heropatterns.com/static/media/grid.8c1dd1aa.svg');
+  background-repeat: repeat;
+  background-size: 180px;
+  opacity: 0.04;
+}
+
+.gradient-soft {
+  background: linear-gradient(135deg, rgba(255, 245, 235, 0.6), rgba(240, 250, 255, 0.6));
+}
+
+.gradient-blush-cream {
+  background: linear-gradient(135deg, rgba(250, 218, 221, 0.4), rgba(255, 248, 240, 0.4));
+}
+
+.gradient-sage-gold {
+  background: linear-gradient(135deg, rgba(220, 237, 230, 0.4), rgba(255, 251, 230, 0.4));
+}
+
+.floaty {
+  animation: float 4s ease-in-out infinite;
+}
+
+.gentle-pulse {
+  animation: gentle-pulse 6s ease-in-out infinite;
+}
+
+.background-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  opacity: 0.08;
+  z-index: -1;
+}
+
+.decorative-element {
+  position: absolute;
+  opacity: 0.06;
+  z-index: -1;
+  pointer-events: none;
+  width: 3rem;
+  height: 3rem;
+}
+
