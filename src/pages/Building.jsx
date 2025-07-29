@@ -232,7 +232,7 @@ const Building = () => {
                             }`}
                           >
                             <Link to="/book-call">
-                              Apply Here
+                              Book a Call
                             </Link>
                           </Button>
                         </CardContent>
