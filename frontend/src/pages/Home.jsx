@@ -9,13 +9,7 @@ const Home = () => {
       {/* Hero Section */}
       <section className="relative py-20 lg:py-28 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-accent/10"></div>
-        <div className="absolute inset-0 opacity-10">
-          <img 
-            src="/src/assets/hero-background.jpg" 
-            alt="Peaceful workspace" 
-            className="w-full h-full object-cover"
-          />
-        </div>
+
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <h1 className="font-serif text-4xl md:text-6xl lg:text-7xl font-semibold text-foreground mb-6 leading-tight">

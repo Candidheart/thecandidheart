@@ -150,7 +150,7 @@ const Organizations = () => {
             </div>
             <div className="text-center">
               <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                <Bot className="h-8 w-8 text-primary" />
+                <Cpu className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Ethical Technology

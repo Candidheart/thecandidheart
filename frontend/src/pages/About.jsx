@@ -80,16 +80,10 @@ const About = () => {
               </Button>
             </div>
             <div className="relative">
-              <div className="rounded-2xl overflow-hidden shadow-lg">
-                <img 
-                  src="/src/assets/about-image.jpg" 
-                  alt="Writing and reflection" 
-                  className="w-full h-96 object-cover"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>
-                <div className="absolute bottom-8 left-8 right-8">
-                  <Quote className="h-12 w-12 text-primary mb-4" />
-                  <p className="font-serif text-lg text-white italic leading-relaxed">
+              <div className="rounded-2xl overflow-hidden shadow-lg bg-gradient-to-br from-primary/10 to-accent/10 p-8 h-96 flex items-center justify-center">
+                <div className="text-center">
+                  <Quote className="h-12 w-12 text-primary mb-4 mx-auto" />
+                  <p className="font-serif text-lg text-foreground italic leading-relaxed">
                     "I am not the same woman who entered this wilderness, and I am grateful. 
                     She was beautiful, but she was not free."
                   </p>
