@@ -96,31 +96,13 @@ const Creating = () => {
               </div>
             </div>
 
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/contact">
-                  Collaborate With Me
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/about">My Creative Vision</Link>
-              </Button>
-            </div>
+
           </div>
         </div>
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-8 lg:py-12 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
