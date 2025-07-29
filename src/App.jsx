@@ -9,6 +9,7 @@ import Organizations from './pages/Organizations';
 import Speaking from './pages/Speaking';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import BookCall from './pages/BookCall';
 import Footer from './components/Footer';
 import './App.css';
 
@@ -28,6 +29,7 @@ function App() {
             <Route path="/speaking" element={<Speaking />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/book-call" element={<BookCall />} />
           </Routes>
         </main>
         <Footer />

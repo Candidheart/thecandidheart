@@ -231,7 +231,7 @@ const Building = () => {
                                 : 'bg-primary hover:bg-primary/90 text-primary-foreground'
                             }`}
                           >
-                            <Link to="/contact">
+                            <Link to="/book-call">
                               Apply Here
                             </Link>
                           </Button>
@@ -395,7 +395,7 @@ const Building = () => {
                   asChild 
                   className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
                 >
-                  <Link to="/start-here">
+                  <Link to="/book-call">
                     Get Early Access
                   </Link>
                 </Button>
@@ -419,7 +419,7 @@ const Building = () => {
             size="lg" 
             className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
           >
-            <Link to="/start-here">
+            <Link to="/book-call">
               Start Your Journey
             </Link>
           </Button>
