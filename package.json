@@ -4,15 +4,12 @@
   "description": "The Candid Heart - Frontend and Backend",
   "scripts": {
     "dev": "cd frontend && npm run dev",
-    "build": "cd frontend && npm install && npm run build",
+    "build": "cd frontend && npm install && npm run build && cp -r dist ../dist",
     "preview": "cd frontend && npm run preview",
     "install-deps": "cd frontend && npm install",
     "postinstall": "cd frontend && npm install"
   },
   "engines": {
     "node": ">=18.0.0"
-  },
-  "render": {
-    "publishDir": "frontend/dist"
   }
 } 
