@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import { Mic, Users, Lightbulb, Heart, ArrowRight, Calendar, MapPin } from 'lucide-react';
+import { Mic, Users, Lightbulb, Heart, ArrowRight, Calendar, MapPin, Cpu } from 'lucide-react';
 
 const Speaking = () => {
   const speakingServices = [
@@ -47,7 +47,7 @@ const Speaking = () => {
 
   const speakingTopics = [
     {
-      icon: Bot,
+      icon: Cpu,
       title: "Ethical AI",
       description: "Navigating AI implementation while maintaining human connection, ethical standards, and authentic communication.",
       keyPoints: [
