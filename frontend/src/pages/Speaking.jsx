@@ -110,7 +110,7 @@ const Speaking = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
@@ -118,35 +118,16 @@ const Speaking = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               Speaking & Workshops
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Keynotes and strategy sessions for conscious companies, plus creative team intensives 
               and narrative leadership events that inspire authentic, ethical innovation.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/contact">
-                  Book Me to Speak <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/about">My Speaking Style</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Speaking Philosophy Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -201,7 +182,7 @@ const Speaking = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -277,7 +258,7 @@ const Speaking = () => {
       </section>
 
       {/* Topics Section */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 to-accent/5">
+      <section className="py-12 lg:py-16 bg-gradient-to-br from-primary/5 to-accent/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -324,7 +305,7 @@ const Speaking = () => {
       </section>
 
       {/* Testimonials Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -362,7 +343,7 @@ const Speaking = () => {
       </section>
 
       {/* Booking Information Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -422,7 +403,7 @@ const Speaking = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Inspire Your Team?
@@ -431,23 +412,7 @@ const Speaking = () => {
             Let's create a speaking experience that moves your audience beyond information 
             to transformation, with practical tools they can implement immediately.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
-            >
-              <Link to="/contact">Book Speaking Engagement</Link>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans"
-            >
-              <Link to="/about">Learn My Story</Link>
-            </Button>
-          </div>
+
         </div>
       </section>
     </div>

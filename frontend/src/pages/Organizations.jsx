@@ -86,7 +86,7 @@ const Organizations = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      <section className="relative py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/20"></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
@@ -94,35 +94,16 @@ const Organizations = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               For Organizations
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Consulting services for conscious companies ready to prioritize human experience, 
               ethical AI implementation, and authentic brand communication.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/contact">
-                  Schedule a Consultation <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/about">My Approach</Link>
-              </Button>
-            </div>
           </div>
         </div>
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -177,7 +158,7 @@ const Organizations = () => {
       </section>
 
       {/* Services Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -284,7 +265,7 @@ const Organizations = () => {
       </section>
 
       {/* Ideal Clients Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="py-12 lg:py-16 bg-secondary/30">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -308,7 +289,7 @@ const Organizations = () => {
       </section>
 
       {/* Process Section */}
-      <section className="py-16 lg:py-24">
+      <section className="py-12 lg:py-16">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -370,7 +351,7 @@ const Organizations = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-card/50">
+      <section className="py-12 lg:py-16 bg-card/50">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Align Your Organization?
@@ -379,23 +360,7 @@ const Organizations = () => {
             Let's explore how we can help your organization thrive while staying true to your values 
             and prioritizing human experience.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
-            >
-              <Link to="/contact">Schedule Consultation</Link>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans"
-            >
-              <Link to="/about">Learn My Approach</Link>
-            </Button>
-          </div>
+
         </div>
       </section>
     </div>
