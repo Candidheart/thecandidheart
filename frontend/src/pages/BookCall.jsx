@@ -101,7 +101,7 @@ const BookCall = () => {
     return (
       <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <Card className="border-2 border-primary/20 bg-[#C8A25C]">
+          <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
             <CardContent className="p-12 text-center">
               <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
               <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
@@ -154,7 +154,7 @@ const BookCall = () => {
         </div>
 
         {/* Booking Form */}
-        <Card className="border-2 border-primary/20 bg-[#C8A25C]">
+        <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
           <CardContent className="p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-8">
               
@@ -178,7 +178,7 @@ const BookCall = () => {
                             htmlFor={service.id} 
                             className="flex-1 cursor-pointer"
                           >
-                            <Card className={`border transition-all bg-[#C8A25C] ${
+                            <Card className={`border transition-all bg-[#FDFBF7] ${
                               selectedService === service.id 
                                 ? 'border-primary bg-primary/5' 
                                 : 'border-border hover:border-primary/50'
@@ -376,7 +376,7 @@ const BookCall = () => {
 
         {/* Additional Info */}
         <div className="mt-12 text-center">
-          <Card className="border border-primary/20 bg-[#C8A25C]">
+          <Card className="border border-primary/20 bg-[#FDFBF7]">
             <CardContent className="p-8">
               <Heart className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="font-serif text-xl font-semibold text-foreground mb-4">

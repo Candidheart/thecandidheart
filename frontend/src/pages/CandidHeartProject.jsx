@@ -77,7 +77,7 @@ const CandidHeartProject = () => {
               </div>
             </div>
 
-            <Card className="border-2 border-primary/20 bg-[#C8A25C]">
+            <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-6 text-center">
                   Simple Ways to Care
@@ -148,7 +148,7 @@ const CandidHeartProject = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center border border-primary/20 hover:border-primary/40 transition-colors bg-[#C8A25C]">
+            <Card className="text-center border border-primary/20 hover:border-primary/40 transition-colors bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
                   <Heart className="h-8 w-8 text-primary" />
@@ -163,7 +163,7 @@ const CandidHeartProject = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border border-accent/20 hover:border-accent/40 transition-colors bg-[#C8A25C]">
+            <Card className="text-center border border-accent/20 hover:border-accent/40 transition-colors bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-accent/10">
                   <Users className="h-8 w-8 text-accent" />
@@ -178,7 +178,7 @@ const CandidHeartProject = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border border-secondary/40 hover:border-secondary/60 transition-colors bg-[#C8A25C]">
+            <Card className="text-center border border-secondary/40 hover:border-secondary/60 transition-colors bg-[#FDFBF7]">
               <CardContent className="p-8">
                 <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/20">
                   <HandHeart className="h-8 w-8 text-secondary-foreground" />

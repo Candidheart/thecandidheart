@@ -191,7 +191,7 @@ const Organizations = () => {
 
           <div className="space-y-8">
             {organizationServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#C8A25C]">
+              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-3 gap-8">
                     <div className="lg:col-span-2">
