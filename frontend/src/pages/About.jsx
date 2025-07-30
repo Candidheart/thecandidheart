@@ -24,29 +24,34 @@ const About = () => {
 
   const timeline = [
     {
-      year: "2015-2023",
-      title: "The Stay-at-Home Years",
-      description: "Nearly a decade devoted to motherhood, building a home, and believing in a life that would ultimately crumble."
+      year: "2015–2023",
+      title: "The Quiet Becoming",
+      description: "Years spent tending to tiny hands and quiet dreams. I poured myself into motherhood, side hustles, and into a relationship I believed could be whole. I held it all—until I couldn’t anymore."
     },
     {
       year: "2023",
-      title: "The Shattering",
-      description: "Betrayal trauma. The end of everything I thought I knew about my life, my marriage, and myself."
+      title: "The Gentle Awakening",
+      description: "In 2023 I started picking up the frequent patterns of silence and uneasiness. For years I knew something was off but now I knew something was wrong. I started to see past the illusion and stopped giving the excuses."
     },
     {
-      year: "2023-2024",
-      title: "The Wilderness",
-      description: "Learning to survive, then to heal. Writing became my lifeline. Poetry became my prayer."
+      year: "2023–2024",
+      title: "The Wilderness Season",
+      description: "The illusion fully dissipated. Grief echoed. Silence taught. I wrote my way through the ache. Poetry became my prayer, my protest, my proof of life."
     },
     {
       year: "2024",
-      title: "The Rebuilding",
-      description: "Discovering that healing is a system. Building frameworks for recovery. Helping other women find their way."
+      title: "The Rebuild",
+      description: "Brick by breath. I began to see healing as a structure, not just a feeling. I built systems to hold myself—then shared them to help others hold themselves, too. Sharing my story through devotionals became healing and empowering. I was no longer standing alone. In fact, the opposite—I realized I never was."
+    },
+    {
+      year: "Early 2025",
+      title: "The Unmasking",
+      description: "I named my neurodivergence—AuADHD—and with it, the years I spent overcompensating to hide what made me different. I joined my church’s leadership program, even as the voice in my head whispered, 'Don’t do it. They’ll see you.' And they did. They saw the softness. The sacred fire. The mind that moves like music. I had spent a lifetime armoring my tenderness. But what I know now is this: the people who poked at my softness were never my people. This was the year I became brave."
     },
     {
       year: "2025",
       title: "The Integration",
-      description: "Merging my healing journey with my strategic mind. Creating a business that honors both my story and my skills."
+      description: "No more choosing between softness and strategy. I merged the sacred with the systems. And Soulful Strategy was born—not as a brand, but as a blueprint for becoming whole."
     }
   ];
 
@@ -58,16 +63,18 @@ const About = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in">
               <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-                This work chose me
+                I’m Samantha Josette — poet, strategist, and mirror holder for those navigating the wild terrain of healing and becoming.
               </h1>
               <p className="font-sans text-xl text-muted-foreground mb-8 leading-relaxed">
-                I'm Samantha Josette — poet, strategist, and mirror holder for women 
-                who are rebuilding their lives from the ground up.
+                I didn’t set out to do this work. I walked through fire, asked hard questions, and followed the breadcrumbs of grace until the pieces began to form a map. A map for rebuilding — not just businesses, but identities. Not just systems, but stories.
               </p>
               <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
-                I didn't plan to become a trauma coach or a business strategist. 
-                But when my world fell apart, I discovered that healing is a system, 
-                growth is a strategy, and poetry is a framework for feeling seen.
+                This isn’t about perfection. It’s about wholeness.
+                About choosing clarity over hustle. Soul over strategy.
+                And building something sustainable — from the inside out.
+              </p>
+              <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
+                If you’re ready to stop performing and start remembering who you are, I’ll be right here. With frameworks that feel like freedom, and language that holds a mirror to your strength.
               </p>
               <Button 
                 asChild 
@@ -84,8 +91,8 @@ const About = () => {
                 <div className="text-center">
                   <Quote className="h-12 w-12 text-primary mb-4 mx-auto" />
                   <p className="font-serif text-lg text-foreground italic leading-relaxed">
-                    "I am not the same woman who entered this wilderness, and I am grateful. 
-                    She was beautiful, but she was not free."
+                    "I am not the same soul who entered this wilderness, and I am grateful. 
+                    They were beautiful, but they were not free."
                   </p>
                 </div>
               </div>
@@ -233,7 +240,7 @@ const About = () => {
                 What Fills My Cup
               </h3>
               <ul className="font-sans text-muted-foreground space-y-2">
-                <li>• Morning coffee and journal pages</li>
+                <li>• Morning tea and journal pages</li>
                 <li>• Long walks with my thoughts</li>
                 <li>• Books that change how I see the world</li>
                 <li>• Conversations that go deeper than small talk</li>
