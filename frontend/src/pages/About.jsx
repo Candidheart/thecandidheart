@@ -75,57 +75,56 @@ const About = () => {
         <Sparkles className="decorative-element floaty bottom-40 left-1/4 text-primary/10" style={{ animationDelay: '1.5s' }} />
 
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div className="animate-fade-in">
-              <div className="mb-6">
-                <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
-                  <Sparkles className="h-4 w-4 mr-2" />
-                  Your Story Matters
-                </span>
-              </div>
-              
-              <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-semibold text-foreground mb-8 leading-tight">
-                I'm Samantha Josette —{' '}
-                <span className="text-primary">poet, strategist</span>, and mirror holder for those navigating the wild terrain of healing and becoming.
-              </h1>
-              
-              <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
-                <p>
-                  I didn't set out to do this work. I walked through fire, asked hard questions, and followed the breadcrumbs of grace until the pieces began to form a map. A map for rebuilding — not just businesses, but identities. Not just systems, but stories.
-                </p>
-                <p>
-                  This isn't about perfection. It's about wholeness. About choosing clarity over hustle. Soul over strategy. And building something sustainable — from the inside out.
-                </p>
-                <p>
-                  If you're ready to stop performing and start remembering who you are, I'll be right here. With frameworks that feel like freedom, and language that holds a mirror to your strength.
-                </p>
-              </div>
-              
-              <div className="flex flex-col sm:flex-row gap-4 mt-8">
-                <Button 
-                  asChild 
-                  size="lg" 
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans shadow-lg hover:shadow-xl transition-all duration-300"
-                >
-                  <Link to="/work-with-me">
-                    Work With Me <ArrowRight className="ml-2 h-5 w-5" />
-                  </Link>
-                </Button>
-                <Button 
-                  asChild 
-                  variant="outline" 
-                  size="lg"
-                  className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans"
-                >
-                  <Link to="/poetry">
-                    Read My Poetry
-                  </Link>
-                </Button>
-              </div>
+          <div className="text-center animate-fade-in">
+            <div className="mb-6">
+              <span className="inline-flex items-center px-4 py-2 rounded-full text-sm font-medium bg-primary/10 text-primary border border-primary/20">
+                <Sparkles className="h-4 w-4 mr-2" />
+                Your Story Matters
+              </span>
             </div>
             
-            <div className="relative">
-              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-12 h-[500px] flex items-center justify-center">
+            <h1 className="font-serif text-4xl md:text-5xl lg:text-6xl font-bold text-foreground mb-8 leading-tight">
+              I'm Samantha Josette —{' '}
+              <span className="text-primary">poet, strategist</span>, and mirror holder for those navigating the wild terrain of healing and becoming.
+            </h1>
+            
+            <div className="space-y-6 text-lg text-muted-foreground leading-relaxed max-w-4xl mx-auto mb-12">
+              <p>
+                I didn't set out to do this work. I walked through fire, asked hard questions, and followed the breadcrumbs of grace until the pieces began to form a map. A map for rebuilding — not just businesses, but identities. Not just systems, but stories.
+              </p>
+              <p>
+                This isn't about perfection. It's about wholeness. About choosing clarity over hustle. Soul over strategy. And building something sustainable — from the inside out.
+              </p>
+              <p>
+                If you're ready to stop performing and start remembering who you are, I'll be right here. With frameworks that feel like freedom, and language that holds a mirror to your strength.
+              </p>
+            </div>
+            
+            <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Link to="/work-with-me">
+                  Work With Me <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
+              </Button>
+              <Button 
+                asChild 
+                variant="outline" 
+                size="lg"
+                className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans"
+              >
+                <Link to="/poetry">
+                  Read My Poetry
+                </Link>
+              </Button>
+            </div>
+            
+            {/* Quote moved below the main content */}
+            <div className="relative max-w-3xl mx-auto">
+              <div className="relative rounded-3xl overflow-hidden shadow-2xl bg-gradient-to-br from-primary/10 via-secondary/10 to-accent/10 p-12">
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 rounded-3xl"></div>
                 <div className="relative text-center z-10">
                   <div className="mb-8">
@@ -176,7 +175,7 @@ const About = () => {
               return (
                 <div key={index} className={`flex flex-col lg:flex-row gap-8 items-start ${index % 2 === 1 ? 'lg:flex-row-reverse' : ''}`}>
                   <div className="lg:w-48 flex-shrink-0">
-                    <div className="bg-gradient-to-r from-primary to-accent text-primary-foreground px-6 py-3 rounded-2xl text-center font-sans font-semibold shadow-lg">
+                    <div className="bg-gradient-to-r from-primary to-secondary text-primary-foreground px-6 py-3 rounded-2xl text-center font-sans font-semibold shadow-lg">
                       {item.year}
                     </div>
                   </div>
