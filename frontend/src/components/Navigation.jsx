@@ -20,18 +20,18 @@ const Navigation = () => {
   const isActive = (path) => location.pathname === path;
 
   return (
-    <nav className="bg-white/80 backdrop-blur-sm border-b border-primary/10 sticky top-0 z-50">
+    <nav className="bg-background/80 backdrop-blur-sm border-b border-border/50 sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
           <Link to="/" className="flex items-center space-x-2">
-            <Heart className="h-4 w-4 text-amber-500" />
-            <PenTool className="h-4 w-4 text-gray-500" />
+            <Heart className="h-4 w-4 text-primary" />
+            <PenTool className="h-4 w-4 text-muted-foreground" />
             <div className="flex flex-col leading-tight">
-              <span className="font-serif text-base font-semibold text-gray-900">
+              <span className="font-serif text-base font-semibold text-foreground">
                 The Candid Heart
               </span>
-              <span className="font-sans text-sm text-gray-600">
+              <span className="font-sans text-sm text-muted-foreground">
                 with Samantha Josette
               </span>
             </div>
@@ -45,8 +45,8 @@ const Navigation = () => {
                 to={item.path}
                 className={`font-sans text-sm transition-colors whitespace-nowrap ${
                   isActive(item.path)
-                    ? 'text-amber-700 border-b-2 border-amber-500'
-                    : 'text-gray-700 hover:text-amber-600'
+                    ? 'text-primary border-b-2 border-primary font-medium'
+                    : 'text-muted-foreground hover:text-foreground'
                 }`}
               >
                 {item.name}
@@ -56,7 +56,7 @@ const Navigation = () => {
               to="https://samanthajosette.me"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-sans text-sm bg-amber-100 text-amber-700 px-3 py-1 rounded-full hover:bg-amber-200 transition-colors whitespace-nowrap"
+              className="font-sans text-sm bg-primary/10 text-primary px-3 py-1 rounded-full hover:bg-primary/20 transition-colors whitespace-nowrap border border-primary/20"
             >
               Meet Samantha
             </Link>
@@ -66,7 +66,7 @@ const Navigation = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-gray-700 hover:text-amber-600 transition-colors"
+              className="text-muted-foreground hover:text-foreground transition-colors"
             >
               {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </button>
@@ -75,7 +75,7 @@ const Navigation = () => {
 
         {/* Mobile Navigation */}
         {isOpen && (
-          <div className="md:hidden py-4 border-t border-primary/10">
+          <div className="md:hidden py-4 border-t border-border/50">
             <div className="flex flex-col space-y-3">
               {navItems.map((item) => (
                 <Link
@@ -84,8 +84,8 @@ const Navigation = () => {
                   onClick={() => setIsOpen(false)}
                   className={`font-sans text-sm transition-colors ${
                     isActive(item.path)
-                      ? 'text-amber-700 font-semibold'
-                      : 'text-gray-700 hover:text-amber-600'
+                      ? 'text-primary font-medium'
+                      : 'text-muted-foreground hover:text-foreground'
                   }`}
                 >
                   {item.name}
@@ -96,7 +96,7 @@ const Navigation = () => {
                 target="_blank"
                 rel="noopener noreferrer"
                 onClick={() => setIsOpen(false)}
-                className="font-sans text-sm bg-amber-100 text-amber-700 px-3 py-2 rounded-full hover:bg-amber-200 transition-colors text-center"
+                className="font-sans text-sm bg-primary/10 text-primary px-3 py-2 rounded-full hover:bg-primary/20 transition-colors text-center border border-primary/20"
               >
                 Meet Samantha
               </Link>
