@@ -6,6 +6,10 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../components/ui/select';
 import { Heart, Mail, Calendar, MessageCircle, Send, ArrowRight, Clock, Shield } from 'lucide-react';
+import Hero from '@/components/ui/hero';
+import Section from '@/components/ui/section';
+import ContentCard from '@/components/ui/content-card';
+import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -37,259 +41,238 @@ const Contact = () => {
     // You would integrate with your backend or email service here
   };
 
+  const heroDecorativeElements = [
+    { icon: <Heart className="h-12 w-12" />, position: 'top-20 right-20', color: 'text-primary/30', delay: 1 },
+    { icon: <Mail className="h-12 w-12" />, position: 'bottom-20 left-20', color: 'text-accent/30', delay: 2 }
+  ];
+
+  const servicesDecorativeElements = [
+    { icon: <MessageCircle className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-primary/20', delay: 1.5 }
+  ];
+
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-12 lg:py-20 bg-gradient-to-br from-secondary/20 via-background to-primary/10">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Heart className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-            Let's Connect
-          </h1>
-          <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            This is your digital front porch — a safe space where healing meets strategy 
-            and every conversation begins with understanding your unique story.
-          </p>
-        </div>
-      </section>
+      <Hero
+        title="Let's Connect"
+        subtitle="This is your digital front porch — a safe space where healing meets strategy and every conversation begins with understanding your unique story."
+        decorativeElements={heroDecorativeElements}
+        size="medium"
+        badge={{ icon: Heart, text: "Ready to Begin" }}
+      />
 
       {/* Quick Connect Options */}
-      <section className="py-12 lg:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid md:grid-cols-3 gap-8">
-            
-            {/* Book a Call */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-primary/20 hover:border-primary/40 bg-[#FDFBF7]">
-              <CardContent className="p-8 text-center">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
-                  <Calendar className="h-8 w-8 text-primary" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
-                  Book a Discovery Call
-                </h3>
-                <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
-                  Ready to explore working together? Let's have a conversation about your goals, 
-                  challenges, and how I might support your journey.
-                </p>
-                <Button 
-                  asChild
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                >
-                  <Link to="/book-call">
-                    Schedule Now
-                  </Link>
-                </Button>
-                <p className="font-sans text-xs text-muted-foreground mt-3">
-                  <Clock className="h-3 w-3 inline mr-1" />
-                  Free 30-minute consultation available
-                </p>
-              </CardContent>
-            </Card>
+      <Section 
+        size="medium" 
+        background={true}
+        decorativeElements={servicesDecorativeElements}
+      >
+        <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
+          {/* Book a Call */}
+          <ContentCard
+            icon={Calendar}
+            title="Book a Discovery Call"
+            description="Ready to explore working together? Let's have a conversation about your goals, challenges, and how I might support your journey."
+            variant="primary"
+          >
+            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mb-3">
+              <Link to="/book-call">Schedule Now</Link>
+            </Button>
+            <p className="font-sans text-xs text-muted-foreground text-center">
+              <Clock className="h-3 w-3 inline mr-1" />
+              Free 30-minute consultation available
+            </p>
+          </ContentCard>
 
-            {/* Send Message */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-accent/20 hover:border-accent/40 bg-[#FDFBF7]">
-              <CardContent className="p-8 text-center">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-accent/10">
-                  <MessageCircle className="h-8 w-8 text-accent" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
-                  Send a Message
-                </h3>
-                <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
-                  Have questions, want to share your story, or explore collaboration? 
-                  I read every message personally and respond thoughtfully.
-                </p>
-                <Button 
-                  asChild
-                  className="w-full bg-accent hover:bg-accent/90 text-accent-foreground"
-                >
-                  <a href="#message-form">
-                    Write to Me
-                  </a>
-                </Button>
-                <p className="font-sans text-xs text-muted-foreground mt-3">
-                  <Shield className="h-3 w-3 inline mr-1" />
-                  Response within 24-48 hours
-                </p>
-              </CardContent>
-            </Card>
+          {/* Send Message */}
+          <ContentCard
+            icon={MessageCircle}
+            title="Send a Message"
+            description="Have questions, want to share your story, or explore collaboration? I read every message personally and respond thoughtfully."
+            variant="accent"
+          >
+            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground mb-3">
+              <Link to="#contact-form">Send Message</Link>
+            </Button>
+            <p className="font-sans text-xs text-muted-foreground text-center">
+              <Shield className="h-3 w-3 inline mr-1" />
+              Your privacy is protected
+            </p>
+          </ContentCard>
 
-            {/* Email Direct */}
-            <Card className="group hover:shadow-lg transition-all border-2 border-secondary/40 hover:border-secondary/60 bg-[#FDFBF7]">
-              <CardContent className="p-8 text-center">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/20">
-                  <Mail className="h-8 w-8 text-secondary-foreground" />
-                </div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
-                  Email Me Directly
-                </h3>
-                <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
-                  Prefer email? Send me a note directly. Perfect for detailed inquiries, 
-                  collaboration ideas, or when you need a more private conversation.
-                </p>
-                <Button 
-                  asChild
-                  className="w-full bg-secondary hover:bg-secondary/80 text-secondary-foreground"
-                >
-                  <a href="mailto:hello@samanthajosette.com">
-                    hello@samanthajosette.com
-                  </a>
-                </Button>
-                <p className="font-sans text-xs text-muted-foreground mt-3">
-                  <Heart className="h-3 w-3 inline mr-1" />
-                  For urgent or sensitive matters
-                </p>
-              </CardContent>
-            </Card>
-          </div>
+          {/* Email Direct */}
+          <ContentCard
+            icon={Mail}
+            title="Email Directly"
+            description="Prefer to email? I'm available at samantha@thecandidheart.com for direct communication about your needs and projects."
+            variant="primary"
+          >
+            <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground mb-3">
+              <a href="mailto:samantha@thecandidheart.com">Send Email</a>
+            </Button>
+            <p className="font-sans text-xs text-muted-foreground text-center">
+              <Clock className="h-3 w-3 inline mr-1" />
+              Response within 24 hours
+            </p>
+          </ContentCard>
         </div>
-      </section>
+      </Section>
 
-      {/* Message Form */}
-      <section id="message-form" className="py-12 lg:py-20 bg-card/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Contact Form Section */}
+      <Section 
+        size="large" 
+        background={false}
+        className="bg-card/50"
+      >
+        <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Share What's on Your Heart
+            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+              Send Me a Message
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-              Whether you're seeking healing, building strategy, or simply need someone 
-              who understands the journey — your story matters to me.
+            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+              Whether you have questions, want to share your story, or are ready to explore working together, 
+              I'd love to hear from you. Every message is read personally and responded to thoughtfully.
             </p>
           </div>
 
-          <Card className="max-w-2xl mx-auto border-2 border-primary/20 bg-[#FDFBF7]">
-            <CardHeader className="text-center">
-              <CardTitle className="font-serif text-2xl text-foreground">
-                Let's Start the Conversation
+          <Card className="bg-card border border-border/50 shadow-lg">
+            <CardHeader>
+              <CardTitle className="font-serif text-2xl font-semibold text-foreground text-center">
+                Let's Start a Conversation
               </CardTitle>
-              <p className="font-sans text-muted-foreground">
-                Take your time. Share what feels important. I'm here to listen.
-              </p>
             </CardHeader>
             <CardContent>
               <form onSubmit={handleSubmit} className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-4">
+                <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="block font-sans text-sm font-medium text-foreground mb-2">
-                      Your Name *
+                    <label htmlFor="name" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                      Name *
                     </label>
                     <Input
                       id="name"
                       name="name"
                       type="text"
-                      required
                       value={formData.name}
                       onChange={handleInputChange}
-                      placeholder="What should I call you?"
-                      className="border-primary/30 focus:border-primary"
+                      required
+                      className="w-full"
+                      placeholder="Your full name"
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="block font-sans text-sm font-medium text-foreground mb-2">
-                      Email Address *
+                    <label htmlFor="email" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                      Email *
                     </label>
                     <Input
                       id="email"
                       name="email"
                       type="email"
-                      required
                       value={formData.email}
                       onChange={handleInputChange}
-                      placeholder="your@email.com"
-                      className="border-primary/30 focus:border-primary"
+                      required
+                      className="w-full"
+                      placeholder="your.email@example.com"
                     />
                   </div>
                 </div>
 
                 <div>
-                  <label htmlFor="inquiryType" className="block font-sans text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="inquiryType" className="font-sans text-sm font-medium text-foreground mb-2 block">
                     What brings you here? *
                   </label>
-                  <Select onValueChange={handleSelectChange} required>
-                    <SelectTrigger className="border-primary/30 focus:border-primary">
-                      <SelectValue placeholder="Choose what resonates most..." />
+                  <Select value={formData.inquiryType} onValueChange={handleSelectChange} required>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select your inquiry type" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="healing">Healing & Trauma Recovery</SelectItem>
-                      <SelectItem value="clarity">Clarity Session</SelectItem>
-                      <SelectItem value="copywriting">Copy & Messaging</SelectItem>
-                      <SelectItem value="automation">Automation & Systems</SelectItem>
-                      <SelectItem value="strategy">Business Strategy</SelectItem>
-                      <SelectItem value="monthly">Ongoing Support</SelectItem>
-                      <SelectItem value="collaboration">Collaboration</SelectItem>
-                      <SelectItem value="other">Something Else</SelectItem>
+                      <SelectItem value="strategy">Business Strategy & Copywriting</SelectItem>
+                      <SelectItem value="collaboration">Collaboration & Partnership</SelectItem>
+                      <SelectItem value="general">General Question</SelectItem>
+                      <SelectItem value="other">Other</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="block font-sans text-sm font-medium text-foreground mb-2">
+                  <label htmlFor="message" className="font-sans text-sm font-medium text-foreground mb-2 block">
                     Your Message *
                   </label>
-                  <p className="font-sans text-xs text-muted-foreground mb-3 italic">
-                    Share your story, your challenges, your dreams. Where are you in your journey? 
-                    What support are you seeking? There's no wrong way to begin.
-                  </p>
                   <Textarea
                     id="message"
                     name="message"
-                    required
                     value={formData.message}
                     onChange={handleInputChange}
-                    placeholder="I'm here to listen..."
+                    required
                     rows={6}
-                    className="border-primary/30 focus:border-primary resize-none"
+                    className="w-full"
+                    placeholder="Tell me about your story, your needs, or what you're hoping to explore..."
                   />
                 </div>
 
-                <Button 
-                  type="submit" 
-                  size="lg" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg"
-                >
-                  <Send className="mr-2 h-5 w-5" />
-                  Send Message
-                </Button>
+                <div className="text-center">
+                  <Button 
+                    type="submit" 
+                    size="lg" 
+                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans px-8"
+                  >
+                    Send Message <Send className="ml-2 h-4 w-4" />
+                  </Button>
+                </div>
 
-                <div className="text-center space-y-2">
+                <div className="text-center">
                   <p className="font-sans text-xs text-muted-foreground">
-                    I typically respond within 24-48 hours. Your information is kept private and secure.
-                  </p>
-                  <p className="font-sans text-xs text-muted-foreground italic">
-                    "Every conversation begins with curiosity and care."
+                    <Shield className="h-3 w-3 inline mr-1" />
+                    Your information is secure and will never be shared without your permission.
                   </p>
                 </div>
               </form>
             </CardContent>
           </Card>
         </div>
-      </section>
+      </Section>
 
-      {/* Final Message */}
-      <section className="py-12 lg:py-20 bg-secondary/20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <blockquote className="font-serif text-2xl md:text-3xl text-foreground italic mb-8 leading-relaxed">
-            "This is your digital front porch — a sacred creative studio where trauma survivors 
-            feel safe enough to explore healing and business owners feel grounded enough 
-            to trust me with their strategy."
-          </blockquote>
-          <p className="font-sans text-lg text-muted-foreground mb-6">
-            Thank you for being here. Your journey matters, and I'm honored to witness it.
-          </p>
-          <div className="flex justify-center">
-            <Button 
-              asChild 
-              variant="outline"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
-            >
-              <a href="https://samanthajosette.me" target="_blank" rel="noopener noreferrer">
-                Visit My Personal Portal
-              </a>
-            </Button>
+      {/* Additional Info Section */}
+      <Section 
+        size="medium" 
+        background={false}
+        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-6`}>
+            What to Expect
+          </h3>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Clock className="h-6 w-6 text-primary" />
+              </div>
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Quick Response</h4>
+              <p className="font-sans text-sm text-muted-foreground">
+                I typically respond within 24 hours, often much sooner.
+              </p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Heart className="h-6 w-6 text-accent" />
+              </div>
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Personal Touch</h4>
+              <p className="font-sans text-sm text-muted-foreground">
+                Every message is read personally, not by an assistant or bot.
+              </p>
+            </div>
+            <div>
+              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+                <Shield className="h-6 w-6 text-primary" />
+              </div>
+              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Safe Space</h4>
+              <p className="font-sans text-sm text-muted-foreground">
+                Your story is sacred. I hold everything you share with care and confidentiality.
+              </p>
+            </div>
           </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };
