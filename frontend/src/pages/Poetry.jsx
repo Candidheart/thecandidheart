@@ -1,356 +1,297 @@
-import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
-import { Feather, Heart, Download, ExternalLink, Filter } from 'lucide-react';
+import { Heart, PenTool, BookOpen, Star, Sparkles, Quote } from 'lucide-react';
+import Hero from '@/components/ui/hero';
+import Section from '@/components/ui/section';
+import ContentCard from '@/components/ui/content-card';
+import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Poetry = () => {
-  const [selectedFilter, setSelectedFilter] = useState('all');
+  const heroDecorativeElements = [
+    { icon: <Heart className="h-12 w-12" />, position: 'top-20 left-16', color: 'text-primary/30', delay: 1 },
+    { icon: <PenTool className="h-12 w-12" />, position: 'top-40 right-20', color: 'text-accent/30', delay: 2 },
+    { icon: <Star className="h-12 w-12" />, position: 'bottom-40 left-1/4', color: 'text-primary/20', delay: 1.5 }
+  ];
 
-  const poems = [
+  const collectionsDecorativeElements = [
+    { icon: <BookOpen className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-primary/20', delay: 1.5 }
+  ];
+
+  const featuredDecorativeElements = [
+    { icon: <Quote className="h-16 w-16" />, position: 'bottom-20 left-20', color: 'text-accent/20', delay: 1 }
+  ];
+
+  const poetryCollections = [
     {
-      title: "The Woman I'm Becoming",
-      category: "rebuilding",
-      excerpt: "She rises not from ashes, but from choice...\nEach morning, she decides again\nto trust the voice that whispers\n'you are worth the work of becoming.'",
-      fullText: `She rises not from ashes, but from choice.
-Each morning, she decides again
-to trust the voice that whispers
-'you are worth the work of becoming.'
-
-The mirror shows her scars,
-but she sees stories.
-The silence holds her pain,
-but she hears poetry.
-
-This woman I'm becoming
-doesn't need permission
-to take up space,
-to speak her truth,
-to build a life that fits
-the shape of her healing.
-
-She is not who she was,
-and that is not a loss—
-it is a liberation.`
+      title: "Shattered Into One",
+      subtitle: "A collection of poems about betrayal trauma and identity rebuilding",
+      description: "Raw, honest poetry that explores the journey from brokenness to wholeness, from betrayal to self-trust.",
+      status: "Coming Soon",
+      available: false,
+      themes: ["Betrayal Trauma", "Identity Rebuilding", "Self-Discovery", "Healing"]
     },
     {
-      title: "Sacred Rebuilding",
-      category: "faith",
-      excerpt: "In the rubble of what was,\nI found the blueprint for what could be...\nGod doesn't waste our breaking;\nHe uses it as foundation.",
-      fullText: `In the rubble of what was,
-I found the blueprint for what could be.
-Every shattered piece
-a cornerstone for something stronger.
-
-God doesn't waste our breaking;
-He uses it as foundation.
-The cracks become the places
-where His light gets in,
-where grace takes root,
-where new growth begins.
-
-I am not the same woman
-who entered this wilderness,
-and I am grateful.
-She was beautiful,
-but she was not free.
-
-This rebuilding is sacred work—
-holy hands shaping holy clay,
-divine love writing new stories
-on the pages of my becoming.`
-    },
-    {
-      title: "The Space Between",
-      category: "pain",
-      excerpt: "There is a space between\nwho I was and who I'm becoming...\nIn this liminal place,\nI am learning to breathe.",
-      fullText: `There is a space between
-who I was and who I'm becoming,
-a threshold where grief and hope
-dance their ancient dance.
-
-In this liminal place,
-I am learning to breathe.
-To sit with the discomfort
-of not knowing,
-of being unfinished,
-of carrying both sorrow and joy
-in the same tender heart.
-
-The space between is not empty—
-it is full of possibility,
-pregnant with potential,
-alive with the quiet work
-of transformation.
-
-Here, I am neither
-the woman who was broken
-nor the woman who is whole.
-I am the woman who is becoming,
-and that is enough.`
+      title: "Morning Pages for the Healing Heart",
+      subtitle: "Daily poetry prompts for trauma survivors",
+      description: "Gentle, trauma-informed prompts designed to help you process your experiences through creative expression.",
+      status: "Coming Soon",
+      available: false,
+      themes: ["Daily Practice", "Trauma-Informed", "Creative Expression", "Self-Care"]
     },
     {
       title: "Systems of Grace",
-      category: "rebuilding",
-      excerpt: "I built my healing like a business plan...\nStep by step, choice by choice,\nI automated my recovery.",
-      fullText: `I built my healing like a business plan:
-clear objectives, measurable outcomes,
-systems that could run
-even when I couldn't.
-
-Step by step, choice by choice,
-I automated my recovery.
-Morning routines that held me
-when I couldn't hold myself.
-Evening rituals that reminded me
-I was worth the investment.
-
-Healing, I learned, is not magic—
-it is methodology.
-Not a lightning strike of wholeness,
-but a thousand small decisions
-to choose growth over comfort,
-truth over familiar lies.
-
-I am both the CEO
-and the product being developed.
-The strategist and the strategy.
-The system and the soul
-it was designed to serve.`
+      subtitle: "Poetry about building a life that honors your soul",
+      description: "Poems that explore the intersection of healing, business, and creating systems that support your authentic self.",
+      status: "Available Now",
+      available: true,
+      themes: ["Business & Soul", "Systems Design", "Authenticity", "Purpose"]
     }
   ];
 
-  const devotionals = [
+  const featuredPoems = [
     {
-      title: "Morning Pages for the Healing Heart",
-      description: "A 30-day devotional combining faith, journaling, and gentle self-discovery for women in recovery.",
-      type: "Digital Download",
-      price: "Free"
+      title: "The Woman I'm Becoming",
+      excerpt: "I am not the same soul who entered this wilderness, and I am grateful. They were beautiful, but they were not free.",
+      theme: "Identity",
+      readTime: "2 min read"
     },
     {
-      title: "Prayers for the In-Between",
-      description: "Honest conversations with God for the seasons when you're not who you were but not yet who you're becoming.",
-      type: "eBook",
-      price: "$12"
+      title: "Systems of Grace",
+      excerpt: "I am both the CEO and the product being developed. The strategist and the strategy. The system and the soul it was designed to serve.",
+      theme: "Business & Soul",
+      readTime: "3 min read"
     },
     {
-      title: "Sacred Systems Workbook",
-      description: "A practical guide to building healing routines that honor both your humanity and your divinity.",
-      type: "Workbook + Audio",
-      price: "$27"
+      title: "Boundaries as Love",
+      excerpt: "My no is not rejection. It is protection. My boundaries are not walls. They are the architecture of my becoming.",
+      theme: "Boundaries",
+      readTime: "2 min read"
     }
   ];
-
-  const categories = [
-    { id: 'all', label: 'All Poems', count: poems.length },
-    { id: 'pain', label: 'Poems for Pain', count: poems.filter(p => p.category === 'pain').length },
-    { id: 'rebuilding', label: 'Rebuilding', count: poems.filter(p => p.category === 'rebuilding').length },
-    { id: 'faith', label: 'Faith', count: poems.filter(p => p.category === 'faith').length }
-  ];
-
-  const filteredPoems = selectedFilter === 'all' 
-    ? poems 
-    : poems.filter(poem => poem.category === selectedFilter);
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="py-20 lg:py-32 bg-gradient-to-br from-accent/10 via-background to-secondary/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <div className="flex justify-center mb-6">
-            <Feather className="h-16 w-16 text-accent" />
-          </div>
-          <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6">
-            Poetry & Devotionals
-          </h1>
-          <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Words for the woman who is healing, rebuilding, and becoming. 
-            Poetry is not a luxury — it's a framework for feeling seen.
+      <Hero
+        title="Poetry as Medicine"
+        subtitle="Words have power to heal, to clarify, to transform. These poems are my prayers, my protests, my proof of life."
+        decorativeElements={heroDecorativeElements}
+        size="large"
+        badge={{ icon: PenTool, text: "Creative Expression" }}
+      />
+
+      {/* Featured Poems */}
+      <Section 
+        size="large" 
+        background={true}
+        decorativeElements={featuredDecorativeElements}
+      >
+        <div className="text-center mb-16">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Featured Poems
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+            A selection of poems that have resonated deeply with readers on their own healing journeys.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-sans"
-            >
-              <a href="https://substack.com" target="_blank" rel="noopener noreferrer">
-                Read on Substack <ExternalLink className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-accent text-accent hover:bg-accent hover:text-accent-foreground font-sans"
-            >
-              <Link to="#devotionals">Browse Devotionals</Link>
-            </Button>
-          </div>
         </div>
-      </section>
 
-      {/* Filter Section */}
-      <section className="py-8 bg-card/50 border-b border-border">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-wrap items-center gap-4">
-            <div className="flex items-center">
-              <Filter className="h-5 w-5 text-muted-foreground mr-2" />
-              <span className="font-sans text-sm text-muted-foreground">Filter by:</span>
-            </div>
-            {categories.map((category) => (
-              <Button
-                key={category.id}
-                variant={selectedFilter === category.id ? "default" : "outline"}
-                size="sm"
-                onClick={() => setSelectedFilter(category.id)}
-                className={`font-sans ${
-                  selectedFilter === category.id 
-                    ? 'bg-accent text-accent-foreground' 
-                    : 'border-accent text-accent hover:bg-accent hover:text-accent-foreground'
-                }`}
-              >
-                {category.label} ({category.count})
-              </Button>
-            ))}
-          </div>
+        <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
+          {featuredPoems.map((poem, index) => (
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+              <CardContent className="p-8">
+                <div className="mb-4">
+                  <Badge className="bg-primary/10 text-primary border-primary/20 mb-3">
+                    {poem.theme}
+                  </Badge>
+                  <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                    {poem.title}
+                  </h3>
+                </div>
+                
+                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-muted-foreground italic mb-6 leading-relaxed`}>
+                  "{poem.excerpt}"
+                </blockquote>
+                
+                <div className="flex items-center justify-between">
+                  <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                    {poem.readTime}
+                  </span>
+                  <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                    <Link to="/poetry/read">Read Full Poem</Link>
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </section>
+      </Section>
 
-      {/* Poetry Section */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid lg:grid-cols-2 gap-8">
-            {filteredPoems.map((poem, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth">
-                <CardContent className="p-8">
-                  <div className="flex items-start justify-between mb-4">
-                    <h3 className="font-serif text-2xl font-semibold text-foreground group-hover:text-accent transition-colors">
-                      {poem.title}
-                    </h3>
-                    <Badge variant="secondary" className="ml-4 capitalize">
-                      {poem.category}
-                    </Badge>
-                  </div>
-                  <div className="font-serif text-muted-foreground leading-relaxed mb-6 whitespace-pre-line italic">
-                    {poem.excerpt}
-                  </div>
-                  <details className="group/details">
-                    <summary className="font-sans text-accent cursor-pointer hover:text-accent/80 transition-colors list-none">
-                      Read full poem →
-                    </summary>
-                    <div className="mt-4 pt-4 border-t border-border">
-                      <div className="font-serif text-foreground leading-relaxed whitespace-pre-line">
-                        {poem.fullText}
+      {/* Poetry Collections */}
+      <Section 
+        size="large" 
+        background={false}
+        decorativeElements={collectionsDecorativeElements}
+        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+      >
+        <div className="text-center mb-16">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Poetry Collections
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+            Curated collections designed to support your healing journey through the power of words and creative expression.
+          </p>
+        </div>
+
+        <div className="space-y-8">
+          {poetryCollections.map((collection, index) => (
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+              <CardContent className="p-8">
+                <div className="flex flex-col lg:flex-row gap-8">
+                  <div className="flex-1">
+                    <div className="mb-4">
+                      <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-2`}>
+                        {collection.title}
+                      </h3>
+                      <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-primary font-medium mb-4`}>
+                        {collection.subtitle}
+                      </p>
+                      <Badge className={collection.available ? 
+                        'bg-accent/10 text-accent border-accent/20' : 
+                        'bg-muted text-muted-foreground border-muted-foreground/20'
+                      }>
+                        {collection.status}
+                      </Badge>
+                    </div>
+                    
+                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-6`}>
+                      {collection.description}
+                    </p>
+
+                    <div className="mb-6">
+                      <h4 className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-foreground mb-3`}>
+                        Themes Explored:
+                      </h4>
+                      <div className="flex flex-wrap gap-2">
+                        {collection.themes.map((theme, idx) => (
+                          <Badge key={idx} variant="outline" className="text-xs">
+                            {theme}
+                          </Badge>
+                        ))}
                       </div>
                     </div>
-                  </details>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Devotionals Section */}
-      <section id="devotionals" className="py-16 lg:py-24 bg-card/50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <div className="flex justify-center items-center mb-6">
-              <Heart className="h-12 w-12 text-primary mr-4" />
-              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground">
-                Devotionals & Resources
-              </h2>
-            </div>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              Gentle guides for the journey of healing, combining faith, practical wisdom, 
-              and the sacred work of becoming who you're meant to be.
-            </p>
-          </div>
-
-          <div className="grid lg:grid-cols-3 gap-8">
-            {devotionals.map((devotional, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth">
-                <CardContent className="p-8">
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-4 group-hover:text-primary transition-colors">
-                    {devotional.title}
-                  </h3>
-                  <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
-                    {devotional.description}
-                  </p>
-                  <div className="flex items-center justify-between mb-6">
-                    <Badge variant="outline" className="border-accent text-accent">
-                      {devotional.type}
-                    </Badge>
-                    <span className="font-sans text-lg font-semibold text-primary">
-                      {devotional.price}
-                    </span>
                   </div>
-                  <Button 
-                    asChild 
-                    className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
-                  >
-                    <Link to="/contact">
-                      <Download className="mr-2 h-4 w-4" />
-                      {devotional.price === 'Free' ? 'Download Free' : 'Purchase'}
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Newsletter Signup */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Words for Your Journey
-          </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Receive weekly poetry, devotionals, and gentle reminders that you are worth 
-            the work of becoming. No spam, just soul-nourishing words.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-            <input
-              type="email"
-              placeholder="Your email address"
-              className="flex-1 px-4 py-3 border border-border rounded-lg bg-input text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-accent"
-            />
-            <Button 
-              className="bg-accent hover:bg-accent/90 text-accent-foreground font-sans px-6"
-            >
-              Subscribe
-            </Button>
-          </div>
-          <p className="font-sans text-xs text-muted-foreground mt-4">
-            Unsubscribe anytime. Your email is safe with me.
-          </p>
+                  <div className="lg:w-64 flex-shrink-0">
+                    <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 text-center">
+                      {collection.available ? (
+                        <div className="space-y-3">
+                          <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+                            <Link to="/poetry/collections">Read Collection</Link>
+                          </Button>
+                          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                            <Link to="/contact">Get Notified</Link>
+                          </Button>
+                        </div>
+                      ) : (
+                        <div className="space-y-3">
+                          <Button disabled className="w-full bg-muted text-muted-foreground font-sans cursor-not-allowed">
+                            Coming Soon
+                          </Button>
+                          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                            <Link to="/contact">Join Waitlist</Link>
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </section>
+      </Section>
+
+      {/* About My Poetry */}
+      <Section 
+        size="large" 
+        background={true}
+        className="bg-card/50"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Why Poetry?
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-12 max-w-3xl mx-auto`}>
+            Poetry has been my companion through every season of healing and becoming. 
+            It's how I process, how I remember, how I find my way back to myself.
+          </p>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Heart className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                Healing Tool
+              </h3>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                Poetry provides a safe space to explore complex emotions and experiences that might be difficult to express otherwise.
+              </p>
+            </div>
+
+            <div>
+              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <PenTool className="h-8 w-8 text-accent" />
+              </div>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                Creative Expression
+              </h3>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                Writing poetry helps you find your voice and reclaim your story in a way that feels authentic and empowering.
+              </p>
+            </div>
+
+            <div>
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <Star className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                Connection
+              </h3>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                Poetry creates bridges between experiences, helping you feel less alone in your journey of healing and growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </Section>
 
       {/* CTA Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Ready for Deeper Healing?
+      <Section 
+        size="large" 
+        background={false}
+        className="bg-gradient-to-br from-primary/10 to-secondary/20"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Ready to Explore Poetry Together?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            If these words resonate with your heart, perhaps you're ready to explore 
-            what healing and rebuilding could look like with personalized support.
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+            Whether you're looking for healing through words or want to explore your own creative expression, 
+            poetry can be a powerful companion on your journey.
           </p>
-          <Button 
-            asChild 
-            size="lg" 
-            className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-          >
-            <Link to="/work-with-me">
-              Explore Healing Services
-            </Link>
-          </Button>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+              <Link to="/poetry/read">Read More Poems</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+              <Link to="/contact">Share Your Poetry</Link>
+            </Button>
+          </div>
         </div>
-      </section>
+      </Section>
     </div>
   );
 };

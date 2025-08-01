@@ -3,9 +3,27 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { Heart, Users, Calendar, MessageCircle, Video, Mail, CheckCircle, ArrowRight, Clock, Star } from 'lucide-react';
+import { Heart, Users, Calendar, MessageCircle, Video, Mail, CheckCircle, ArrowRight, Clock, Star, Sparkles } from 'lucide-react';
+import Hero from '@/components/ui/hero';
+import Section from '@/components/ui/section';
+import ContentCard from '@/components/ui/content-card';
+import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Coaching = () => {
+  const heroDecorativeElements = [
+    { icon: <Heart className="h-12 w-12" />, position: 'top-20 left-16', color: 'text-primary/30', delay: 1 },
+    { icon: <Users className="h-12 w-12" />, position: 'top-40 right-20', color: 'text-accent/30', delay: 2 },
+    { icon: <Star className="h-12 w-12" />, position: 'bottom-40 left-1/4', color: 'text-primary/20', delay: 1.5 }
+  ];
+
+  const optionsDecorativeElements = [
+    { icon: <Calendar className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-primary/20', delay: 1.5 }
+  ];
+
+  const approachDecorativeElements = [
+    { icon: <Heart className="h-16 w-16" />, position: 'bottom-20 left-20', color: 'text-accent/20', delay: 1 }
+  ];
+
   const coachingOptions = [
     {
       title: "Reclaim & Rebuild: The Elevated Model",
@@ -98,332 +116,221 @@ const Coaching = () => {
     },
     {
       icon: Users,
-      title: "Values-Aligned",
-      description: "Business strategies that support your deepest values and mission"
+      title: "Community-Centered",
+      description: "Healing happens in connection with others who understand"
     },
     {
       icon: Calendar,
-      title: "Sustainable Pace",
-      description: "Growth that doesn't compromise your well-being or recovery"
+      title: "Structured Support",
+      description: "Consistent touchpoints and accountability for sustainable change"
     }
   ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center animate-fade-in">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 text-sm font-sans">
-              Coaching & Support
-            </Badge>
-            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-8 leading-tight">
-              Healing-Informed Coaching
-            </h1>
-            <p className="font-serif text-xl md:text-2xl text-accent mb-8 italic">
-              Where Strategy Meets Self-Worth
-            </p>
-            <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
-                Coaching designed for entrepreneurs who are healing from betrayal trauma while 
-                building businesses that honor their values. You don't have to choose between 
-                success and staying true to yourself.
-              </p>
-              <div className="space-y-4 text-center">
-                <p className="font-serif text-xl text-foreground">
-                  You're not broken. You're in survival.
-                </p>
-                <p className="font-serif text-xl text-foreground">
-                  And now, you're choosing to thrive.
-                </p>
-              </div>
-            </div>
-            
-            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="/book-call">
-                  Book Discovery Call <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
-              </Button>
-              <Button 
-                asChild 
-                variant="outline" 
-                size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-              >
-                <Link to="#options">Explore Options</Link>
-              </Button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* My Approach */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              My Approach
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
-              Coaching that honors both your healing journey and your business goals
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {approach.map((item, index) => (
-              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg text-center bg-[#FDFBF7]">
-                <CardContent className="p-8">
-                  <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
-                    <item.icon className="h-8 w-8 text-primary" />
-                  </div>
-                  <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
-                    {item.title}
-                  </h3>
-                  <p className="font-sans text-muted-foreground leading-relaxed">
-                    {item.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      <Hero
+        title="Sacred Coaching for Healing & Growth"
+        subtitle="Whether you're healing from betrayal trauma or building a values-aligned business, I provide the structure, support, and sacred space you need to reclaim your voice and power."
+        decorativeElements={heroDecorativeElements}
+        size="large"
+        badge={{ icon: Sparkles, text: "Your Journey Matters" }}
+      />
 
       {/* Coaching Options */}
-      <section id="options" className="py-16 lg:py-24 bg-secondary/20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Coaching Options
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground">
-              Choose the support that meets you where you are
-            </p>
-          </div>
+      <Section 
+        size="large" 
+        background={true}
+        decorativeElements={optionsDecorativeElements}
+      >
+        <div className="text-center mb-16">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Choose Your Path
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+            From group programs to intensive one-on-one sessions, find the support that fits your unique needs and timeline.
+          </p>
+        </div>
 
-          <div className="grid lg:grid-cols-3 gap-8">
-            {coachingOptions.map((option, index) => (
-              <Card key={index} className={`border-2 bg-[#FDFBF7] ${
-                option.color === 'primary' ? 'border-primary/30' :
-                option.color === 'accent' ? 'border-accent/30' :
-                'border-secondary/50'
-              } hover:shadow-lg transition-all relative`}>
-                {option.badge && (
-                  <Badge className={`absolute -top-3 left-6 ${
-                    option.color === 'primary' ? 'bg-primary text-primary-foreground' :
-                    option.color === 'accent' ? 'bg-accent text-accent-foreground' :
-                    'bg-secondary text-secondary-foreground'
-                  }`}>
-                    {option.badge}
-                  </Badge>
-                )}
-                <CardContent className="p-8">
-                  <div className="mb-6">
-                    <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                      {option.title}
-                    </h3>
-                    <p className="font-serif text-base text-accent italic mb-4">
-                      {option.subtitle}
-                    </p>
-                    <p className="font-sans text-muted-foreground leading-relaxed mb-4">
-                      {option.description}
-                    </p>
-                    <div className="flex items-center space-x-4 text-sm text-muted-foreground mb-4">
-                      <div className="flex items-center">
-                        <Clock className="h-4 w-4 mr-1 text-primary" />
-                        {option.duration}
-                      </div>
-                      <div className="flex items-center">
-                        <Users className="h-4 w-4 mr-1 text-primary" />
-                        {option.format}
+        <div className="space-y-8">
+          {coachingOptions.map((option, index) => (
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+              <CardContent className="p-8">
+                <div className="flex flex-col lg:flex-row gap-8">
+                  <div className="flex-1">
+                    <div className="flex items-start justify-between mb-4">
+                      <div>
+                        <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-2`}>
+                          {option.title}
+                        </h3>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-primary font-medium mb-2`}>
+                          {option.subtitle}
+                        </p>
+                        <Badge className={`${option.color === 'primary' ? 'bg-primary/10 text-primary border-primary/20' : 
+                                          option.color === 'accent' ? 'bg-accent/10 text-accent border-accent/20' : 
+                                          'bg-secondary/10 text-secondary-foreground border-secondary/20'}`}>
+                          {option.badge}
+                        </Badge>
                       </div>
                     </div>
-                  </div>
+                    
+                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-6`}>
+                      {option.description}
+                    </p>
 
-                  <div className="mb-6">
-                    <h4 className="font-sans text-sm font-semibold text-foreground mb-3">
-                      What's Included:
-                    </h4>
-                    <ul className="space-y-2">
+                    <div className="grid md:grid-cols-2 gap-6 mb-6">
+                      <div>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                          Duration
+                        </p>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
+                          {option.duration}
+                        </p>
+                      </div>
+                      <div>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                          Format
+                        </p>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
+                          {option.format}
+                        </p>
+                      </div>
+                    </div>
+
+                    <ul className="space-y-2 mb-6">
                       {option.includes.map((item, idx) => (
                         <li key={idx} className="flex items-start">
-                          <CheckCircle className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="font-sans text-sm text-muted-foreground">{item}</span>
+                          <CheckCircle className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
+                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                            {item}
+                          </span>
                         </li>
                       ))}
                     </ul>
                   </div>
 
-                  <div className="mb-6 p-4 bg-white/50 rounded-lg">
-                    <p className="font-sans text-lg font-semibold text-foreground text-center">
-                      {option.pricing}
-                    </p>
+                  <div className="lg:w-64 flex-shrink-0">
+                    <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 text-center">
+                      <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-primary mb-4`}>
+                        {option.pricing}
+                      </p>
+                      <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans mb-3">
+                        <Link to={option.link}>
+                          {option.cta}
+                        </Link>
+                      </Button>
+                      <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                        <Link to="/contact">
+                          Ask Questions
+                        </Link>
+                      </Button>
+                    </div>
                   </div>
-
-                  <Button 
-                    asChild 
-                    className={`w-full ${
-                      option.color === 'primary' ? 'bg-primary hover:bg-primary/90' :
-                      option.color === 'accent' ? 'bg-accent hover:bg-accent/90' :
-                      'bg-secondary hover:bg-secondary/90'
-                    } text-white font-sans`}
-                  >
-                    <Link to={option.link}>
-                      {option.cta}
-                    </Link>
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
         </div>
-      </section>
+      </Section>
+
+      {/* My Approach */}
+      <Section 
+        size="large" 
+        background={false}
+        decorativeElements={approachDecorativeElements}
+        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+      >
+        <div className="text-center mb-16">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            My Approach
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+            Every coaching relationship is built on these foundational principles that honor both your humanity and your goals.
+          </p>
+        </div>
+
+        <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
+          {approach.map((item, index) => (
+            <div key={index} className="text-center">
+              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+                <item.icon className="h-8 w-8 text-primary" />
+              </div>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                {item.title}
+              </h3>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                {item.description}
+              </p>
+            </div>
+          ))}
+        </div>
+      </Section>
 
       {/* Testimonials */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              Client Stories
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground">
-              Hear from entrepreneurs who've transformed their businesses and lives
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border border-primary/20 bg-[#FDFBF7]">
-                <CardContent className="p-8">
-                  <div className="flex items-center mb-4">
-                    {[...Array(testimonial.rating)].map((_, i) => (
-                      <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                    ))}
-                  </div>
-                  <blockquote className="font-serif text-base text-foreground italic mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <p className="font-sans text-sm font-semibold text-foreground">
-                      {testimonial.author}
-                    </p>
-                    <p className="font-sans text-sm text-muted-foreground">
-                      {testimonial.role}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* How It Works */}
-      <section className="py-16 lg:py-24 bg-primary/5">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              How It Works
-            </h2>
-            <p className="font-sans text-lg text-muted-foreground">
-              A simple process designed with your healing in mind
-            </p>
-          </div>
-
-          <div className="space-y-8">
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                <span className="font-serif text-lg font-semibold text-primary">1</span>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                  Discovery Call
-                </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
-                  We'll talk about where you are in your healing journey and what kind of support 
-                  would be most helpful. No pressure, just connection.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                <span className="font-serif text-lg font-semibold text-primary">2</span>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                  Choose Your Path
-                </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
-                  Based on our conversation, we'll determine whether group coaching, 1:1 sessions, 
-                  or an intensive would be the best fit for your needs.
-                </p>
-              </div>
-            </div>
-
-            <div className="flex items-start space-x-6">
-              <div className="flex-shrink-0 w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                <span className="font-serif text-lg font-semibold text-primary">3</span>
-              </div>
-              <div>
-                <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
-                  Begin Your Journey
-                </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
-                  Start your coaching experience with the support, tools, and community you need 
-                  to build a business that honors both your healing and your dreams.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <Heart className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-            Ready to Begin?
+      <Section 
+        size="large" 
+        background={true}
+        className="bg-card/50"
+      >
+        <div className="text-center mb-16">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            What Women Are Saying
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Your healing journey and your business dreams don't have to be separate paths. 
-            Let's explore how they can support each other.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Button 
-              asChild 
-              size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
-            >
-              <Link to="/book-call">
-                Book Your Discovery Call
-              </Link>
-            </Button>
-            <Button 
-              asChild 
-              variant="outline" 
-              size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
-            >
-              <Link to="/contact">
-                Ask Questions First
-              </Link>
-            </Button>
-          </div>
-
-          <p className="font-sans text-sm text-muted-foreground italic">
-            "This is your digital front porch — a sacred creative studio where strategy meets self-worth."
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+            Real stories from women who have transformed their lives through our work together.
           </p>
         </div>
-      </section>
+
+        <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
+          {testimonials.map((testimonial, index) => (
+            <Card key={index} className="bg-card border border-border/50 shadow-sm">
+              <CardContent className="p-6">
+                <div className="flex mb-4">
+                  {[...Array(testimonial.rating)].map((_, i) => (
+                    <Star key={i} className="h-4 w-4 text-primary fill-current" />
+                  ))}
+                </div>
+                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-foreground italic mb-4`}>
+                  "{testimonial.quote}"
+                </blockquote>
+                <div>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-foreground`}>
+                    {testimonial.author}
+                  </p>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                    {testimonial.role}
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
+      {/* CTA Section */}
+      <Section 
+        size="large" 
+        background={false}
+        className="bg-gradient-to-br from-primary/10 to-secondary/20"
+      >
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            Ready to Begin Your Transformation?
+          </h2>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+            Whether you're ready to join a group program or prefer one-on-one support, 
+            let's find the perfect path for your unique journey.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+              <Link to="/book-call">Book a Discovery Call</Link>
+            </Button>
+            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+              <Link to="/contact">Send Me a Message</Link>
+            </Button>
+          </div>
+        </div>
+      </Section>
     </div>
   );
 };
