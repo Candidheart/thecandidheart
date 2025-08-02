@@ -133,7 +133,7 @@ const WorkWithMe = () => {
         size="large"
         badge={{ icon: Sparkles, text: "Your Journey Matters" }}
       >
-        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-2xl mx-auto`}>
+        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-2xl mx-auto`}>
           You don't have to choose between structure and softness. 
           Healing is a strategy. So is clarity.
         </p>
@@ -152,7 +152,7 @@ const WorkWithMe = () => {
               Healing & Clarity Coaching
             </h2>
           </div>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             For the woman who's ready to rebuild her identity, reclaim her voice, 
             and create systems that honor her healing journey.
           </p>
@@ -165,13 +165,13 @@ const WorkWithMe = () => {
                 <CardTitle className={`font-serif ${DESIGN_SYSTEM.typography.h3} text-foreground mb-2`}>
                   {service.title}
                 </CardTitle>
-                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                   {service.description}
                 </p>
               </CardHeader>
               <CardContent>
                 <div className="mb-6">
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
                     {service.duration}
                   </p>
                   <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-primary`}>
@@ -182,7 +182,7 @@ const WorkWithMe = () => {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <CheckCircle className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                         {feature}
                       </span>
                     </li>
@@ -225,7 +225,7 @@ const WorkWithMe = () => {
               Business Strategy & Systems
             </h2>
           </div>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             For the entrepreneur who wants to build something sustainable — 
             systems that honor both your humanity and your goals.
           </p>
@@ -238,13 +238,13 @@ const WorkWithMe = () => {
                 <CardTitle className={`font-serif ${DESIGN_SYSTEM.typography.h3} text-foreground mb-2`}>
                   {service.title}
                 </CardTitle>
-                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                   {service.description}
                 </p>
               </CardHeader>
               <CardContent>
                 <div className="mb-6">
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
                     {service.duration}
                   </p>
                   <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-accent`}>
@@ -255,7 +255,7 @@ const WorkWithMe = () => {
                   {service.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <CheckCircle className="h-4 w-4 text-accent mr-2 mt-1 flex-shrink-0" />
-                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                         {feature}
                       </span>
                     </li>
@@ -294,7 +294,7 @@ const WorkWithMe = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Not Sure Where to Start?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
             Let's have a conversation about your unique needs and find the perfect path forward together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">

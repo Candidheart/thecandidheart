@@ -53,7 +53,7 @@ const ContentCard = ({
         )}
         
         {description && (
-          <p className="font-sans text-muted-foreground mb-6 leading-relaxed text-center">
+          <p className="font-sans text-foreground mb-6 leading-relaxed text-center">
             {description}
           </p>
         )}

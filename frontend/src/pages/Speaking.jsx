@@ -118,7 +118,7 @@ const Speaking = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               Speaking & Workshops
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed">
               Keynotes and strategy sessions for conscious companies, plus creative team intensives 
               and narrative leadership events that inspire authentic, ethical innovation.
             </p>
@@ -133,7 +133,7 @@ const Speaking = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Speaking That Moves Beyond Information
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
               I don't just share information — I create experiences that shift perspectives, 
               inspire action, and leave audiences with practical tools they can implement immediately. 
               Every talk is designed to honor both the strategic mind and the human heart.
@@ -148,7 +148,7 @@ const Speaking = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Story-Driven Content
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Every presentation weaves together personal narrative, practical strategy, 
                 and actionable insights that resonate on both intellectual and emotional levels.
               </p>
@@ -160,7 +160,7 @@ const Speaking = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Practical Implementation
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Audiences leave with concrete frameworks, tools, and next steps they can 
                 implement immediately to create meaningful change in their organizations.
               </p>
@@ -172,7 +172,7 @@ const Speaking = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Interactive Experience
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Engaging, participatory sessions that create space for reflection, 
                 discussion, and collaborative problem-solving among participants.
               </p>
@@ -188,7 +188,7 @@ const Speaking = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Speaking Services
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               From inspiring keynotes to intensive workshops, I offer a range of speaking services 
               designed to meet your organization's unique needs and goals.
             </p>
@@ -210,7 +210,7 @@ const Speaking = () => {
                     </div>
                   </div>
 
-                  <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
+                  <p className="font-sans text-foreground mb-6 leading-relaxed">
                     {service.description}
                   </p>
 
@@ -219,7 +219,7 @@ const Speaking = () => {
                       <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
                         Available Formats
                       </h4>
-                      <ul className="font-sans text-sm text-muted-foreground space-y-2">
+                      <ul className="font-sans text-sm text-foreground space-y-2">
                         {service.formats.map((format, idx) => (
                           <li key={idx}>• {format}</li>
                         ))}
@@ -229,7 +229,7 @@ const Speaking = () => {
                       <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
                         Ideal Audiences
                       </h4>
-                      <ul className="font-sans text-sm text-muted-foreground space-y-2">
+                      <ul className="font-sans text-sm text-foreground space-y-2">
                         {service.audiences.map((audience, idx) => (
                           <li key={idx}>• {audience}</li>
                         ))}
@@ -264,7 +264,7 @@ const Speaking = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Speaking Topics
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Core topics that can be customized and combined to meet your event's specific needs 
               and your audience's unique challenges and goals.
             </p>
@@ -283,7 +283,7 @@ const Speaking = () => {
                     </h3>
                   </div>
 
-                  <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
+                  <p className="font-sans text-foreground mb-6 leading-relaxed">
                     {topic.description}
                   </p>
 
@@ -291,7 +291,7 @@ const Speaking = () => {
                     <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
                       Key Discussion Points
                     </h4>
-                    <ul className="font-sans text-sm text-muted-foreground space-y-2">
+                    <ul className="font-sans text-sm text-foreground space-y-2">
                       {topic.keyPoints.map((point, idx) => (
                         <li key={idx}>• {point}</li>
                       ))}
@@ -311,7 +311,7 @@ const Speaking = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               What Audiences Say
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Feedback from organizations and leaders who have experienced the impact 
               of these speaking engagements firsthand.
             </p>
@@ -328,7 +328,7 @@ const Speaking = () => {
                     <p className="font-sans font-semibold text-foreground">
                       {testimonial.author}
                     </p>
-                    <p className="font-sans text-sm text-muted-foreground">
+                    <p className="font-sans text-sm text-foreground">
                       {testimonial.title}
                     </p>
                     <p className="font-sans text-sm text-accent">
@@ -349,7 +349,7 @@ const Speaking = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Booking Information
             </h2>
-            <p className="font-sans text-lg text-muted-foreground">
+            <p className="font-sans text-lg text-foreground">
               Ready to bring these conversations to your organization? Here's what you need to know.
             </p>
           </div>
@@ -360,7 +360,7 @@ const Speaking = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Advance Booking
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Book 6-8 weeks in advance for keynotes, 8-12 weeks for intensive workshops.
               </p>
             </div>
@@ -369,7 +369,7 @@ const Speaking = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Location Flexibility
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Available for virtual, in-person, or hybrid events worldwide.
               </p>
             </div>
@@ -378,14 +378,14 @@ const Speaking = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                 Custom Content
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 All content customized to your audience, industry, and organizational goals.
               </p>
             </div>
           </div>
 
           <div className="text-center">
-            <p className="font-sans text-muted-foreground mb-8">
+            <p className="font-sans text-foreground mb-8">
               Each speaking engagement includes pre-event consultation, customized content development, 
               and post-event resources for continued implementation.
             </p>
@@ -408,7 +408,7 @@ const Speaking = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Inspire Your Team?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto">
             Let's create a speaking experience that moves your audience beyond information 
             to transformation, with practical tools they can implement immediately.
           </p>

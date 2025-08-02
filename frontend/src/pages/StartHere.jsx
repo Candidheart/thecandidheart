@@ -67,19 +67,19 @@ const StartHere = () => {
               <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
                 Thank you for beginning.
               </h1>
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 I'll review your reflection and be in touch within 2-3 business days with either:
               </p>
               <div className="space-y-3 text-left max-w-md mx-auto mb-8">
-                <p className="font-sans text-muted-foreground flex items-start">
+                <p className="font-sans text-foreground flex items-start">
                   <span className="text-primary mr-2">•</span>
                   An invitation to complete the full brand reflection form
                 </p>
-                <p className="font-sans text-muted-foreground flex items-start">
+                <p className="font-sans text-foreground flex items-start">
                   <span className="text-primary mr-2">•</span>
                   A call to explore working together
                 </p>
-                <p className="font-sans text-muted-foreground flex items-start">
+                <p className="font-sans text-foreground flex items-start">
                   <span className="text-primary mr-2">•</span>
                   A gentle note if we're not aligned right now
                 </p>
@@ -106,7 +106,7 @@ const StartHere = () => {
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Begin Your Reflection
           </h1>
-          <p className="font-sans text-xl text-muted-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
             This is a first step toward a potential collaboration — a gentle way for us to see 
             if we're aligned before diving deeper.
           </p>
@@ -158,7 +158,7 @@ const StartHere = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   What kind of support are you seeking?
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Select all that resonate
                 </p>
                 
@@ -187,7 +187,7 @@ const StartHere = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   How would you describe your brand's personality?
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Choose up to 3 that feel most true
                 </p>
                 
@@ -222,7 +222,7 @@ const StartHere = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground">
                   What's feeling unclear or overwhelming right now?
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Share what brought you here today
                 </p>
                 
@@ -261,7 +261,7 @@ const StartHere = () => {
                   Begin My Reflection
                 </Button>
                 
-                <p className="font-sans text-sm text-muted-foreground mt-4">
+                <p className="font-sans text-sm text-foreground mt-4">
                   This takes courage. Thank you for trusting the process.
                 </p>
               </div>

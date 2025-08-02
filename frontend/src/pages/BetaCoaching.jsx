@@ -92,7 +92,7 @@ const BetaCoaching = () => {
               The Elevated Model
             </p>
             <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 A sacred coaching rhythm for women healing betrayal and reclaiming their voice
               </p>
               <div className="space-y-4 text-center">
@@ -103,7 +103,7 @@ const BetaCoaching = () => {
                   You need a rhythm that honors it.
                 </p>
               </div>
-              <p className="font-sans text-lg text-muted-foreground mt-8 italic">
+              <p className="font-sans text-lg text-foreground mt-8 italic">
                 This is not a course. It's not a social group.<br />
                 It's a steady, sacred rhythm of remembering yourself—one brave breath at a time.
               </p>
@@ -117,7 +117,7 @@ const BetaCoaching = () => {
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                     Beta Launch Pricing
                   </h3>
-                  <p className="font-sans text-muted-foreground mb-4">
+                  <p className="font-sans text-foreground mb-4">
                     <strong>First 20 participants:</strong> Completely free<br />
                     <strong>Next 30 participants:</strong> Pay what you can (donation-based)
                   </p>
@@ -158,7 +158,7 @@ const BetaCoaching = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Your Sacred Weekly Rhythm
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Each week aligns with a phase of your Reclaim & Rebuild journey—gently moving 
               you from disorientation to embodiment.
             </p>
@@ -177,7 +177,7 @@ const BetaCoaching = () => {
                   <p className="font-sans text-sm text-accent mb-4 font-medium">
                     {element.description}
                   </p>
-                  <p className="font-sans text-muted-foreground leading-relaxed">
+                  <p className="font-sans text-foreground leading-relaxed">
                     {element.purpose}
                   </p>
                 </CardContent>
@@ -194,7 +194,7 @@ const BetaCoaching = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               The 6-Week Journey Overview
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               A carefully crafted progression that honors your healing timeline and builds 
               sustainable strength from within.
             </p>
@@ -215,7 +215,7 @@ const BetaCoaching = () => {
                   <blockquote className="font-serif text-base text-foreground italic mb-4 leading-relaxed">
                     {week.title}
                   </blockquote>
-                  <p className="font-sans text-sm text-muted-foreground leading-relaxed">
+                  <p className="font-sans text-sm text-foreground leading-relaxed">
                     {week.outcome}
                   </p>
                 </CardContent>
@@ -232,7 +232,7 @@ const BetaCoaching = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Sample Weekly Flow
             </h2>
-            <p className="font-sans text-lg text-muted-foreground">
+            <p className="font-sans text-lg text-foreground">
               Week 2: Clarify - "Your Voice Knows the Way"
             </p>
           </div>
@@ -253,7 +253,7 @@ const BetaCoaching = () => {
                   </div>
                   <div>
                     <h4 className="font-sans text-sm font-medium text-foreground mb-2">Includes:</h4>
-                    <ul className="font-sans text-sm text-muted-foreground space-y-1">
+                    <ul className="font-sans text-sm text-foreground space-y-1">
                       <li>• Reflection on self-trust and internalized gaslighting</li>
                       <li>• Journaling prompt: "When did I first feel something was off?"</li>
                       <li>• Preview of the week's Zoom circle + one small practice</li>
@@ -274,23 +274,23 @@ const BetaCoaching = () => {
                 <div className="space-y-3">
                   <div className="flex">
                     <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Mon</Badge>
-                    <p className="font-sans text-sm text-muted-foreground">"What's one gut feeling you've ignored that proved true?"</p>
+                    <p className="font-sans text-sm text-foreground">"What's one gut feeling you've ignored that proved true?"</p>
                   </div>
                   <div className="flex">
                     <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Tue</Badge>
-                    <p className="font-sans text-sm text-muted-foreground">"When did you first silence yourself to avoid conflict?"</p>
+                    <p className="font-sans text-sm text-foreground">"When did you first silence yourself to avoid conflict?"</p>
                   </div>
                   <div className="flex">
                     <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Wed</Badge>
-                    <p className="font-sans text-sm text-muted-foreground">"Your needs are not too much. What do you need today?"</p>
+                    <p className="font-sans text-sm text-foreground">"Your needs are not too much. What do you need today?"</p>
                   </div>
                   <div className="flex">
                     <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Thu</Badge>
-                    <p className="font-sans text-sm text-muted-foreground">"Tonight we gather. Bring your breath and your truth."</p>
+                    <p className="font-sans text-sm text-foreground">"Tonight we gather. Bring your breath and your truth."</p>
                   </div>
                   <div className="flex">
                     <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Fri</Badge>
-                    <p className="font-sans text-sm text-muted-foreground">"What part of you are you learning to trust again?"</p>
+                    <p className="font-sans text-sm text-foreground">"What part of you are you learning to trust again?"</p>
                   </div>
                 </div>
               </CardContent>
@@ -316,7 +316,7 @@ const BetaCoaching = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
                   What We'll Do Together
                 </h3>
-                <ul className="font-sans text-muted-foreground space-y-2">
+                <ul className="font-sans text-foreground space-y-2">
                   <li className="flex items-start">
                     <CheckCircle className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
                     Grounding breathwork
@@ -342,7 +342,7 @@ const BetaCoaching = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
                   Safe Space Promise
                 </h3>
-                <ul className="font-sans text-muted-foreground space-y-2">
+                <ul className="font-sans text-foreground space-y-2">
                   <li className="flex items-start">
                     <Heart className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
                     Same Zoom link weekly for consistency
@@ -380,7 +380,7 @@ const BetaCoaching = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   Weekly Themed Email
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Anchors the heart and mind in the healing phase
                 </p>
               </CardContent>
@@ -392,7 +392,7 @@ const BetaCoaching = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   Daily SMS Check-ins
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Builds safety, pattern recognition, and consistency
                 </p>
               </CardContent>
@@ -404,7 +404,7 @@ const BetaCoaching = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   Weekly Live Zoom
                 </h3>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   Offers voice, validation, and group resonance
                 </p>
               </CardContent>
@@ -425,7 +425,7 @@ const BetaCoaching = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Reclaim & Rebuild?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             This beta program is limited to 50 women total. Join us for this sacred journey 
             of remembering yourself—one brave breath at a time.
           </p>
@@ -452,7 +452,7 @@ const BetaCoaching = () => {
             </Button>
           </div>
 
-          <p className="font-sans text-sm text-muted-foreground italic">
+          <p className="font-sans text-sm text-foreground italic">
             You're leading yourself out of the silence. And you're doing it with rhythm, grace, and truth.
           </p>
         </div>

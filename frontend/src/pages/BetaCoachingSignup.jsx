@@ -125,7 +125,7 @@ const BetaCoachingSignup = () => {
         title: 'Waitlist Only',
         description: 'Beta program is full - join our waitlist',
         icon: Clock,
-        color: 'text-muted-foreground'
+        color: 'text-foreground'
       };
     }
   };
@@ -141,7 +141,7 @@ const BetaCoachingSignup = () => {
             <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
               Welcome to the Journey
             </h1>
-            <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+            <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
               Thank you for trusting me with your healing story. You'll receive a welcome email 
               within 24 hours with all the details for our first week together.
             </p>
@@ -178,7 +178,7 @@ const BetaCoachingSignup = () => {
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Join Reclaim & Rebuild
           </h1>
-          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed mb-8">
+          <p className="font-sans text-lg text-foreground max-w-2xl mx-auto leading-relaxed mb-8">
             A sacred 6-week coaching rhythm for women healing betrayal and reclaiming their voice.
           </p>
 
@@ -193,13 +193,13 @@ const BetaCoachingSignup = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                 {pricingTier.title}
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 {pricingTier.description}
               </p>
               <Badge className={`mt-3 ${
                 pricingTier.tier === 'free' ? 'bg-primary/10 text-primary border-primary/20' :
                 pricingTier.tier === 'donation' ? 'bg-accent/10 text-accent border-accent/20' :
-                'bg-muted text-muted-foreground border-muted'
+                'bg-muted text-foreground border-muted'
               }`}>
                 {50 - currentSpot} spots remaining
               </Badge>
@@ -213,7 +213,7 @@ const BetaCoachingSignup = () => {
             <CardTitle className="font-serif text-2xl text-foreground">
               Your Sacred Application
             </CardTitle>
-            <p className="font-sans text-muted-foreground">
+            <p className="font-sans text-foreground">
               This application helps me understand your needs and create the safest possible space for healing.
             </p>
           </CardHeader>
@@ -313,7 +313,7 @@ const BetaCoachingSignup = () => {
                     placeholder="e.g., EST, PST, CST"
                     className="border-primary/30 focus:border-primary"
                   />
-                  <p className="font-sans text-xs text-muted-foreground mt-1">
+                  <p className="font-sans text-xs text-foreground mt-1">
                     Zoom circles are Thursdays at 7PM EST
                   </p>
                 </div>
@@ -482,7 +482,7 @@ const BetaCoachingSignup = () => {
                   <h3 className="font-serif text-lg font-semibold text-foreground border-b border-primary/20 pb-2">
                     Pay What You Can
                   </h3>
-                  <p className="font-sans text-sm text-muted-foreground">
+                  <p className="font-sans text-sm text-foreground">
                     This program is offered on a donation basis. Pay what feels sustainable and honoring 
                     for you - whether that's $10 or $100 per week. Every contribution helps me continue 
                     offering this work.
@@ -503,7 +503,7 @@ const BetaCoachingSignup = () => {
                       placeholder="$0 - $100+"
                       className="border-primary/30 focus:border-primary"
                     />
-                    <p className="font-sans text-xs text-muted-foreground mt-1">
+                    <p className="font-sans text-xs text-foreground mt-1">
                       You can adjust this amount at any time during the program
                     </p>
                   </div>
@@ -529,7 +529,7 @@ const BetaCoachingSignup = () => {
                     placeholder="Name and phone number of someone we can contact if needed"
                     className="border-primary/30 focus:border-primary"
                   />
-                  <p className="font-sans text-xs text-muted-foreground mt-1">
+                  <p className="font-sans text-xs text-foreground mt-1">
                     This is for your safety and will only be used in case of emergency
                   </p>
                 </div>
@@ -577,7 +577,7 @@ const BetaCoachingSignup = () => {
                   <Send className="mr-2 h-5 w-5" />
                   {loading ? 'Submitting...' : (pricingTier.tier === 'full' ? 'Join Waitlist' : 'Submit Application')}
                 </Button>
-                <p className="font-sans text-xs text-muted-foreground text-center mt-4">
+                <p className="font-sans text-xs text-foreground text-center mt-4">
                   You'll receive a welcome email within 24 hours with program details and next steps.
                 </p>
               </div>
@@ -587,7 +587,7 @@ const BetaCoachingSignup = () => {
 
         {/* Footer Message */}
         <div className="text-center mt-12">
-          <p className="font-serif text-lg text-muted-foreground italic">
+          <p className="font-serif text-lg text-foreground italic">
             "You're not broken. You're in survival. And now, you're choosing to thrive."
           </p>
         </div>

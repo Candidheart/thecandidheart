@@ -78,7 +78,7 @@ const Contact = () => {
             <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mb-3">
               <Link to="/book-call">Schedule Now</Link>
             </Button>
-            <p className="font-sans text-xs text-muted-foreground text-center">
+            <p className="font-sans text-xs text-foreground text-center">
               <Clock className="h-3 w-3 inline mr-1" />
               Free 30-minute consultation available
             </p>
@@ -94,7 +94,7 @@ const Contact = () => {
             <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground mb-3">
               <Link to="#contact-form">Send Message</Link>
             </Button>
-            <p className="font-sans text-xs text-muted-foreground text-center">
+            <p className="font-sans text-xs text-foreground text-center">
               <Shield className="h-3 w-3 inline mr-1" />
               Your privacy is protected
             </p>
@@ -110,7 +110,7 @@ const Contact = () => {
             <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground mb-3">
               <a href="mailto:samantha@thecandidheart.com">Send Email</a>
             </Button>
-            <p className="font-sans text-xs text-muted-foreground text-center">
+            <p className="font-sans text-xs text-foreground text-center">
               <Clock className="h-3 w-3 inline mr-1" />
               Response within 24 hours
             </p>
@@ -129,7 +129,7 @@ const Contact = () => {
             <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
               Send Me a Message
             </h2>
-            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
               Whether you have questions, want to share your story, or are ready to explore working together, 
               I'd love to hear from you. Every message is read personally and responded to thoughtfully.
             </p>
@@ -221,7 +221,7 @@ const Contact = () => {
                 </div>
 
                 <div className="text-center">
-                  <p className="font-sans text-xs text-muted-foreground">
+                  <p className="font-sans text-xs text-foreground">
                     <Shield className="h-3 w-3 inline mr-1" />
                     Your information is secure and will never be shared without your permission.
                   </p>
@@ -248,7 +248,7 @@ const Contact = () => {
                 <Clock className="h-6 w-6 text-primary" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Quick Response</h4>
-              <p className="font-sans text-sm text-muted-foreground">
+              <p className="font-sans text-sm text-foreground">
                 I typically respond within 24 hours, often much sooner.
               </p>
             </div>
@@ -257,7 +257,7 @@ const Contact = () => {
                 <Heart className="h-6 w-6 text-accent" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Personal Touch</h4>
-              <p className="font-sans text-sm text-muted-foreground">
+              <p className="font-sans text-sm text-foreground">
                 Every message is read personally, not by an assistant or bot.
               </p>
             </div>
@@ -266,7 +266,7 @@ const Contact = () => {
                 <Shield className="h-6 w-6 text-primary" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Safe Space</h4>
-              <p className="font-sans text-sm text-muted-foreground">
+              <p className="font-sans text-sm text-foreground">
                 Your story is sacred. I hold everything you share with care and confidentiality.
               </p>
             </div>

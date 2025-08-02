@@ -64,7 +64,7 @@ const SayItBrave = () => {
               A Storytelling Assembly for Students Navigating Big Feelings, Friendship, and Finding Their Voice
             </p>
             <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 In every school, there are students silently struggling with friendship drama, 
                 family changes, and the overwhelming pressure to fit in. This isn't a lecture. 
                 It's a mirror—reflecting back the truth that their feelings matter and their voice has power.
@@ -109,7 +109,7 @@ const SayItBrave = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               What Students Will Take Away
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Practical tools and emotional validation that students can use immediately
             </p>
           </div>
@@ -118,7 +118,7 @@ const SayItBrave = () => {
             {takeaways.map((takeaway, index) => (
               <div key={index} className="flex items-start space-x-4 p-6 bg-primary/5 rounded-lg">
                 <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   {takeaway}
                 </p>
               </div>
@@ -134,7 +134,7 @@ const SayItBrave = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Assembly Details
             </h2>
-            <p className="font-sans text-lg text-muted-foreground">
+            <p className="font-sans text-lg text-foreground">
               Flexible programming designed to fit your school's needs
             </p>
           </div>
@@ -149,7 +149,7 @@ const SayItBrave = () => {
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                     {detail.title}
                   </h3>
-                  <p className="font-sans text-sm text-muted-foreground">
+                  <p className="font-sans text-sm text-foreground">
                     {detail.description}
                   </p>
                 </CardContent>
@@ -173,19 +173,19 @@ const SayItBrave = () => {
                   <ul className="space-y-3">
                     <li className="flex items-start">
                       <Heart className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="font-sans text-muted-foreground">Real stories, not lectures</span>
+                      <span className="font-sans text-foreground">Real stories, not lectures</span>
                     </li>
                     <li className="flex items-start">
                       <Shield className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="font-sans text-muted-foreground">Trauma-informed approach</span>
+                      <span className="font-sans text-foreground">Trauma-informed approach</span>
                     </li>
                     <li className="flex items-start">
                       <Users className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="font-sans text-muted-foreground">Interactive, not passive</span>
+                      <span className="font-sans text-foreground">Interactive, not passive</span>
                     </li>
                     <li className="flex items-start">
                       <BookOpen className="h-5 w-5 text-primary mr-3 mt-0.5 flex-shrink-0" />
-                      <span className="font-sans text-muted-foreground">Age-appropriate content</span>
+                      <span className="font-sans text-foreground">Age-appropriate content</span>
                     </li>
                   </ul>
                 </div>
@@ -193,7 +193,7 @@ const SayItBrave = () => {
                   <h4 className="font-sans text-lg font-semibold text-foreground mb-4">
                     Topics Covered:
                   </h4>
-                  <ul className="space-y-2 font-sans text-muted-foreground">
+                  <ul className="space-y-2 font-sans text-foreground">
                     <li>• Recognizing and naming emotions</li>
                     <li>• Healthy vs. unhealthy relationships</li>
                     <li>• Setting boundaries with friends</li>
@@ -229,18 +229,18 @@ const SayItBrave = () => {
               </div>
               
               <div className="prose prose-lg mx-auto">
-                <p className="font-sans text-muted-foreground leading-relaxed mb-6">
+                <p className="font-sans text-foreground leading-relaxed mb-6">
                   Samantha knows what it feels like to have your world turned upside down. After 
                   experiencing betrayal trauma in her marriage, she had to rebuild not just her life, 
                   but her understanding of relationships, trust, and her own voice.
                 </p>
-                <p className="font-sans text-muted-foreground leading-relaxed mb-6">
+                <p className="font-sans text-foreground leading-relaxed mb-6">
                   Through her own healing journey, she discovered that the skills needed to navigate 
                   betrayal—setting boundaries, trusting your instincts, speaking up when something 
                   feels wrong—are the same skills that help young people navigate the complex social 
                   world of school.
                 </p>
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   As the founder of The Candid Heart Project, Samantha brings both personal experience 
                   and professional expertise to help students find their voice during some of life's 
                   most challenging moments.
@@ -257,7 +257,7 @@ const SayItBrave = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Serving Northwest Ohio
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-12">
+          <p className="font-sans text-lg text-foreground mb-12">
             Available for assemblies throughout the Bowling Green area and surrounding districts
           </p>
           
@@ -269,7 +269,7 @@ const SayItBrave = () => {
             ))}
           </div>
           
-          <p className="font-sans text-sm text-muted-foreground mt-8 italic">
+          <p className="font-sans text-sm text-foreground mt-8 italic">
             Other districts welcome • Virtual presentations available
           </p>
         </div>
@@ -296,7 +296,7 @@ const SayItBrave = () => {
                   "Our students were completely engaged. Samantha's approach made difficult topics 
                   accessible and gave our kids practical tools they could use immediately."
                 </blockquote>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   — Sarah M., Middle School Counselor
                 </p>
               </CardContent>
@@ -313,7 +313,7 @@ const SayItBrave = () => {
                   "The feedback from both students and parents was overwhelmingly positive. 
                   This is exactly the kind of programming our students need."
                 </blockquote>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   — Michael T., High School Principal
                 </p>
               </CardContent>
@@ -329,7 +329,7 @@ const SayItBrave = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Bring Say It Brave to Your School?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Give your students the tools and validation they need to navigate big feelings 
             and find their voice. Let's create a space where their truth can breathe.
           </p>
@@ -356,7 +356,7 @@ const SayItBrave = () => {
             </Button>
           </div>
 
-          <p className="font-sans text-sm text-muted-foreground italic">
+          <p className="font-sans text-sm text-foreground italic">
             "Every student deserves to know their voice matters and their feelings are valid."
           </p>
         </div>

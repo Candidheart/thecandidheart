@@ -94,7 +94,7 @@ const Organizations = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               For Organizations
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed">
               Consulting services for conscious companies ready to prioritize human experience, 
               ethical AI implementation, and authentic brand communication.
             </p>
@@ -109,7 +109,7 @@ const Organizations = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Human-Centered Business Consulting
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
               I work with organizations that understand business success and human flourishing aren't 
               mutually exclusive. Together, we create systems, strategies, and cultures that honor 
               both profit and people.
@@ -124,7 +124,7 @@ const Organizations = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Empathy-Driven Analysis
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 We examine your organization through the lens of human experience, 
                 understanding how your brand and systems feel to real people.
               </p>
@@ -136,7 +136,7 @@ const Organizations = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Ethical Technology
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Navigate AI and automation implementation while maintaining human connection, 
                 ethical standards, and authentic communication.
               </p>
@@ -148,7 +148,7 @@ const Organizations = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Inclusive Communication
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Develop authentic brand voice and inclusive practices that honor diversity 
                 and build genuine connection with all stakeholders.
               </p>
@@ -164,7 +164,7 @@ const Organizations = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Consulting Services
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Comprehensive consulting services designed to help conscious organizations 
               align their operations with their values while driving meaningful results.
             </p>
@@ -196,7 +196,7 @@ const Organizations = () => {
                         </div>
                       )}
 
-                      <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
+                      <p className="font-sans text-foreground mb-6 leading-relaxed">
                         {service.description}
                       </p>
 
@@ -205,7 +205,7 @@ const Organizations = () => {
                           <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
                             What's Included
                           </h4>
-                          <ul className="font-sans text-sm text-muted-foreground space-y-2">
+                          <ul className="font-sans text-sm text-foreground space-y-2">
                             {service.features.map((feature, idx) => (
                               <li key={idx} className="flex items-start">
                                 <CheckCircle className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -218,7 +218,7 @@ const Organizations = () => {
                           <h4 className="font-serif text-lg font-semibold text-foreground mb-3">
                             Deliverables
                           </h4>
-                          <ul className="font-sans text-sm text-muted-foreground space-y-2">
+                          <ul className="font-sans text-sm text-foreground space-y-2">
                             {service.deliverables.map((deliverable, idx) => (
                               <li key={idx} className="flex items-start">
                                 <CheckCircle className="h-4 w-4 text-primary mr-2 mt-0.5 flex-shrink-0" />
@@ -234,13 +234,13 @@ const Organizations = () => {
                       <div className="bg-gray-50 rounded-lg p-6 h-full flex flex-col justify-between">
                         <div>
                           <div className="mb-4">
-                            <span className="font-sans text-sm text-muted-foreground">Investment</span>
+                            <span className="font-sans text-sm text-foreground">Investment</span>
                             <p className="font-serif text-xl font-semibold text-foreground">
                               {service.price}
                             </p>
                           </div>
                           <div className="mb-6">
-                            <span className="font-sans text-sm text-muted-foreground">Timeline</span>
+                            <span className="font-sans text-sm text-foreground">Timeline</span>
                             <p className="font-sans text-foreground">
                               {service.duration}
                             </p>
@@ -271,7 +271,7 @@ const Organizations = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Who I Work With
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               I partner with organizations that are ready to prioritize human experience 
               alongside business results. Here's who tends to be the best fit:
             </p>
@@ -295,7 +295,7 @@ const Organizations = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               How We Work Together
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               A collaborative process that honors your organization's unique culture 
               while implementing meaningful, sustainable change.
             </p>
@@ -309,7 +309,7 @@ const Organizations = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
                 Discovery & Assessment
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Deep dive into your current state, challenges, and aspirations through stakeholder interviews and analysis.
               </p>
             </div>
@@ -320,7 +320,7 @@ const Organizations = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
                 Strategy Development
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Collaborative development of frameworks, guidelines, and strategies tailored to your organization.
               </p>
             </div>
@@ -331,7 +331,7 @@ const Organizations = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
                 Implementation Support
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Hands-on support for rolling out new practices, training teams, and embedding changes.
               </p>
             </div>
@@ -342,7 +342,7 @@ const Organizations = () => {
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
                 Ongoing Optimization
               </h3>
-              <p className="font-sans text-muted-foreground text-sm">
+              <p className="font-sans text-foreground text-sm">
                 Monitoring, refinement, and continuous improvement to ensure lasting positive impact.
               </p>
             </div>
@@ -356,7 +356,7 @@ const Organizations = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Align Your Organization?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto">
             Let's explore how we can help your organization thrive while staying true to your values 
             and prioritizing human experience.
           </p>

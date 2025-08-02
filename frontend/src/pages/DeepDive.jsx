@@ -145,14 +145,14 @@ const DeepDive = () => {
               <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
                 Thank you for trusting me with your clarity.
               </h1>
-              <p className="font-sans text-lg text-muted-foreground mb-8 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-8 leading-relaxed">
                 Your reflection has been received with care. I'll review every detail and 
                 craft a proposal that holds space for your heart and honors the work you're here to do.
               </p>
               <p className="font-serif text-lg text-foreground italic mb-8">
                 "This is the merging of vision and voice, structure and soul."
               </p>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 I'll be in touch within 3-5 business days with your personalized proposal.
               </p>
             </CardContent>
@@ -172,7 +172,7 @@ const DeepDive = () => {
               <h2 className="font-serif text-3xl font-semibold text-foreground mb-4">
                 Who You Are
               </h2>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Let's start with your essence — the truth that drives everything you create.
               </p>
             </div>
@@ -205,7 +205,7 @@ const DeepDive = () => {
               <label className="block font-sans text-sm font-medium text-foreground mb-2">
                 In your own words, what do you feel called to offer the world?
               </label>
-              <p className="font-sans text-xs text-muted-foreground mb-3 italic">
+              <p className="font-sans text-xs text-foreground mb-3 italic">
                 Say it how you'd say it to a friend.
               </p>
               <Textarea
@@ -295,7 +295,7 @@ const DeepDive = () => {
               <h2 className="font-serif text-3xl font-semibold text-foreground mb-4">
                 Brand Voice & Message
               </h2>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Your voice already exists. Let's clarify and express it with confidence.
               </p>
             </div>
@@ -304,7 +304,7 @@ const DeepDive = () => {
               <label className="block font-sans text-sm font-medium text-foreground mb-3">
                 If your brand were a person, how would they speak?
               </label>
-              <p className="font-sans text-xs text-muted-foreground mb-4">
+              <p className="font-sans text-xs text-foreground mb-4">
                 Select 3–5 that feel most true
               </p>
               <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
@@ -346,7 +346,7 @@ const DeepDive = () => {
               <label className="block font-sans text-sm font-medium text-foreground mb-2">
                 What do you not want your brand to sound like?
               </label>
-              <p className="font-sans text-xs text-muted-foreground mb-3">
+              <p className="font-sans text-xs text-foreground mb-3">
                 (E.g., too salesy, overly polished, cold, etc.)
               </p>
               <Textarea
@@ -379,7 +379,7 @@ const DeepDive = () => {
               <h2 className="font-serif text-3xl font-semibold text-foreground mb-4">
                 Automations & Systems
               </h2>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Let's create systems that support you, not drain you.
               </p>
             </div>
@@ -464,7 +464,7 @@ const DeepDive = () => {
               <h2 className="font-serif text-3xl font-semibold text-foreground mb-4">
                 Website & Tech Needs
               </h2>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Your digital space should feel like home — authentic, welcoming, and true to you.
               </p>
             </div>
@@ -473,7 +473,7 @@ const DeepDive = () => {
               <label className="block font-sans text-sm font-medium text-foreground mb-2">
                 Do you currently have a website?
               </label>
-              <p className="font-sans text-xs text-muted-foreground mb-3">
+              <p className="font-sans text-xs text-foreground mb-3">
                 Share the link or write "no site yet"
               </p>
               <Input
@@ -547,7 +547,7 @@ const DeepDive = () => {
               <h2 className="font-serif text-3xl font-semibold text-foreground mb-4">
                 Vibe + Vision
               </h2>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Let's align on how we work together and what feels most supportive.
               </p>
             </div>
@@ -589,7 +589,7 @@ const DeepDive = () => {
               <p className="font-serif text-lg text-foreground mb-4">
                 Thank you for sharing your story, your truth, and your clarity-in-progress.
               </p>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 I'll review your answers and be in touch soon — with a proposal that holds space 
                 for your heart and honors the work you're here to do.
               </p>
@@ -614,18 +614,18 @@ const DeepDive = () => {
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
             The Candid Heart Discovery Form
           </h1>
-          <p className="font-sans text-xl text-muted-foreground mb-4 leading-relaxed max-w-3xl mx-auto">
+          <p className="font-sans text-xl text-foreground mb-4 leading-relaxed max-w-3xl mx-auto">
             A gentle guide to help me understand your voice, your systems, and your next brave step.
           </p>
           <div className="border-t border-primary/20 w-24 mx-auto my-6"></div>
           <p className="font-serif text-lg text-foreground italic">
             "Before we build anything — we listen."
           </p>
-          <p className="font-sans text-muted-foreground mt-4 max-w-2xl mx-auto">
+          <p className="font-sans text-foreground mt-4 max-w-2xl mx-auto">
             This form isn't about starting from scratch. It's about uncovering what's already alive in you — 
             your message, your momentum, your desire to feel more held by the systems around you.
           </p>
-          <p className="font-sans text-sm text-muted-foreground mt-4 italic">
+          <p className="font-sans text-sm text-foreground mt-4 italic">
             Take your time. Pause when you need. Leave what doesn't fit. The goal is not perfection — it's presence.
           </p>
         </div>
@@ -642,11 +642,11 @@ const DeepDive = () => {
                       ? 'bg-primary border-primary text-primary-foreground' 
                       : index < currentSection 
                         ? 'bg-primary/20 border-primary text-primary'
-                        : 'bg-background border-muted text-muted-foreground'
+                        : 'bg-background border-muted text-foreground'
                   }`}>
                     <Icon className="h-4 w-4" />
                   </div>
-                  <span className="text-xs font-sans text-muted-foreground mt-2 text-center max-w-20">
+                  <span className="text-xs font-sans text-foreground mt-2 text-center max-w-20">
                     {section.title}
                   </span>
                 </div>
@@ -679,7 +679,7 @@ const DeepDive = () => {
                   Previous
                 </Button>
                 
-                <span className="font-sans text-sm text-muted-foreground">
+                <span className="font-sans text-sm text-foreground">
                   {currentSection + 1} of {sections.length}
                 </span>
                 

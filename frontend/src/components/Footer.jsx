@@ -33,7 +33,7 @@ const Footer = () => {
                 The Candid Heart
               </span>
             </div>
-            <p className="font-sans text-sm text-muted-foreground leading-relaxed mb-4">
+            <p className="font-sans text-sm text-foreground leading-relaxed mb-4">
               Where strategy meets self-worth. A sacred creative studio for entrepreneurs 
               healing from betrayal trauma while building values-aligned businesses.
             </p>
@@ -47,7 +47,7 @@ const Footer = () => {
             <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Services
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
+            <ul className="space-y-2 font-sans text-sm text-foreground">
               <li><Link to="/healing" className="hover:text-sage-600 transition-colors">Healing & Coaching</Link></li>
               <li><Link to="/building" className="hover:text-sage-600 transition-colors">Strategy & Systems</Link></li>
               <li><Link to="/creating" className="hover:text-sage-600 transition-colors">Creative Projects</Link></li>
@@ -61,7 +61,7 @@ const Footer = () => {
             <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Resources
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
+            <ul className="space-y-2 font-sans text-sm text-foreground">
               <li><Link to="/soulful-strategy-book" className="hover:text-sage-600 transition-colors">Soulful Strategy Book</Link></li>
               <li><Link to="/say-it-brave" className="hover:text-sage-600 transition-colors">Say It Brave Assembly</Link></li>
               <li><Link to="/candid-heart-project" className="hover:text-sage-600 transition-colors">Community Project</Link></li>
@@ -74,7 +74,7 @@ const Footer = () => {
             <h3 className="font-serif text-base font-semibold text-foreground mb-4">
               Connect
             </h3>
-            <ul className="space-y-2 font-sans text-sm text-muted-foreground">
+            <ul className="space-y-2 font-sans text-sm text-foreground">
               <li><Link to="/contact" className="hover:text-sage-600 transition-colors">Get in Touch</Link></li>
               <li><Link to="/book-call" className="hover:text-sage-600 transition-colors">Book a Call</Link></li>
               <li>
@@ -88,7 +88,7 @@ const Footer = () => {
                 </a>
               </li>
             </ul>
-            <div className="mt-4 flex items-center space-x-2 text-sm text-muted-foreground">
+            <div className="mt-4 flex items-center space-x-2 text-sm text-foreground">
               <MapPin className="h-4 w-4" />
               <span>Bowling Green, Ohio</span>
             </div>
@@ -96,7 +96,7 @@ const Footer = () => {
         </div>
 
         <div className="border-t border-sage-200/50 mt-12 pt-8 text-center">
-          <p className="font-sans text-sm text-muted-foreground">
+          <p className="font-sans text-sm text-foreground">
             © {currentYear} The Candid Heart • Made with intention.
           </p>
           <p className="font-serif text-sm text-sage-600 italic mt-2">

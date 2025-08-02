@@ -79,12 +79,12 @@ const SoulfulStrategyBook = () => {
               Where Business Meets Your Deepest Values
             </p>
             <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 A comprehensive guide and mini-course for entrepreneurs who refuse to choose 
                 between profit and purpose. Learn to build a business that honors your soul 
                 while creating sustainable success.
               </p>
-              <div className="flex items-center justify-center space-x-8 text-sm text-muted-foreground">
+              <div className="flex items-center justify-center space-x-8 text-sm text-foreground">
                 <div className="flex items-center">
                   <Book className="h-4 w-4 mr-2 text-primary" />
                   200+ Page Guide
@@ -120,7 +120,7 @@ const SoulfulStrategyBook = () => {
               </Button>
             </div>
 
-            <p className="font-sans text-sm text-muted-foreground">
+            <p className="font-sans text-sm text-foreground">
               ✨ Launch Special: Regular price $97 • Limited time offer
             </p>
           </div>
@@ -134,7 +134,7 @@ const SoulfulStrategyBook = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               What You'll Learn
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Five comprehensive modules that transform how you think about business strategy
             </p>
           </div>
@@ -155,10 +155,10 @@ const SoulfulStrategyBook = () => {
                       <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
                         {module.title}
                       </h3>
-                      <p className="font-sans text-muted-foreground mb-4 leading-relaxed">
+                      <p className="font-sans text-foreground mb-4 leading-relaxed">
                         {module.description}
                       </p>
-                      <div className="flex items-center space-x-4 text-sm text-muted-foreground">
+                      <div className="flex items-center space-x-4 text-sm text-foreground">
                         <div className="flex items-center">
                           <Clock className="h-4 w-4 mr-1 text-primary" />
                           {module.duration}
@@ -184,7 +184,7 @@ const SoulfulStrategyBook = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Bonus Materials
             </h2>
-            <p className="font-sans text-lg text-muted-foreground">
+            <p className="font-sans text-lg text-foreground">
               Additional resources to support your soulful strategy journey
             </p>
           </div>
@@ -199,7 +199,7 @@ const SoulfulStrategyBook = () => {
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
                     {bonus.title}
                   </h3>
-                  <p className="font-sans text-muted-foreground leading-relaxed">
+                  <p className="font-sans text-foreground leading-relaxed">
                     {bonus.description}
                   </p>
                 </CardContent>
@@ -228,7 +228,7 @@ const SoulfulStrategyBook = () => {
                   "Finally, a business book that doesn't ask me to compromise my values. 
                   Samantha's approach helped me build a strategy that feels authentic and sustainable."
                 </blockquote>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   — Sarah M., Creative Entrepreneur
                 </p>
               </CardContent>
@@ -245,7 +245,7 @@ const SoulfulStrategyBook = () => {
                   "The mini-course videos brought the concepts to life. I implemented the 
                   strategies immediately and saw results within weeks."
                 </blockquote>
-                <p className="font-sans text-sm text-muted-foreground">
+                <p className="font-sans text-sm text-foreground">
                   — Marcus T., Coach & Consultant
                 </p>
               </CardContent>
@@ -275,13 +275,13 @@ const SoulfulStrategyBook = () => {
               </div>
               
               <div className="prose prose-lg mx-auto text-center">
-                <p className="font-sans text-muted-foreground leading-relaxed mb-6">
+                <p className="font-sans text-foreground leading-relaxed mb-6">
                   After rebuilding her life and business from the ground up following betrayal trauma, 
                   Samantha discovered that the most sustainable strategies are the ones that honor your 
                   deepest values. She's helped hundreds of entrepreneurs create businesses that feel 
                   as good as they look on paper.
                 </p>
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   This book distills years of experience helping values-driven entrepreneurs build 
                   strategies that support both their mission and their well-being.
                 </p>
@@ -298,7 +298,7 @@ const SoulfulStrategyBook = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Build Your Soulful Strategy?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Join thousands of entrepreneurs who've discovered that you don't have to choose 
             between success and staying true to yourself.
           </p>
@@ -313,27 +313,27 @@ const SoulfulStrategyBook = () => {
             <div className="grid md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">200+ page comprehensive guide</span>
+                <span className="font-sans text-foreground">200+ page comprehensive guide</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">5 video modules (4+ hours)</span>
+                <span className="font-sans text-foreground">5 video modules (4+ hours)</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">Strategic planning templates</span>
+                <span className="font-sans text-foreground">Strategic planning templates</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">Values alignment audit</span>
+                <span className="font-sans text-foreground">Values alignment audit</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">Private community access</span>
+                <span className="font-sans text-foreground">Private community access</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-muted-foreground">Lifetime updates</span>
+                <span className="font-sans text-foreground">Lifetime updates</span>
               </div>
             </div>
           </div>
@@ -360,7 +360,7 @@ const SoulfulStrategyBook = () => {
             </Button>
           </div>
 
-          <p className="font-sans text-sm text-muted-foreground italic">
+          <p className="font-sans text-sm text-foreground italic">
             30-day money-back guarantee • Instant digital delivery
           </p>
         </div>

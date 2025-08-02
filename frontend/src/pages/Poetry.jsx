@@ -92,7 +92,7 @@ const Poetry = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Featured Poems
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             A selection of poems that have resonated deeply with readers on their own healing journeys.
           </p>
         </div>
@@ -110,12 +110,12 @@ const Poetry = () => {
                   </h3>
                 </div>
                 
-                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-muted-foreground italic mb-6 leading-relaxed`}>
+                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-foreground italic mb-6 leading-relaxed`}>
                   "{poem.excerpt}"
                 </blockquote>
                 
                 <div className="flex items-center justify-between">
-                  <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                  <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                     {poem.readTime}
                   </span>
                   <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
@@ -139,7 +139,7 @@ const Poetry = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Poetry Collections
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             Curated collections designed to support your healing journey through the power of words and creative expression.
           </p>
         </div>
@@ -159,13 +159,13 @@ const Poetry = () => {
                       </p>
                       <Badge className={collection.available ? 
                         'bg-accent/10 text-accent border-accent/20' : 
-                        'bg-muted text-muted-foreground border-muted-foreground/20'
+                        'bg-muted text-foreground border-muted-foreground/20'
                       }>
                         {collection.status}
                       </Badge>
                     </div>
                     
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-6`}>
+                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-6`}>
                       {collection.description}
                     </p>
 
@@ -196,7 +196,7 @@ const Poetry = () => {
                         </div>
                       ) : (
                         <div className="space-y-3">
-                          <Button disabled className="w-full bg-muted text-muted-foreground font-sans cursor-not-allowed">
+                          <Button disabled className="w-full bg-muted text-foreground font-sans cursor-not-allowed">
                             Coming Soon
                           </Button>
                           <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
@@ -223,7 +223,7 @@ const Poetry = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Why Poetry?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-12 max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-12 max-w-3xl mx-auto`}>
             Poetry has been my companion through every season of healing and becoming. 
             It's how I process, how I remember, how I find my way back to myself.
           </p>
@@ -236,7 +236,7 @@ const Poetry = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Healing Tool
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                 Poetry provides a safe space to explore complex emotions and experiences that might be difficult to express otherwise.
               </p>
             </div>
@@ -248,7 +248,7 @@ const Poetry = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Creative Expression
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                 Writing poetry helps you find your voice and reclaim your story in a way that feels authentic and empowering.
               </p>
             </div>
@@ -260,7 +260,7 @@ const Poetry = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Connection
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                 Poetry creates bridges between experiences, helping you feel less alone in your journey of healing and growth.
               </p>
             </div>
@@ -278,7 +278,7 @@ const Poetry = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Ready to Explore Poetry Together?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
             Whether you're looking for healing through words or want to explore your own creative expression, 
             poetry can be a powerful companion on your journey.
           </p>

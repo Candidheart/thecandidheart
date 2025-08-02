@@ -81,7 +81,7 @@ const CandidHeartInterest = () => {
             <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
               Thank You
             </h1>
-            <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+            <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
               Thank you for being part of something tender, brave, and real.
             </p>
             <p className="font-serif text-xl text-foreground italic leading-relaxed">
@@ -116,7 +116,7 @@ const CandidHeartInterest = () => {
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Join The Candid Heart Project
           </h1>
-          <p className="font-sans text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
             Every act of care, no matter how small, creates ripples of healing in our community. 
             Thank you for wanting to be part of this movement.
           </p>
@@ -128,7 +128,7 @@ const CandidHeartInterest = () => {
             <CardTitle className="font-serif text-2xl text-foreground">
               Tell Us How You'd Like to Help
             </CardTitle>
-            <p className="font-sans text-muted-foreground">
+            <p className="font-sans text-foreground">
               This form is personal, low-pressure, and affirming. Share what feels right for you.
             </p>
           </CardHeader>
@@ -208,7 +208,7 @@ const CandidHeartInterest = () => {
                 <Label className="font-sans text-sm font-medium text-foreground block">
                   What type of care can you offer? *
                 </Label>
-                <p className="font-sans text-xs text-muted-foreground italic">
+                <p className="font-sans text-xs text-foreground italic">
                   Check all that apply. Every offering matters, no matter how small.
                 </p>
                 
@@ -254,7 +254,7 @@ const CandidHeartInterest = () => {
                 <Label className="font-sans text-sm font-medium text-foreground block">
                   How often are you available to offer this? *
                 </Label>
-                <p className="font-sans text-xs text-muted-foreground italic">
+                <p className="font-sans text-xs text-foreground italic">
                   Choose what feels sustainable for you. There's no wrong answer.
                 </p>
                 
@@ -311,7 +311,7 @@ const CandidHeartInterest = () => {
                 <Label className="font-sans text-sm font-medium text-foreground block">
                   Would you like to receive occasional updates or volunteer requests? *
                 </Label>
-                <p className="font-sans text-xs text-muted-foreground italic">
+                <p className="font-sans text-xs text-foreground italic">
                   We'll only reach out when there's a genuine need or to share impact stories.
                 </p>
                 
@@ -353,7 +353,7 @@ const CandidHeartInterest = () => {
                   <Send className="mr-2 h-5 w-5" />
                   Join The Movement
                 </Button>
-                <p className="font-sans text-xs text-muted-foreground text-center mt-4">
+                <p className="font-sans text-xs text-foreground text-center mt-4">
                   Your information is kept private and will only be used to coordinate care within our community.
                 </p>
               </div>
@@ -363,7 +363,7 @@ const CandidHeartInterest = () => {
 
         {/* Footer Message */}
         <div className="text-center mt-12">
-          <p className="font-serif text-lg text-muted-foreground italic">
+          <p className="font-serif text-lg text-foreground italic">
             "We believe healing happens in circles, not systems."
           </p>
         </div>

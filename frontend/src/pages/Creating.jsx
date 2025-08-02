@@ -74,7 +74,7 @@ const Creating = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               Creating & Innovating
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Passion projects I'm developing that blend technology, healing, and human connection. 
               These are the creative expressions of my heart and mind working together.
             </p>
@@ -87,7 +87,7 @@ const Creating = () => {
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                     Projects in Progress
                   </h3>
-                  <p className="font-sans text-muted-foreground text-sm leading-relaxed">
+                  <p className="font-sans text-foreground text-sm leading-relaxed">
                     These are passion projects I'm actively developing and deeply passionate about. 
                     Each one represents a piece of my vision for how technology can serve healing, 
                     connection, and human flourishing.
@@ -108,7 +108,7 @@ const Creating = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Technology with Heart
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
               I believe technology should serve humanity, not the other way around. 
               Each project I create is designed to support healing, connection, and human flourishing. 
               These aren't just apps — they're tools for building a more compassionate world.
@@ -123,7 +123,7 @@ const Creating = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Healing-Centered Design
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Every interface, interaction, and feature is designed with trauma-informed principles 
                 and emotional safety at the forefront.
               </p>
@@ -135,7 +135,7 @@ const Creating = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Human-First Technology
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Technology that enhances human connection rather than replacing it, 
                 supporting real relationships and authentic growth.
               </p>
@@ -147,7 +147,7 @@ const Creating = () => {
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
                 Creative Problem-Solving
               </h3>
-              <p className="font-sans text-muted-foreground">
+              <p className="font-sans text-foreground">
                 Each project addresses real problems I've experienced or witnessed, 
                 creating solutions that are both innovative and deeply needed.
               </p>
@@ -163,7 +163,7 @@ const Creating = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Current Projects
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Each project represents a different aspect of my vision for technology that serves healing, 
               connection, and human flourishing.
             </p>
@@ -189,16 +189,16 @@ const Creating = () => {
                     <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
                       {project.category}
                     </span>
-                    <span className="bg-secondary/50 text-muted-foreground px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="bg-secondary/50 text-foreground px-3 py-1 rounded-full text-xs font-medium">
                       {project.status}
                     </span>
                   </div>
 
-                  <p className="font-sans text-muted-foreground mb-6 leading-relaxed">
+                  <p className="font-sans text-foreground mb-6 leading-relaxed">
                     {project.description}
                   </p>
                   
-                  <ul className="font-sans text-sm text-muted-foreground space-y-2 mb-8">
+                  <ul className="font-sans text-sm text-foreground space-y-2 mb-8">
                     {project.features.map((feature, idx) => (
                       <li key={idx}>• {feature}</li>
                     ))}
@@ -230,7 +230,7 @@ const Creating = () => {
             "I'm not just building apps — I'm building bridges. Between technology and humanity. 
             Between healing and innovation. Between what is and what could be."
           </blockquote>
-          <p className="font-sans text-lg text-muted-foreground mb-8">
+          <p className="font-sans text-lg text-foreground mb-8">
             Each project is a piece of a larger puzzle: creating a world where technology serves 
             our deepest human needs for connection, healing, and growth. Where innovation doesn't 
             come at the cost of our humanity, but in service of it.
@@ -244,7 +244,7 @@ const Creating = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Want to Collaborate?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto">
             These projects are close to my heart, and I'm always open to collaboration with 
             like-minded individuals who share the vision of technology that serves humanity.
           </p>

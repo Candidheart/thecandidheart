@@ -107,7 +107,7 @@ const BookCall = () => {
               <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
                 Your call is being scheduled!
               </h1>
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 I've opened Google Calendar for you to add this event. Please save it to your calendar, 
                 and I'll send you a confirmation email with the Zoom link within 24 hours.
               </p>
@@ -115,7 +115,7 @@ const BookCall = () => {
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   What happens next:
                 </h3>
-                <ul className="text-left space-y-2 text-sm text-muted-foreground">
+                <ul className="text-left space-y-2 text-sm text-foreground">
                   <li>• You'll receive a confirmation email within 24 hours</li>
                   <li>• Zoom link and prep materials will be included</li>
                   <li>• Calendar reminder will be sent 24 hours before</li>
@@ -144,7 +144,7 @@ const BookCall = () => {
           <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
             Book Your Call
           </h1>
-          <p className="font-sans text-xl text-muted-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
             Let's explore how we can work together. Choose your session type and 
             find a time that works for both of us.
           </p>
@@ -192,12 +192,12 @@ const BookCall = () => {
                                     <div className="font-serif text-xl font-bold text-primary">
                                       {service.price}
                                     </div>
-                                    <div className="font-sans text-sm text-muted-foreground">
+                                    <div className="font-sans text-sm text-foreground">
                                       {service.duration}
                                     </div>
                                   </div>
                                 </div>
-                                <p className="font-sans text-sm text-muted-foreground">
+                                <p className="font-sans text-sm text-foreground">
                                   {service.description}
                                 </p>
                               </CardContent>
@@ -262,7 +262,7 @@ const BookCall = () => {
                                 htmlFor={time}
                                 className="font-sans text-sm text-foreground cursor-pointer flex items-center"
                               >
-                                <Clock className="h-4 w-4 mr-2 text-muted-foreground" />
+                                <Clock className="h-4 w-4 mr-2 text-foreground" />
                                 {time}
                               </Label>
                             </div>
@@ -339,7 +339,7 @@ const BookCall = () => {
                     <label className="block font-sans text-sm font-medium text-foreground mb-2">
                       What's your current challenge or goal?
                     </label>
-                    <p className="font-sans text-xs text-muted-foreground mb-3">
+                    <p className="font-sans text-xs text-foreground mb-3">
                       Help me prepare for our conversation
                     </p>
                     <Textarea
@@ -365,7 +365,7 @@ const BookCall = () => {
                     <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
                   
-                  <p className="font-sans text-sm text-muted-foreground mt-4">
+                  <p className="font-sans text-sm text-foreground mt-4">
                     This will open Google Calendar to save the event. You'll receive confirmation within 24 hours.
                   </p>
                 </div>
@@ -385,15 +385,15 @@ const BookCall = () => {
               <div className="grid md:grid-cols-3 gap-6 text-sm">
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-2">Before Our Call</h4>
-                  <p className="text-muted-foreground">You'll receive prep materials and the Zoom link 24 hours in advance.</p>
+                  <p className="text-foreground">You'll receive prep materials and the Zoom link 24 hours in advance.</p>
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-2">During Our Call</h4>
-                  <p className="text-muted-foreground">We'll dive deep into your challenges and explore aligned solutions together.</p>
+                  <p className="text-foreground">We'll dive deep into your challenges and explore aligned solutions together.</p>
                 </div>
                 <div>
                   <h4 className="font-sans font-semibold text-foreground mb-2">After Our Call</h4>
-                  <p className="text-muted-foreground">You'll receive a recording and action recap within 48 hours.</p>
+                  <p className="text-foreground">You'll receive a recording and action recap within 48 hours.</p>
                 </div>
               </div>
             </CardContent>

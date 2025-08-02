@@ -155,7 +155,7 @@ const Building = () => {
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
               Words That Feel True—And Work
             </h1>
-            <p className="font-sans text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
               I don’t just write copy. I translate the soul of your business into words.
               Because when your message resonates, your audience doesn’t just listen—they *trust*. 
               That’s what makes them click, buy, and stay.

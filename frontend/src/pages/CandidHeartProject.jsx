@@ -38,7 +38,7 @@ const CandidHeartProject = () => {
               Local Partners & Organizations
             </p>
             <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-muted-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
                 A growing care network offering practical support to parents and families 
                 facing divorce, burnout, illness, or other hard seasons — right here in our community.
               </p>
@@ -59,18 +59,18 @@ const CandidHeartProject = () => {
                 What We're Building Together
               </h2>
               <div className="space-y-6">
-                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+                <p className="font-sans text-lg text-foreground leading-relaxed">
                   The Candid Heart Project is more than a program — it's a quiet revolution 
                   of care happening in living rooms, coffee shops, and church basements 
                   across our small towns.
                 </p>
-                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+                <p className="font-sans text-lg text-foreground leading-relaxed">
                   We're creating a network where families in transition don't have to choose 
                   between pride and survival. Where a single mom can get her hair done without 
                   worrying about the cost. Where a dad going through divorce can grab coffee 
                   with someone who simply listens.
                 </p>
-                <p className="font-sans text-lg text-muted-foreground leading-relaxed">
+                <p className="font-sans text-lg text-foreground leading-relaxed">
                   This is about restoring what community used to mean — dignity, presence, 
                   and shared responsibility. One small act of care at a time.
                 </p>
@@ -95,7 +95,7 @@ const CandidHeartProject = () => {
                   ))}
                 </div>
                 <div className="mt-6 pt-6 border-t border-primary/20 text-center">
-                  <p className="font-sans text-sm text-muted-foreground italic">
+                  <p className="font-sans text-sm text-foreground italic">
                     Every act of care, no matter how small, creates ripples of healing.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ const CandidHeartProject = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Rooted in Our Communities
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
             The Candid Heart Project is growing across Northwest Ohio, connecting hearts 
             and hands in the places we call home.
           </p>
@@ -129,7 +129,7 @@ const CandidHeartProject = () => {
             ))}
           </div>
           
-          <p className="font-sans text-muted-foreground italic">
+          <p className="font-sans text-foreground italic">
             Don't see your community? We're always growing. Let's connect.
           </p>
         </div>
@@ -142,7 +142,7 @@ const CandidHeartProject = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               Why This Matters
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
               Little acts of care create ripples that change lives — and communities.
             </p>
           </div>
@@ -156,7 +156,7 @@ const CandidHeartProject = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
                   Dignity Over Charity
                 </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   We offer care without conditions, judgment, or strings attached. 
                   Every person deserves to be seen and supported with dignity.
                 </p>
@@ -171,7 +171,7 @@ const CandidHeartProject = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
                   Neighbors, Not Saviors
                 </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   We show up as equals, offering what we can and receiving what we need. 
                   Community care flows in all directions.
                 </p>
@@ -186,7 +186,7 @@ const CandidHeartProject = () => {
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
                   Ripples of Healing
                 </h3>
-                <p className="font-sans text-muted-foreground leading-relaxed">
+                <p className="font-sans text-foreground leading-relaxed">
                   When someone receives care in their hardest moment, they remember. 
                   And they pass that care forward when they can.
                 </p>
@@ -203,7 +203,7 @@ const CandidHeartProject = () => {
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
               How Your Organization Can Help
             </h2>
-            <p className="font-sans text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
               Whether you're a salon, restaurant, church, or local business — there's a way 
               for you to be part of this movement. It doesn't have to be big to be meaningful.
             </p>
@@ -215,7 +215,7 @@ const CandidHeartProject = () => {
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
                   For Service Providers
                 </h3>
-                <ul className="space-y-3 text-muted-foreground">
+                <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
                     <Scissors className="h-4 w-4 text-primary mr-3 mt-1 flex-shrink-0" />
                     <span className="font-sans">Offer one free service per month to a family in need</span>
@@ -241,7 +241,7 @@ const CandidHeartProject = () => {
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-6">
                   For Businesses & Organizations
                 </h3>
-                <ul className="space-y-3 text-muted-foreground">
+                <ul className="space-y-3 text-foreground">
                   <li className="flex items-start">
                     <Coffee className="h-4 w-4 text-accent mr-3 mt-1 flex-shrink-0" />
                     <span className="font-sans">Sponsor coffee cards or meal vouchers</span>
@@ -271,7 +271,7 @@ const CandidHeartProject = () => {
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Join the Movement?
           </h2>
-          <p className="font-sans text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
             Every act of care matters. Every organization that says "yes" creates space 
             for healing. Let's build this together.
           </p>

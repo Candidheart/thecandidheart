@@ -100,7 +100,7 @@ const Home = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Two Paths, One Journey
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             Whether you're seeking healing and clarity or building systems for growth, 
             I meet you where you are and guide you where you're going.
           </p>
@@ -175,7 +175,7 @@ const Home = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Ready to Begin?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
             This is your digital front porch — a sacred creative studio where trauma survivors 
             feel safe to explore healing and business owners feel grounded enough to hire strategy.
           </p>

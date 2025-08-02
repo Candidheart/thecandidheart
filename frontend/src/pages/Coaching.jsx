@@ -147,7 +147,7 @@ const Coaching = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Choose Your Path
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             From group programs to intensive one-on-one sessions, find the support that fits your unique needs and timeline.
           </p>
         </div>
@@ -174,13 +174,13 @@ const Coaching = () => {
                       </div>
                     </div>
                     
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-6`}>
+                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-6`}>
                       {option.description}
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
                           Duration
                         </p>
                         <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
@@ -188,7 +188,7 @@ const Coaching = () => {
                         </p>
                       </div>
                       <div>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground mb-1`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
                           Format
                         </p>
                         <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
@@ -201,7 +201,7 @@ const Coaching = () => {
                       {option.includes.map((item, idx) => (
                         <li key={idx} className="flex items-start">
                           <CheckCircle className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                             {item}
                           </span>
                         </li>
@@ -244,7 +244,7 @@ const Coaching = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             My Approach
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             Every coaching relationship is built on these foundational principles that honor both your humanity and your goals.
           </p>
         </div>
@@ -258,7 +258,7 @@ const Coaching = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 {item.title}
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
                 {item.description}
               </p>
             </div>
@@ -276,7 +276,7 @@ const Coaching = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             What Women Are Saying
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
             Real stories from women who have transformed their lives through our work together.
           </p>
         </div>
@@ -297,7 +297,7 @@ const Coaching = () => {
                   <p className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-foreground`}>
                     {testimonial.author}
                   </p>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-muted-foreground`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                     {testimonial.role}
                   </p>
                 </div>
@@ -317,7 +317,7 @@ const Coaching = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Ready to Begin Your Transformation?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
             Whether you're ready to join a group program or prefer one-on-one support, 
             let's find the perfect path for your unique journey.
           </p>
