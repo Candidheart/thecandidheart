@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Mail, MapPin, Sparkles, Flower2 } from 'lucide-react';
+import { Heart, Mail, MapPin } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -20,68 +20,7 @@ const Footer = () => {
       {/* Subtle overlay for content readability */}
       <div className="absolute inset-0 bg-background/85 backdrop-blur-[0.5px]"></div>
       
-              {/* Decorative elements (fallback if image not available) */}
-        <div className="absolute inset-0 pointer-events-none">
-          {/* Wildflowers along bottom */}
-          <div className="absolute bottom-0 left-0 right-0 h-32 opacity-60">
-            <div className="absolute bottom-4 left-8 w-6 h-16">
-              <Flower2 className="w-full h-full text-sage-400" />
-            </div>
-            <div className="absolute bottom-2 left-16 w-4 h-12">
-              <Flower2 className="w-full h-full text-sage-300" />
-            </div>
-            <div className="absolute bottom-6 left-24 w-5 h-14">
-              <Flower2 className="w-full h-full text-sage-500" />
-            </div>
-            <div className="absolute bottom-3 left-32 w-4 h-10">
-              <Flower2 className="w-full h-full text-sage-400" />
-            </div>
-            <div className="absolute bottom-5 left-40 w-6 h-16">
-              <Flower2 className="w-full h-full text-sage-300" />
-            </div>
-            <div className="absolute bottom-2 left-48 w-4 h-12">
-              <Flower2 className="w-full h-full text-sage-500" />
-            </div>
-            <div className="absolute bottom-4 left-56 w-5 h-14">
-              <Flower2 className="w-full h-full text-sage-400" />
-            </div>
-            <div className="absolute bottom-6 left-64 w-4 h-10">
-              <Flower2 className="w-full h-full text-sage-300" />
-            </div>
-            <div className="absolute bottom-3 left-72 w-6 h-16">
-              <Flower2 className="w-full h-full text-sage-500" />
-            </div>
-            <div className="absolute bottom-5 left-80 w-4 h-12">
-              <Flower2 className="w-full h-full text-sage-400" />
-            </div>
-            <div className="absolute bottom-2 left-88 w-5 h-14">
-              <Flower2 className="w-full h-full text-sage-300" />
-            </div>
-            <div className="absolute bottom-4 left-96 w-4 h-10">
-              <Flower2 className="w-full h-full text-sage-500" />
-            </div>
-          </div>
-          
-          {/* Sparkles scattered above (representing butterflies) */}
-          <div className="absolute bottom-16 left-12 w-8 h-8 opacity-70 animate-float">
-            <Sparkles className="w-full h-full text-blue-300" />
-          </div>
-          <div className="absolute bottom-20 left-32 w-6 h-6 opacity-60 animate-float" style={{ animationDelay: '1s' }}>
-            <Sparkles className="w-full h-full text-pink-300" />
-          </div>
-          <div className="absolute bottom-14 left-48 w-7 h-7 opacity-80 animate-float" style={{ animationDelay: '2s' }}>
-            <Sparkles className="w-full h-full text-sage-400" />
-          </div>
-          <div className="absolute bottom-18 left-64 w-5 h-5 opacity-70 animate-float" style={{ animationDelay: '0.5s' }}>
-            <Sparkles className="w-full h-full text-blue-200" />
-          </div>
-          <div className="absolute bottom-16 left-80 w-6 h-6 opacity-60 animate-float" style={{ animationDelay: '1.5s' }}>
-            <Sparkles className="w-full h-full text-pink-200" />
-          </div>
-          <div className="absolute bottom-20 left-96 w-7 h-7 opacity-80 animate-float" style={{ animationDelay: '0.8s' }}>
-            <Sparkles className="w-full h-full text-sage-300" />
-          </div>
-        </div>
+      
 
       {/* Content */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
