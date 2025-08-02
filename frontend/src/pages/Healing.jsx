@@ -121,7 +121,7 @@ const Healing = () => {
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Healing Resources & Offerings
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800 max-w-3xl mx-auto`}>
             From poetry to practical tools, these offerings are designed to support your healing journey 
             and help you reclaim your voice and power.
           </p>
@@ -129,7 +129,7 @@ const Healing = () => {
 
         <div className={DESIGN_SYSTEM.layouts.grid.cards}>
           {healingOfferings.map((offering, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-background/90 backdrop-blur-sm">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-white shadow-lg">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -141,7 +141,7 @@ const Healing = () => {
                   <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-primary font-medium mb-4`}>
                     {offering.subtitle}
                   </p>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-6`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800 mb-6`}>
                     {offering.description}
                   </p>
                 </div>
@@ -150,7 +150,7 @@ const Healing = () => {
                   {offering.features.map((feature, idx) => (
                     <li key={idx} className="flex items-start">
                       <Star className="h-4 w-4 text-primary mr-3 mt-1 flex-shrink-0" />
-                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
+                      <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-gray-800`}>
                         {feature}
                       </span>
                     </li>
@@ -201,13 +201,13 @@ const Healing = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-secondary/30 to-accent/30"
+        className="bg-gradient-to-br from-gray-100 to-gray-200"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             My Approach to Healing
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-12 max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800 mb-12 max-w-3xl mx-auto`}>
             Healing isn't linear, and it doesn't happen in isolation. My approach honors the complexity 
             of your journey while providing practical tools for transformation.
           </p>
@@ -220,7 +220,7 @@ const Healing = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Trauma-Informed
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800`}>
                 Every resource and approach honors your nervous system and respects your healing timeline.
               </p>
             </div>
@@ -232,19 +232,19 @@ const Healing = () => {
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Creative Expression
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800`}>
                 Poetry, writing, and creative practices as pathways to healing and self-discovery.
               </p>
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <Shield className="h-8 w-8 text-primary" />
               </div>
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
                 Community-Centered
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800`}>
                 Healing happens in connection. Safe spaces for sharing, learning, and growing together.
               </p>
             </div>
@@ -256,13 +256,13 @@ const Healing = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-primary/20 to-secondary/30"
+        className="bg-gradient-to-br from-gray-50 to-gray-100"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
             Ready to Begin Your Healing Journey?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-gray-800 mb-8 max-w-2xl mx-auto`}>
             Whether you're just beginning to explore healing or ready to dive deep, 
             I'm here to support you every step of the way.
           </p>
