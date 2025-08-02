@@ -24,10 +24,10 @@ const Hero = ({
       {backgroundImage ? (
         <>
           <div 
-            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat z-0"
             style={{ backgroundImage: `url(${backgroundImage})` }}
           ></div>
-          <div className="absolute inset-0 bg-background/20 backdrop-blur-[0.5px]"></div>
+          <div className="absolute inset-0 bg-background/10 z-10"></div>
         </>
       ) : background && (
         <>
@@ -40,7 +40,7 @@ const Hero = ({
       {decorativeElements.map((element, index) => (
         <div
           key={index}
-          className={`decorative-element floaty ${element.position} ${element.color}`}
+          className={`decorative-element floaty ${element.position} ${element.color} relative z-15`}
           style={{ animationDelay: `${element.delay || index}s` }}
         >
           {element.icon}
@@ -48,7 +48,7 @@ const Hero = ({
       ))}
 
       {/* Content */}
-      <div className={DESIGN_SYSTEM.layouts.hero.container}>
+      <div className={`${DESIGN_SYSTEM.layouts.hero.container} relative z-20`}>
         <div className={DESIGN_SYSTEM.layouts.hero.content}>
           {badge && (
             <div className="mb-6">
