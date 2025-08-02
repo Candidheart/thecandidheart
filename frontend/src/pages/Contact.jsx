@@ -9,6 +9,7 @@ import { Heart, Mail, Calendar, MessageCircle, Send, ArrowRight, Clock, Shield }
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
+import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Contact = () => {
@@ -51,7 +52,7 @@ const Contact = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Let's Connect"
@@ -273,7 +274,7 @@ const Contact = () => {
           </div>
         </div>
       </Section>
-    </div>
+    </FullPageBackground>
   );
 };
 

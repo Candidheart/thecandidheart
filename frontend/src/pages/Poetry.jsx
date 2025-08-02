@@ -6,6 +6,7 @@ import { Heart, PenTool, BookOpen, Star, Sparkles, Quote } from 'lucide-react';
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
+import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Poetry = () => {
@@ -72,7 +73,7 @@ const Poetry = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Poetry as Medicine"
@@ -292,7 +293,7 @@ const Poetry = () => {
           </div>
         </div>
       </Section>
-    </div>
+    </FullPageBackground>
   );
 };
 

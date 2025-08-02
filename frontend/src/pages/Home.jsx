@@ -5,6 +5,7 @@ import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
 import StationaryBackground from '@/components/ui/stationary-background';
+import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Home = () => {
@@ -30,7 +31,7 @@ const Home = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Your message isn't missing—it's buried beneath what you were told to be."
@@ -189,7 +190,7 @@ const Home = () => {
           </div>
         </div>
       </Section>
-    </div>
+    </FullPageBackground>
   );
 };
 

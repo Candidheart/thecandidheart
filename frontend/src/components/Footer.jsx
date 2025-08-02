@@ -1,105 +1,38 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Heart, Mail, MapPin } from 'lucide-react';
+import { Heart } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative overflow-hidden">
-      {/* Wildflower and Butterfly Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
-        style={{ 
-          backgroundImage: `url('/footer-wildflowers.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center bottom'
-        }}
-      ></div>
-      
-
-      
-      
-
+    <footer className="relative py-8">
       {/* Content */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        <div className="grid md:grid-cols-4 gap-8">
-          {/* Brand */}
-          <div className="md:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <Heart className="h-5 w-5 text-sage-600" />
-              <span className="font-serif text-lg font-semibold text-foreground">
-                The Candid Heart
-              </span>
-            </div>
-            <p className="font-sans text-sm text-foreground leading-relaxed mb-4">
-              Where strategy meets self-worth. A sacred creative studio for entrepreneurs 
-              healing from betrayal trauma while building values-aligned businesses.
-            </p>
-            <p className="font-serif text-sm text-sage-600 italic">
-              "You are worthy of a business that honors your soul."
-            </p>
-          </div>
-
-          {/* Services */}
-          <div>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
-              Services
-            </h3>
-            <ul className="space-y-2 font-sans text-sm text-foreground">
-              <li><Link to="/healing" className="hover:text-sage-600 transition-colors">Healing & Coaching</Link></li>
-              <li><Link to="/building" className="hover:text-sage-600 transition-colors">Strategy & Systems</Link></li>
-              <li><Link to="/creating" className="hover:text-sage-600 transition-colors">Creative Projects</Link></li>
-              <li><Link to="/organizations" className="hover:text-sage-600 transition-colors">For Organizations</Link></li>
-              <li><Link to="/speaking" className="hover:text-sage-600 transition-colors">Speaking & Workshops</Link></li>
-            </ul>
-          </div>
-
-          {/* Resources */}
-          <div>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
-              Resources
-            </h3>
-            <ul className="space-y-2 font-sans text-sm text-foreground">
-              <li><Link to="/soulful-strategy-book" className="hover:text-sage-600 transition-colors">Soulful Strategy Book</Link></li>
-              <li><Link to="/say-it-brave" className="hover:text-sage-600 transition-colors">Say It Brave Assembly</Link></li>
-              <li><Link to="/candid-heart-project" className="hover:text-sage-600 transition-colors">Community Project</Link></li>
-              <li><Link to="/coaching" className="hover:text-sage-600 transition-colors">Beta Coaching Program</Link></li>
-            </ul>
-          </div>
-
-          {/* Connect */}
-          <div>
-            <h3 className="font-serif text-base font-semibold text-foreground mb-4">
-              Connect
-            </h3>
-            <ul className="space-y-2 font-sans text-sm text-foreground">
-              <li><Link to="/contact" className="hover:text-sage-600 transition-colors">Get in Touch</Link></li>
-              <li><Link to="/book-call" className="hover:text-sage-600 transition-colors">Book a Call</Link></li>
-              <li>
-                <a 
-                  href="https://samanthajosette.me" 
-                  target="_blank" 
-                  rel="noopener noreferrer"
-                  className="hover:text-sage-600 transition-colors"
-                >
-                  Personal Stories
-                </a>
-              </li>
-            </ul>
-            <div className="mt-4 flex items-center space-x-2 text-sm text-foreground">
-              <MapPin className="h-4 w-4" />
-              <span>Bowling Green, Ohio</span>
-            </div>
-          </div>
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <div className="flex items-center justify-center space-x-2 mb-4">
+          <Heart className="h-4 w-4 text-sage-600" />
+          <span className="font-serif text-sm font-semibold text-sage-800">
+            The Candid Heart
+          </span>
         </div>
-
-        <div className="border-t border-sage-200/50 mt-12 pt-8 text-center">
-          <p className="font-sans text-sm text-foreground">
+        
+        <div className="space-y-2">
+          <p className="font-sans text-sm text-sage-700">
             © {currentYear} The Candid Heart • Made with intention.
           </p>
-          <p className="font-serif text-sm text-sage-600 italic mt-2">
-            "This is your digital front porch — a sacred creative studio where strategy meets self-worth."
+          <p className="font-sans text-xs text-sage-600">
+            <Link to="/contact" className="hover:text-sage-800 transition-colors">
+              Get in Touch
+            </Link>
+            {' • '}
+            <a 
+              href="https://samanthajosette.me" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="hover:text-sage-800 transition-colors"
+            >
+              Personal Stories
+            </a>
           </p>
         </div>
       </div>
