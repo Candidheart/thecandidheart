@@ -22,7 +22,7 @@ const StationaryBackground = ({
       
       {/* Subtle Overlay for Content Readability */}
       <div 
-        className="absolute inset-0 bg-background/80 backdrop-blur-[0.5px]"
+        className="absolute inset-0 bg-background/80"
         style={{ opacity: overlayOpacity }}
       ></div>
       

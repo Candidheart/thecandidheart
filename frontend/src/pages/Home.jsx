@@ -74,9 +74,9 @@ const Home = () => {
                 <div className="bg-cream-100/80 backdrop-blur-sm rounded-2xl p-8 h-96 flex items-center justify-center border border-cream-200/50">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
-                      <Heart className="h-12 w-12 text-amber-600" />
-                      <Lightbulb className="h-12 w-12 text-sage-500" />
-                      <Feather className="h-12 w-12 text-amber-600" />
+                      <Heart className="h-12 w-12 text-sage-500" />
+                      <Lightbulb className="h-12 w-12 text-pink-300" />
+                      <Feather className="h-12 w-12 text-sage-500" />
                     </div>
                     <p className="font-serif text-xl text-foreground italic">
                       "You don't have to choose between structure and softness."

@@ -17,8 +17,7 @@ const Footer = () => {
         }}
       ></div>
       
-      {/* Subtle overlay for content readability */}
-      <div className="absolute inset-0 bg-background/85 backdrop-blur-[0.5px]"></div>
+
       
       
 
