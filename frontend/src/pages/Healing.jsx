@@ -129,7 +129,7 @@ const Healing = () => {
 
         <div className={DESIGN_SYSTEM.layouts.grid.cards}>
           {healingOfferings.map((offering, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-background/90 backdrop-blur-sm">
               <CardContent className="p-8">
                 <div className="text-center mb-6">
                   <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
@@ -201,7 +201,7 @@ const Healing = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+        className="bg-gradient-to-br from-secondary/30 to-accent/30"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -256,7 +256,7 @@ const Healing = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-primary/10 to-secondary/20"
+        className="bg-gradient-to-br from-primary/20 to-secondary/30"
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
