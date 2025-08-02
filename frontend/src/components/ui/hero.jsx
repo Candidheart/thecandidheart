@@ -6,6 +6,7 @@ const Hero = ({
   subtitle, 
   children, 
   background = true, 
+  backgroundImage,
   decorativeElements = [],
   badge,
   size = 'large'
@@ -20,7 +21,15 @@ const Hero = ({
   return (
     <section className={`relative ${sizeClasses[size]} overflow-hidden`}>
       {/* Background */}
-      {background && (
+      {backgroundImage ? (
+        <>
+          <div 
+            className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+            style={{ backgroundImage: `url(${backgroundImage})` }}
+          ></div>
+          <div className="absolute inset-0 bg-background/20 backdrop-blur-[0.5px]"></div>
+        </>
+      ) : background && (
         <>
           <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-accent/10"></div>
           <div className="absolute inset-0 bg-hexagons gentle-pulse"></div>

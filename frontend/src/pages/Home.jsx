@@ -4,6 +4,7 @@ import { Heart, Lightbulb, Feather, ArrowRight, Quote, Sparkles, Star } from 'lu
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
+import StationaryBackground from '@/components/ui/stationary-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Home = () => {
@@ -32,58 +33,61 @@ const Home = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <Hero
-        title="Words That Feel True — And Work"
-        subtitle="I don't just write copy. I translate the soul of your business into words. Because when your message resonates, your audience doesn't just listen — they *trust*. That's what makes them click, buy, and stay."
+        title="Your message isn't missing—it's buried beneath what you were told to be."
+        subtitle="Let's unearth the voice that already knows what to say."
+        backgroundImage="/torn-paper-hero.png"
         decorativeElements={heroDecorativeElements}
         size="large"
       />
 
-      {/* Introduction Section */}
-      <Section 
-        size="medium" 
-        background={true}
-        decorativeElements={introDecorativeElements}
-        className="bg-card/50"
+      {/* Introduction Section with Stationary Background */}
+      <StationaryBackground 
+        className="py-20 lg:py-24"
+        overlayOpacity={0.15}
       >
-        <div className={DESIGN_SYSTEM.layouts.grid.twoCol}>
-          <div className="animate-slide-up">
-            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
-              I'm a writer, strategist, and survivor of betrayal trauma.
-            </h2>
-            <div className="space-y-4">
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground leading-relaxed`}>
-                I spent nearly a decade as a stay-at-home mom, and when my world fell apart, 
-                I didn't just rebuild — I wrote, I healed, and I built systems to support 
-                the woman I was becoming.
-              </p>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground leading-relaxed`}>
-                This is the merging of my two worlds: healing through poetry and personal coaching, 
-                and empowerment through copywriting, AI automations, and clarity-first strategy.
-              </p>
-            </div>
-            <div className="mt-8">
-              <Button asChild variant="outline" className="border-accent text-accent hover:bg-accent hover:text-accent-foreground">
-                <Link to="/about">My Story</Link>
-              </Button>
-            </div>
-          </div>
-          
-          <div className="relative">
-            <div className="bg-gradient-to-br from-primary/10 to-accent/10 rounded-2xl p-8 h-96 flex items-center justify-center">
-              <div className="text-center">
-                <div className="flex justify-center space-x-4 mb-6">
-                  <Heart className="h-12 w-12 text-primary" />
-                  <Lightbulb className="h-12 w-12 text-accent" />
-                  <Feather className="h-12 w-12 text-primary" />
+        <div className={DESIGN_SYSTEM.layouts.hero.container}>
+          <div className={DESIGN_SYSTEM.layouts.hero.content}>
+            <div className={DESIGN_SYSTEM.layouts.grid.twoCol}>
+              <div className="animate-slide-up">
+                <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+                  I'm a writer, strategist, and survivor of betrayal trauma.
+                </h2>
+                <div className="space-y-4">
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground leading-relaxed`}>
+                    I spent nearly a decade as a stay-at-home mom, and when my world fell apart, 
+                    I didn't just rebuild — I wrote, I healed, and I built systems to support 
+                    the woman I was becoming.
+                  </p>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground leading-relaxed`}>
+                    This is the merging of my two worlds: healing through poetry and personal coaching, 
+                    and empowerment through copywriting, AI automations, and clarity-first strategy.
+                  </p>
                 </div>
-                <p className="font-serif text-xl text-foreground italic">
-                  "You don't have to choose between structure and softness."
-                </p>
+                <div className="mt-8">
+                  <Button asChild variant="outline" className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700">
+                    <Link to="/about">My Story</Link>
+                  </Button>
+                </div>
+              </div>
+              
+              <div className="relative">
+                <div className="bg-cream-100/80 backdrop-blur-sm rounded-2xl p-8 h-96 flex items-center justify-center border border-cream-200/50">
+                  <div className="text-center">
+                    <div className="flex justify-center space-x-4 mb-6">
+                      <Heart className="h-12 w-12 text-amber-600" />
+                      <Lightbulb className="h-12 w-12 text-sage-500" />
+                      <Feather className="h-12 w-12 text-amber-600" />
+                    </div>
+                    <p className="font-serif text-xl text-foreground italic">
+                      "You don't have to choose between structure and softness."
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </Section>
+      </StationaryBackground>
 
       {/* Two Paths Section */}
       <Section 
@@ -110,7 +114,7 @@ const Home = () => {
             description="Betrayal trauma coaching, devotionals, and story-based content for the woman who's ready to rebuild her identity and reclaim her voice."
             variant="primary"
           >
-            <ul className="font-sans text-sm text-muted-foreground space-y-2 mb-8">
+            <ul className="font-sans text-sm text-foreground space-y-2 mb-8">
               <li>• Betrayal trauma recovery</li>
               <li>• Identity rebuilding</li>
               <li>• Journaling frameworks</li>
@@ -128,7 +132,7 @@ const Home = () => {
             description="Copywriting, AI automation, and clarity mapping for the business owner who wants to scale with integrity and authentic voice."
             variant="accent"
           >
-            <ul className="font-sans text-sm text-muted-foreground space-y-2 mb-8">
+            <ul className="font-sans text-sm text-foreground space-y-2 mb-8">
               <li>• Strategic copywriting</li>
               <li>• AI automation systems</li>
               <li>• Clarity mapping</li>
@@ -146,7 +150,7 @@ const Home = () => {
         size="large" 
         background={true}
         decorativeElements={[{ icon: <Quote className="h-16 w-16" />, position: 'top-16 left-1/4', color: 'text-primary/20', delay: 1.5 }]}
-        className="bg-secondary/30"
+        className="bg-background/90 backdrop-blur-sm"
       >
         <div className="max-w-4xl mx-auto text-center">
           <Quote className="h-12 w-12 text-primary mx-auto mb-8" />
@@ -154,7 +158,7 @@ const Home = () => {
             "Poetry is not a luxury — it's a framework for feeling seen. 
             You can automate without abandoning your voice."
           </blockquote>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-muted-foreground`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
             — Samantha Josette, Poet, Strategist, Mirror Holder
           </p>
         </div>
