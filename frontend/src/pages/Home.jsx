@@ -4,7 +4,6 @@ import { Heart, Lightbulb, Feather, ArrowRight, Quote, Sparkles, Star } from 'lu
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
-import StationaryBackground from '@/components/ui/stationary-background';
 import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
@@ -36,15 +35,15 @@ const Home = () => {
       <Hero
         title="Your message isn't missing—it's buried beneath what you were told to be."
         subtitle="Let's unearth the voice that already knows what to say."
-        backgroundImage="/torn-paper-hero.png"
         decorativeElements={heroDecorativeElements}
         size="large"
       />
 
-      {/* Introduction Section with Stationary Background */}
-      <StationaryBackground 
+      {/* Introduction Section */}
+      <Section 
+        size="large" 
+        background={false}
         className="py-20 lg:py-24"
-        overlayOpacity={0.15}
       >
         <div className={DESIGN_SYSTEM.layouts.hero.container}>
           <div className={DESIGN_SYSTEM.layouts.hero.content}>
@@ -72,7 +71,7 @@ const Home = () => {
               </div>
               
               <div className="relative">
-                <div className="bg-cream-100/80 rounded-2xl p-8 h-96 flex items-center justify-center border border-cream-200/50">
+                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 h-96 flex items-center justify-center border border-sage-200/50 shadow-lg">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
                       <Heart className="h-12 w-12 text-sage-500" />
@@ -88,7 +87,7 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </StationaryBackground>
+      </Section>
 
       {/* Two Paths Section */}
       <Section 
