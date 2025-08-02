@@ -71,7 +71,7 @@ const Home = () => {
               </div>
               
               <div className="relative">
-                <div className="bg-cream-100/80 backdrop-blur-sm rounded-2xl p-8 h-96 flex items-center justify-center border border-cream-200/50">
+                <div className="bg-cream-100/80 rounded-2xl p-8 h-96 flex items-center justify-center border border-cream-200/50">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
                       <Heart className="h-12 w-12 text-sage-500" />
