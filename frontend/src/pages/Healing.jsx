@@ -81,219 +81,235 @@ const Healing = () => {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-cream-50 via-white to-sage-50">
-      {/* Hero Section */}
-      <Hero
-        title="Healing & Wholeness"
-        subtitle="From poetry to practical tools, these offerings are designed to support your healing journey and help you reclaim your voice and power."
-        decorativeElements={heroDecorativeElements}
-        size="large"
-        badge={{ icon: Heart, text: "Your Healing Matters" }}
-      >
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button 
-            asChild 
-            size="lg" 
-            className="bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-lg hover:shadow-xl transition-all duration-300"
-          >
-            <Link to="/contact">
-              Start Your Healing Journey
-            </Link>
-          </Button>
-          <Button 
-            asChild 
-            variant="outline" 
-            size="lg"
-            className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
-          >
-            <Link to="/about">My Story</Link>
-          </Button>
-        </div>
-      </Hero>
+    <div className="min-h-screen relative">
+      {/* Full Page Background */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
+        style={{
+          backgroundImage: `url('/healing-sanctuary-background.png')`,
+          backgroundSize: 'cover',
+          backgroundPosition: 'center'
+        }}
+      ></div>
 
-      {/* Offerings Section */}
-      <Section 
-        size="large" 
-        background={false}
-        className="py-20 lg:py-24"
-      >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Header */}
-          <div className="text-center mb-16">
-            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
-              Healing & Wholeness
-            </h2>
-            <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
-            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto leading-relaxed`}>
-              From poetry to practical tools, these offerings are designed to support your healing journey 
-              and help you reclaim your voice and power.
-            </p>
-          </div>
+      {/* Subtle overlay for content readability */}
+      <div className="absolute inset-0 bg-white/20"></div>
 
-          {/* Offerings Grid */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
-            {healingOfferings.map((offering, index) => (
-              <Card 
-                key={index} 
-                className="group bg-white/80 backdrop-blur-sm border border-sage-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden"
-              >
-                <CardContent className="p-8">
-                  {/* Icon and Header */}
-                  <div className="text-center mb-8">
-                    <div className="bg-gradient-to-br from-sage-100 to-pink-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                      <offering.icon className="h-10 w-10 text-sage-600" />
-                    </div>
-                    <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-2`}>
-                      {offering.title}
-                    </h3>
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600 font-medium mb-4`}>
-                      {offering.subtitle}
-                    </p>
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-6 leading-relaxed`}>
-                      {offering.description}
-                    </p>
-                  </div>
-
-                  {/* Features */}
-                  <ul className="space-y-3 mb-8">
-                    {offering.features.map((feature, idx) => (
-                      <li key={idx} className="flex items-start">
-                        <div className="w-2 h-2 bg-sage-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
-                        <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-700 leading-relaxed`}>
-                          {feature}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-
-                  {/* CTA */}
-                  <div className="text-center pt-6 border-t border-sage-200/50">
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-sage-600 mb-4`}>
-                      {offering.status}
-                    </p>
-                    
-                    {offering.available ? (
-                      <Button 
-                        asChild 
-                        className="w-full bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-md hover:shadow-lg transition-all duration-300"
-                      >
-                        <Link to={offering.buttonLink}>{offering.buttonText}</Link>
-                      </Button>
-                    ) : (
-                      <div className="space-y-3">
-                        <Button 
-                          disabled 
-                          className="w-full bg-sage-200 text-sage-500 font-sans cursor-not-allowed"
-                        >
-                          Coming Soon
-                        </Button>
-                        <Button 
-                          asChild 
-                          variant="outline" 
-                          className="w-full border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
-                        >
-                          <Link to={offering.buttonLink}>{offering.buttonText}</Link>
-                        </Button>
-                      </div>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </Section>
-
-      {/* Philosophy Section */}
-      <Section 
-        size="large" 
-        background={false}
-        className="bg-gradient-to-br from-sage-50 to-cream-50 py-20 lg:py-24"
-      >
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
-            My Approach to Healing
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-12 max-w-3xl mx-auto leading-relaxed`}>
-            Healing isn't linear, and it doesn't happen in isolation. My approach honors the complexity 
-            of your journey while providing practical tools for transformation.
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-8">
-            <div className="group">
-              <div className="w-16 h-16 bg-gradient-to-br from-sage-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Heart className="h-8 w-8 text-sage-600" />
-              </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
-                Trauma-Informed
-              </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
-                Every resource and approach honors your nervous system and respects your healing timeline.
-              </p>
-            </div>
-
-            <div className="group">
-              <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-sage-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <PenTool className="h-8 w-8 text-sage-600" />
-              </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
-                Creative Expression
-              </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
-                Poetry, writing, and creative practices as pathways to healing and self-discovery.
-              </p>
-            </div>
-
-            <div className="group">
-              <div className="w-16 h-16 bg-gradient-to-br from-sage-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                <Users className="h-8 w-8 text-sage-600" />
-              </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
-                Community-Centered
-              </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
-                Healing happens in connection. Safe spaces for sharing, learning, and growing together.
-              </p>
-            </div>
-          </div>
-        </div>
-      </Section>
-
-      {/* CTA Section */}
-      <Section 
-        size="large" 
-        background={false}
-        className="py-20 lg:py-24"
-      >
-        <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
-            Ready to Begin Your Healing Journey?
-          </h2>
-          <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto leading-relaxed`}>
-            Whether you're just beginning to explore healing or ready to dive deep, 
-            I'm here to support you every step of the way.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      {/* Content */}
+      <div className="relative z-10">
+        {/* Hero Section */}
+        <Hero
+          title="Healing & Wholeness"
+          subtitle="From poetry to practical tools, these offerings are designed to support your healing journey and help you reclaim your voice and power."
+          decorativeElements={heroDecorativeElements}
+          size="large"
+          badge={{ icon: Heart, text: "Your Healing Matters" }}
+        >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               asChild 
               size="lg" 
               className="bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-lg hover:shadow-xl transition-all duration-300"
             >
-              <Link to="/contact">Start Your Journey</Link>
+              <Link to="/contact">
+                Start Your Healing Journey
+              </Link>
             </Button>
             <Button 
               asChild 
               variant="outline" 
-              size="lg" 
+              size="lg"
               className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
             >
-              <Link to="/poetry">Read My Poetry</Link>
+              <Link to="/about">My Story</Link>
             </Button>
           </div>
-        </div>
-      </Section>
+        </Hero>
+
+        {/* Offerings Section */}
+        <Section 
+          size="large" 
+          background={false}
+          className="py-20 lg:py-24"
+        >
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            {/* Header */}
+            <div className="text-center mb-16">
+              <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
+                Healing & Wholeness
+              </h2>
+              <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto leading-relaxed`}>
+                From poetry to practical tools, these offerings are designed to support your healing journey 
+                and help you reclaim your voice and power.
+              </p>
+            </div>
+
+            {/* Offerings Grid */}
+            <div className="grid md:grid-cols-2 lg:grid-cols-2 gap-8 lg:gap-12">
+              {healingOfferings.map((offering, index) => (
+                <Card 
+                  key={index} 
+                  className="group bg-white/90 backdrop-blur-sm border border-sage-200/50 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 overflow-hidden"
+                >
+                  <CardContent className="p-8">
+                    {/* Icon and Header */}
+                    <div className="text-center mb-8">
+                      <div className="bg-gradient-to-br from-sage-100 to-pink-100 rounded-full w-20 h-20 flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <offering.icon className="h-10 w-10 text-sage-600" />
+                      </div>
+                      <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-2`}>
+                        {offering.title}
+                      </h3>
+                      <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600 font-medium mb-4`}>
+                        {offering.subtitle}
+                      </p>
+                      <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-6 leading-relaxed`}>
+                        {offering.description}
+                      </p>
+                    </div>
+
+                    {/* Features */}
+                    <ul className="space-y-3 mb-8">
+                      {offering.features.map((feature, idx) => (
+                        <li key={idx} className="flex items-start">
+                          <div className="w-2 h-2 bg-sage-400 rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-700 leading-relaxed`}>
+                            {feature}
+                          </span>
+                        </li>
+                      ))}
+                    </ul>
+
+                    {/* CTA */}
+                    <div className="text-center pt-6 border-t border-sage-200/50">
+                      <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-sage-600 mb-4`}>
+                        {offering.status}
+                      </p>
+                      
+                      {offering.available ? (
+                        <Button 
+                          asChild 
+                          className="w-full bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-md hover:shadow-lg transition-all duration-300"
+                        >
+                          <Link to={offering.buttonLink}>{offering.buttonText}</Link>
+                        </Button>
+                      ) : (
+                        <div className="space-y-3">
+                          <Button 
+                            disabled 
+                            className="w-full bg-sage-200 text-sage-500 font-sans cursor-not-allowed"
+                          >
+                            Coming Soon
+                          </Button>
+                          <Button 
+                            asChild 
+                            variant="outline" 
+                            className="w-full border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
+                          >
+                            <Link to={offering.buttonLink}>{offering.buttonText}</Link>
+                          </Button>
+                        </div>
+                      )}
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </Section>
+
+        {/* Philosophy Section */}
+        <Section 
+          size="large" 
+          background={false}
+          className="py-20 lg:py-24"
+        >
+          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
+              My Approach to Healing
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
+            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-12 max-w-3xl mx-auto leading-relaxed`}>
+              Healing isn't linear, and it doesn't happen in isolation. My approach honors the complexity 
+              of your journey while providing practical tools for transformation.
+            </p>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="group">
+                <div className="w-16 h-16 bg-gradient-to-br from-sage-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Heart className="h-8 w-8 text-sage-600" />
+                </div>
+                <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
+                  Trauma-Informed
+                </h3>
+                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
+                  Every resource and approach honors your nervous system and respects your healing timeline.
+                </p>
+              </div>
+
+              <div className="group">
+                <div className="w-16 h-16 bg-gradient-to-br from-pink-100 to-sage-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <PenTool className="h-8 w-8 text-sage-600" />
+                </div>
+                <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
+                  Creative Expression
+                </h3>
+                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
+                  Poetry, writing, and creative practices as pathways to healing and self-discovery.
+                </p>
+              </div>
+
+              <div className="group">
+                <div className="w-16 h-16 bg-gradient-to-br from-sage-100 to-pink-100 rounded-full flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <Users className="h-8 w-8 text-sage-600" />
+                </div>
+                <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
+                  Community-Centered
+                </h3>
+                <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
+                  Healing happens in connection. Safe spaces for sharing, learning, and growing together.
+                </p>
+              </div>
+            </div>
+          </div>
+        </Section>
+
+        {/* CTA Section */}
+        <Section 
+          size="large" 
+          background={false}
+          className="py-20 lg:py-24"
+        >
+          <div className="max-w-4xl mx-auto text-center px-4 sm:px-6 lg:px-8">
+            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
+              Ready to Begin Your Healing Journey?
+            </h2>
+            <div className="w-24 h-1 bg-gradient-to-r from-sage-400 to-pink-300 mx-auto mb-8"></div>
+            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto leading-relaxed`}>
+              Whether you're just beginning to explore healing or ready to dive deep, 
+              I'm here to support you every step of the way.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button 
+                asChild 
+                size="lg" 
+                className="bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-lg hover:shadow-xl transition-all duration-300"
+              >
+                <Link to="/contact">Start Your Journey</Link>
+              </Button>
+              <Button 
+                asChild 
+                variant="outline" 
+                size="lg" 
+                className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
+              >
+                <Link to="/poetry">Read My Poetry</Link>
+              </Button>
+            </div>
+          </div>
+        </Section>
+      </div>
     </div>
   );
 };
