@@ -37,6 +37,7 @@ const Home = () => {
         subtitle="Let's unearth the voice that already knows what to say."
         decorativeElements={heroDecorativeElements}
         size="large"
+        background={false}
       />
 
       {/* Introduction Section */}

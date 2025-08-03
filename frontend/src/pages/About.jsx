@@ -93,6 +93,7 @@ const About = () => {
         subtitle=""
         decorativeElements={heroDecorativeElements}
         size="xlarge"
+        background={false}
         badge={{ icon: Sparkles, text: "Your Story Matters" }}
       >
         <div className="space-y-6 text-lg text-foreground leading-relaxed max-w-4xl mx-auto mb-12">

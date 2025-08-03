@@ -80,6 +80,7 @@ const Poetry = () => {
         subtitle="Words have power to heal, to clarify, to transform. These poems are my prayers, my protests, my proof of life."
         decorativeElements={heroDecorativeElements}
         size="large"
+        background={false}
         badge={{ icon: PenTool, text: "Creative Expression" }}
       />
 

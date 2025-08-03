@@ -59,6 +59,7 @@ const Contact = () => {
         subtitle="This is your digital front porch — a safe space where healing meets strategy and every conversation begins with understanding your unique story."
         decorativeElements={heroDecorativeElements}
         size="medium"
+        background={false}
         badge={{ icon: Heart, text: "Ready to Begin" }}
       />
 
