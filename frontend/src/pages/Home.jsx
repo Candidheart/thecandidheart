@@ -71,7 +71,7 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="relative">
+              <div className="relative z-20">
                 <div className="bg-white rounded-2xl p-8 h-96 flex items-center justify-center border border-sage-200/50 shadow-xl">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
