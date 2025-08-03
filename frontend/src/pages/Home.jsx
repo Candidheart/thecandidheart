@@ -71,15 +71,15 @@ const Home = () => {
                 </div>
               </div>
               
-              <div className="relative z-20">
-                <div className="bg-white rounded-2xl p-8 h-96 flex items-center justify-center border border-sage-200/50 shadow-xl">
+              <div className="relative z-30">
+                <div className="bg-white rounded-2xl p-8 h-96 flex items-center justify-center border-2 border-sage-300 shadow-2xl">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
                       <Heart className="h-12 w-12 text-sage-500" />
                       <Lightbulb className="h-12 w-12 text-pink-300" />
                       <Feather className="h-12 w-12 text-sage-500" />
                     </div>
-                    <p className="font-serif text-xl text-sage-600 font-bold italic">
+                    <p className="font-serif text-xl text-sage-700 font-bold italic drop-shadow-sm">
                       "You don't have to choose between structure and softness."
                     </p>
                   </div>
