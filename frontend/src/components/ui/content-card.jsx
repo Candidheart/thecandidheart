@@ -42,7 +42,7 @@ const ContentCard = ({
       <CardContent className="p-8">
         {icon && (
           <div className={`rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 ${variantClasses.iconBg}`}>
-            <icon className={`h-8 w-8 ${variantClasses.iconColor}`} />
+            {React.createElement(icon, { className: `h-8 w-8 ${variantClasses.iconColor}` })}
           </div>
         )}
         
