@@ -79,7 +79,7 @@ const Home = () => {
                       <Lightbulb className="h-12 w-12 text-pink-300" />
                       <Feather className="h-12 w-12 text-sage-500" />
                     </div>
-                    <p className="font-serif text-xl text-foreground italic">
+                    <p className="font-serif text-xl text-sage-800 italic">
                       "You don't have to choose between structure and softness."
                     </p>
                   </div>
