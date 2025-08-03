@@ -35,7 +35,6 @@ const Home = () => {
       <Hero
         title="Your message isn't missing—it's buried beneath what you were told to be."
         subtitle="Let's unearth the voice that already knows what to say."
-        decorativeElements={heroDecorativeElements}
         size="large"
         background={false}
       />
