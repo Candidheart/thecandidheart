@@ -154,11 +154,11 @@ const Home = () => {
       >
         <div className="max-w-4xl mx-auto text-center">
           <Quote className="h-12 w-12 text-primary mx-auto mb-8" />
-          <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.h3} text-foreground italic mb-8 leading-relaxed`}>
+          <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.h3} text-sage-700 italic mb-8 leading-relaxed font-semibold`}>
             "Poetry is not a luxury — it's a framework for feeling seen. 
             You can automate without abandoning your voice."
           </blockquote>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-600 font-medium`}>
             — Samantha Josette, Poet, Strategist, Mirror Holder
           </p>
         </div>
