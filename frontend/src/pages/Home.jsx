@@ -72,14 +72,14 @@ const Home = () => {
               </div>
               
               <div className="relative">
-                <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-8 h-96 flex items-center justify-center border border-sage-200/50 shadow-lg">
+                <div className="bg-white rounded-2xl p-8 h-96 flex items-center justify-center border border-sage-200/50 shadow-lg">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
                       <Heart className="h-12 w-12 text-sage-500" />
                       <Lightbulb className="h-12 w-12 text-pink-300" />
                       <Feather className="h-12 w-12 text-sage-500" />
                     </div>
-                    <p className="font-serif text-xl text-sage-800 italic">
+                    <p className="font-serif text-xl text-sage-900 font-semibold italic">
                       "You don't have to choose between structure and softness."
                     </p>
                   </div>
