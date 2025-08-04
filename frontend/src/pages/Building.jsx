@@ -2,168 +2,295 @@ import FullPageBackground from '@/components/ui/full-page-background';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
-import { Card, CardContent } from '../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
-import { Lightbulb, Compass, PenTool, Cpu, Moon, Sparkles, BookOpen, Heart, ArrowRight, CheckCircle } from 'lucide-react';
+import { Separator } from '../components/ui/separator';
+import { PenTool, BookOpen, Heart, ArrowRight, CheckCircle, Sparkles, Star, Send, Users, Calendar, HelpCircle } from 'lucide-react';
 
 const Building = () => {
-  const services = [
+  const copywritingTiers = [
     {
-      id: 'clarity',
-      icon: Compass,
-      title: 'The Clarity Session',
-      subtitle: 'A one-time deep dive to get unstuck and aligned.',
-      tiers: [
-        {
-          name: 'Starter',
-          price: '$150',
-          features: [
-            '60-minute strategy call',
-            'Audit of current site or messaging',
-            'Recorded call + action recap'
-          ]
-        },
-        {
-          name: 'Signature',
-          price: '$275',
-          features: [
-            'Everything in Starter',
-            'Full brand tone/voice worksheet',
-            'Custom content prompts or automation map'
-          ],
-          popular: true
-        }
+      name: 'Presence',
+      subtitle: 'For the soul-led entrepreneur finding her rhythm.',
+      description: 'You\'ve got a message — let\'s make it land.',
+      price: 'Starting at $450',
+      features: [
+        '8 custom social media captions (Instagram, FB, or LinkedIn)',
+        'Bio or About Me rewrite',
+        'Voice Discovery Questionnaire'
       ],
-      slidingScale: 'Available for survivors, single parents, and those in transition.'
+      note: 'Perfect for refreshes, pivots, or soft launches.'
     },
     {
-      id: 'copy',
-      icon: PenTool,
-      title: 'Done-for-You Copy Kit',
-      subtitle: 'Words that feel like you—written for conversions and connection.',
-      tiers: [
-        {
-          name: 'Starter',
-          price: '$600',
-          features: [
-            '2 core pages (Home + About OR Sales + Thank You)',
-            'Includes tone discovery questionnaire'
-          ]
-        },
-        {
-          name: 'Signature',
-          price: '$1,100',
-          features: [
-            'Full 4-page site (Home, About, Work With Me, Contact)',
-            'Custom SEO-friendly copy',
-            '1 revision round'
-          ],
-          popular: true
-        },
-        {
-          name: 'Premium',
-          price: '$1,800',
-          features: [
-            'All Signature features',
-            'Email Welcome Series (3 emails)',
-            'Optional AI-powered versioning and reuse library'
-          ]
-        }
+      name: 'Momentum',
+      subtitle: 'For brands that are building traction and ready to expand.',
+      description: 'Let\'s deepen connection and grow with intention.',
+      price: 'Starting at $950',
+      features: [
+        '2 Email sequences (Welcome or Nurture, 4–5 emails each)',
+        '10 social media captions',
+        '3 Ad variations (Google, Meta, or Pinterest)',
+        'Light brand voice calibration'
       ],
-      slidingScale: 'Available for community-based or survivor-led projects.'
+      popular: true
     },
     {
-      id: 'automation',
-      icon: Cpu,
-      title: 'Automation Alchemy',
-      subtitle: 'Let your systems carry the weight. AI + texting workflows that support without selling out.',
-      tiers: [
-        {
-          name: 'Starter',
-          price: '$350',
-          features: [
-            'Custom AI chatbot setup (e.g. Manus/Suno)',
-            '1 SMS automation (e.g. birthday or reminder text)'
-          ]
-        },
-        {
-          name: 'Signature',
-          price: '$750',
-          features: [
-            'Strategic automation plan',
-            '3 fully built SMS/email flows (e.g. onboarding, nurture, sales)',
-            'Tech stack guidance + connection help'
-          ],
-          popular: true
-        },
-        {
-          name: 'Premium',
-          price: '$1,200',
-          features: [
-            'Includes AI chatbot, full automation suite',
-            'Team training video'
-          ]
-        }
-      ],
-      slidingScale: 'Available for small offices and trauma-informed providers.'
-    },
-    {
-      id: 'monthly',
-      icon: Moon,
-      title: 'Monthly Magic',
-      subtitle: 'Ongoing support that adapts to your seasons.',
-      tiers: [
-        {
-          name: 'Starter',
-          price: '$400/month',
-          features: [
-            '2 check-in calls',
-            'Light content or tech updates',
-            'Voxer support'
-          ]
-        },
-        {
-          name: 'Signature',
-          price: '$650/month',
-          features: [
-            'Strategy, copy, and system support',
-            'Content bank creation',
-            'Monthly planning rituals'
-          ],
-          popular: true
-        },
-        {
-          name: 'Premium',
-          price: '$1,000/month',
-          features: [
-            'All Signature features',
-            'Unlimited edits / priority turnaround',
-            'Quarterly brand vision map'
-          ]
-        }
-      ],
-      slidingScale: 'Available for long-term rebuilders.'
+      name: 'Immersion',
+      subtitle: 'For the visionary who\'s ready to be fully seen.',
+      description: 'You\'ve outgrown your old copy. Let\'s write the new story.',
+      price: 'Starting at $2,200',
+      features: [
+        'Full website copy (Home, About, Services, Contact + 1 bonus page)',
+        'Email funnel (up to 7 emails)',
+        '12 social captions',
+        'Offer positioning and launch messaging map'
+      ]
     }
+  ];
+
+  const soulfulStrategyFeatures = [
+    '📖 Soulful Strategy: A Guide to Conscious Growth in the Age of AI',
+    '🎥 4-Part Video Course (Clarity, Connection, Container, Conscious Scaling)',
+    '📓 Printable Toolkits:',
+    '• Pricing with Purpose Matrix',
+    '• Nervous System Check-In Guide', 
+    '• Aligned Launch Checklist',
+    '✍️ Ethical AI Prompt Library + Messaging Templates'
   ];
 
   return (
     <FullPageBackground>
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 "></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center animate-fade-in">
-            <Lightbulb className="h-16 w-16 text-accent mx-auto mb-6" />
-            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
-              Words That Feel True—And Work
+      <div className="min-h-screen py-20 lg:py-32">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          {/* Hero Section */}
+          <div className="text-center mb-20">
+            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-sage-800 mb-8 leading-tight">
+              Build What Aligns.<br />
+              Say What Matters.
             </h1>
-            <p className="font-sans text-xl text-foreground max-w-3xl mx-auto leading-relaxed">
-              I don’t just write copy. I translate the soul of your business into words.
-              Because when your message resonates, your audience doesn’t just listen—they *trust*. 
-              That’s what makes them click, buy, and stay.
+            
+            <div className="max-w-4xl mx-auto space-y-6">
+              <p className="font-serif text-xl text-sage-700 italic">
+                "You didn't come this far to blend in."
+              </p>
+              
+              <p className="font-sans text-lg text-sage-700 leading-relaxed">
+                You came to build something real.<br />
+                A business that feels like home.<br />
+                A message that lands like truth.<br />
+                A brand that honors the wholeness of you — not just the polished parts.
+              </p>
+              
+              <p className="font-sans text-lg text-sage-700 leading-relaxed">
+                But if you're being honest?
+              </p>
+              
+              <p className="font-sans text-lg text-sage-700 leading-relaxed">
+                You're tired of trying to write the perfect post while juggling client calls, DMs, and never-ending launch tweaks.<br />
+                You're done with marketing advice that sounds more like manipulation than integrity.<br />
+                And most of all — you're ready for clarity that doesn't cost your soul.
+              </p>
+              
+              <p className="font-serif text-xl text-sage-700 italic">
+                "This is where strategy softens."
+              </p>
+              
+              <p className="font-sans text-lg text-sage-700 leading-relaxed">
+                Where conversion meets compassion.<br />
+                And where your business begins to sound like you.
+              </p>
+            </div>
+          </div>
+
+          <Separator className="my-16" />
+
+          {/* Copywriting Services */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center space-x-2 mb-6">
+                <PenTool className="h-8 w-8 text-primary" />
+                <Sparkles className="h-6 w-6 text-accent" />
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-4">
+                Copywriting Services
+              </h2>
+              <p className="font-sans text-lg text-sage-700 max-w-2xl mx-auto">
+                Done-for-you messaging for brands with a heartbeat.
+              </p>
+              <p className="font-serif text-lg text-sage-700 italic mt-4">
+                "This is for the founder who knows her voice matters —<br />
+                she just needs someone to hold the pen while she holds the vision."
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-3 gap-8">
+              {copywritingTiers.map((tier, index) => (
+                <Card key={index} className={`border-2 transition-all hover:shadow-lg ${
+                  tier.popular ? 'border-primary bg-primary/5' : 'border-sage-200'
+                }`}>
+                  <CardHeader className="text-center">
+                    {tier.popular && (
+                      <Badge className="w-fit mx-auto mb-2 bg-primary text-white">
+                        Most Popular
+                      </Badge>
+                    )}
+                    <CardTitle className="font-serif text-2xl text-sage-800">
+                      ✨ Tier {index + 1}: {tier.name}
+                    </CardTitle>
+                    <p className="font-sans text-sm text-sage-600">
+                      {tier.subtitle}
+                    </p>
+                  </CardHeader>
+                  <CardContent className="space-y-6">
+                    <p className="font-serif text-sage-700 italic">
+                      {tier.description}
+                    </p>
+                    
+                    <div>
+                      <h4 className="font-sans font-semibold text-sage-800 mb-3">Includes:</h4>
+                      <ul className="space-y-2">
+                        {tier.features.map((feature, featureIndex) => (
+                          <li key={featureIndex} className="flex items-start space-x-2">
+                            <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                            <span className="font-sans text-sm text-sage-700">{feature}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                    
+                    {tier.note && (
+                      <p className="font-sans text-xs text-sage-600 italic">
+                        → {tier.note}
+                      </p>
+                    )}
+                    
+                    <div className="text-center">
+                      <p className="font-serif text-xl font-bold text-primary">
+                        {tier.price}
+                      </p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+
+            <div className="text-center mt-8">
+              <p className="font-sans text-sm text-sage-600 mb-4">
+                All packages include a 1:1 kickoff session and optional Loom walkthrough.<br />
+                Sliding scale and equity pricing available. Pay-it-forward credits welcome.
+              </p>
+              <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                <Link to="/contact">
+                  💬 Need something custom? Let's build a bundle that fits your flow.
+                </Link>
+              </Button>
+            </div>
+          </div>
+
+          <Separator className="my-16" />
+
+          {/* Soulful Strategy */}
+          <div className="mb-20">
+            <div className="text-center mb-12">
+              <div className="flex items-center justify-center space-x-2 mb-6">
+                <BookOpen className="h-8 w-8 text-primary" />
+                <Heart className="h-6 w-6 text-accent" />
+              </div>
+              <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-4">
+                📖 Soulful Strategy
+              </h2>
+              <p className="font-sans text-lg text-sage-700 max-w-2xl mx-auto">
+                Learn the method behind the magic.
+              </p>
+              <p className="font-serif text-lg text-sage-700 italic mt-4">
+                "If you're not ready to outsource but you are ready to do it differently —<br />
+                this is for you."
+              </p>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <Card className="border-2 border-primary/20">
+                <CardContent className="p-8 md:p-12">
+                  <div className="text-center mb-8">
+                    <p className="font-serif text-xl text-sage-700 mb-4">
+                      Soulful Strategy isn't just a framework.<br />
+                      It's a reclamation.
+                    </p>
+                    <p className="font-sans text-lg text-sage-700">
+                      Of your voice. Your energy. Your right to grow without selling out.
+                    </p>
+                  </div>
+
+                  <div className="mb-8">
+                    <h3 className="font-serif text-xl font-semibold text-sage-800 mb-4">
+                      The Book + Mini-Course Bundle Includes:
+                    </h3>
+                    <ul className="space-y-2">
+                      {soulfulStrategyFeatures.map((feature, index) => (
+                        <li key={index} className="flex items-start space-x-2">
+                          <CheckCircle className="h-4 w-4 text-primary mt-0.5 flex-shrink-0" />
+                          <span className="font-sans text-sm text-sage-700">{feature}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="text-center space-y-4">
+                    <div className="space-y-2">
+                      <p className="font-sans text-sm text-sage-600">
+                        → Learn at your pace. Build in your voice.
+                      </p>
+                      <p className="font-sans text-sm text-sage-600">
+                        → Available as a self-paced course or upgrade with live feedback.
+                      </p>
+                    </div>
+                    
+                    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+                      <Button asChild className="bg-primary hover:bg-primary/90">
+                        <Link to="/soulful-strategy-book">
+                          [Preorder Now]
+                        </Link>
+                      </Button>
+                      <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-white">
+                        <Link to="/contact">
+                          [Join the Waitlist]
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+
+          <Separator className="my-16" />
+
+          {/* CTA Section */}
+          <div className="text-center">
+            <div className="flex items-center justify-center space-x-2 mb-6">
+              <Heart className="h-8 w-8 text-primary" />
+              <HelpCircle className="h-6 w-6 text-accent" />
+            </div>
+            <h2 className="font-serif text-2xl font-semibold text-sage-800 mb-4">
+              ❤️ Not sure where to start?
+            </h2>
+            <p className="font-serif text-lg text-sage-700 italic mb-6">
+              "Soulful Strategy Session: Find Alignment Before You Scale"
             </p>
+            <p className="font-serif text-lg text-sage-700 mb-8">
+              Because strategy should feel like coming home —<br />
+              not like becoming someone else.
+            </p>
+            <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+              <Link to="/book-call">
+                [Start With Clarity]
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
+            </Button>
           </div>
         </div>
-      </section>
+      </div>
     </FullPageBackground>
   );
 };
