@@ -72,19 +72,19 @@ const SoulfulStrategyBook = () => {
             <Badge className="">
               Book + Mini-Course
             </Badge>
-            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-8 leading-tight">
+            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-sage-800 mb-8 leading-tight">
               Soulful Strategy
             </h1>
             <p className="font-serif text-xl md:text-2xl text-accent mb-8 italic">
               Where Business Meets Your Deepest Values
             </p>
             <div className="max-w-4xl mx-auto mb-12">
-              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-sage-700 mb-6 leading-relaxed">
                 A comprehensive guide and mini-course for entrepreneurs who refuse to choose 
                 between profit and purpose. Learn to build a business that honors your soul 
                 while creating sustainable success.
               </p>
-              <div className="flex items-center justify-center space-x-8 text-sm text-foreground">
+              <div className="flex items-center justify-center space-x-8 text-sm text-sage-600">
                 <div className="flex items-center">
                   <Book className="h-4 w-4 mr-2 text-primary" />
                   200+ Page Guide
@@ -120,7 +120,7 @@ const SoulfulStrategyBook = () => {
               </Button>
             </div>
 
-            <p className="font-sans text-sm text-foreground">
+            <p className="font-sans text-sm text-sage-600">
               ✨ Launch Special: Regular price $97 • Limited time offer
             </p>
           </div>
@@ -131,10 +131,10 @@ const SoulfulStrategyBook = () => {
       <section className="py-16 lg:py-24">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               What You'll Learn
             </h2>
-            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-sage-700 max-w-3xl mx-auto">
               Five comprehensive modules that transform how you think about business strategy
             </p>
           </div>
@@ -152,13 +152,13 @@ const SoulfulStrategyBook = () => {
                       </div>
                     </div>
                     <div className="flex-1">
-                      <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
+                      <h3 className="font-serif text-xl font-semibold text-sage-800 mb-2">
                         {module.title}
                       </h3>
-                      <p className="font-sans text-foreground mb-4 leading-relaxed">
+                      <p className="font-sans text-sage-700 mb-4 leading-relaxed">
                         {module.description}
                       </p>
-                      <div className="flex items-center space-x-4 text-sm text-foreground">
+                      <div className="flex items-center space-x-4 text-sm text-sage-600">
                         <div className="flex items-center">
                           <Clock className="h-4 w-4 mr-1 text-primary" />
                           {module.duration}
@@ -181,10 +181,10 @@ const SoulfulStrategyBook = () => {
       <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               Bonus Materials
             </h2>
-            <p className="font-sans text-lg text-foreground">
+            <p className="font-sans text-lg text-sage-700">
               Additional resources to support your soulful strategy journey
             </p>
           </div>
@@ -196,10 +196,10 @@ const SoulfulStrategyBook = () => {
                   <div className="">
                     <bonus.icon className="h-8 w-8 text-primary" />
                   </div>
-                  <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
+                  <h3 className="font-serif text-lg font-semibold text-sage-800 mb-4">
                     {bonus.title}
                   </h3>
-                  <p className="font-sans text-foreground leading-relaxed">
+                  <p className="font-sans text-sage-700 leading-relaxed">
                     {bonus.description}
                   </p>
                 </CardContent>
@@ -212,7 +212,7 @@ const SoulfulStrategyBook = () => {
       {/* Testimonials */}
       <section className="py-16 lg:py-24">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-12">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-12">
             What Readers Are Saying
           </h2>
           
@@ -224,11 +224,11 @@ const SoulfulStrategyBook = () => {
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <blockquote className="font-serif text-lg text-foreground italic mb-4 leading-relaxed">
+                <blockquote className="font-serif text-lg text-sage-700 italic mb-4 leading-relaxed">
                   "Finally, a business book that doesn't ask me to compromise my values. 
                   Samantha's approach helped me build a strategy that feels authentic and sustainable."
                 </blockquote>
-                <p className="font-sans text-sm text-foreground">
+                <p className="font-sans text-sm text-sage-600">
                   — Sarah M., Creative Entrepreneur
                 </p>
               </CardContent>
@@ -241,11 +241,11 @@ const SoulfulStrategyBook = () => {
                     <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
                   ))}
                 </div>
-                <blockquote className="font-serif text-lg text-foreground italic mb-4 leading-relaxed">
+                <blockquote className="font-serif text-lg text-sage-700 italic mb-4 leading-relaxed">
                   "The mini-course videos brought the concepts to life. I implemented the 
                   strategies immediately and saw results within weeks."
                 </blockquote>
-                <p className="font-sans text-sm text-foreground">
+                <p className="font-sans text-sm text-sage-600">
                   — Marcus T., Coach & Consultant
                 </p>
               </CardContent>
@@ -258,7 +258,7 @@ const SoulfulStrategyBook = () => {
       <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               About the Author
             </h2>
           </div>
@@ -266,7 +266,7 @@ const SoulfulStrategyBook = () => {
           <Card className="">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
-                <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
+                <h3 className="font-serif text-2xl font-semibold text-sage-800 mb-4">
                   Samantha Josette
                 </h3>
                 <p className="font-serif text-lg text-accent italic">
@@ -275,7 +275,7 @@ const SoulfulStrategyBook = () => {
               </div>
               
               <div className="prose prose-lg mx-auto text-center">
-                <p className="font-sans text-foreground leading-relaxed mb-6">
+                <p className="font-sans text-sage-700 leading-relaxed mb-6">
                   After rebuilding her life and business from the ground up following betrayal trauma, 
                   Samantha discovered that the most sustainable strategies are the ones that honor your 
                   deepest values. She's helped hundreds of entrepreneurs create businesses that feel 

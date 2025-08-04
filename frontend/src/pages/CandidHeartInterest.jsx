@@ -78,13 +78,13 @@ const CandidHeartInterest = () => {
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
             <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
+            <h1 className="font-serif text-3xl font-semibold text-sage-800 mb-6">
               Thank You
             </h1>
-            <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
+            <p className="font-sans text-lg text-sage-700 mb-6 leading-relaxed">
               Thank you for being part of something tender, brave, and real.
             </p>
-            <p className="font-serif text-xl text-foreground italic leading-relaxed">
+            <p className="font-serif text-xl text-sage-700 italic leading-relaxed">
               Your care is a thread in someone's healing story.
             </p>
             <div className="mt-8">
@@ -113,10 +113,10 @@ const CandidHeartInterest = () => {
             <Heart className="h-8 w-8 text-primary" />
             <Users className="h-6 w-6 text-accent" />
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-sage-800 mb-6">
             Join The Candid Heart Project
           </h1>
-          <p className="font-sans text-lg text-foreground max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-sage-700 max-w-2xl mx-auto leading-relaxed">
             Every act of care, no matter how small, creates ripples of healing in our community. 
             Thank you for wanting to be part of this movement.
           </p>
@@ -125,10 +125,10 @@ const CandidHeartInterest = () => {
         {/* Form */}
         <Card className="max-w-3xl mx-auto border-2 border-primary/20">
           <CardHeader className="text-center">
-            <CardTitle className="font-serif text-2xl text-foreground">
+            <CardTitle className="font-serif text-2xl text-sage-800">
               Tell Us How You'd Like to Help
             </CardTitle>
-            <p className="font-sans text-foreground">
+            <p className="font-sans text-sage-700">
               This form is personal, low-pressure, and affirming. Share what feels right for you.
             </p>
           </CardHeader>
