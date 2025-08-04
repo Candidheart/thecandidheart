@@ -1,3 +1,4 @@
+import FullPageBackground from '@/components/ui/full-page-background';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';

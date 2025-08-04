@@ -1,3 +1,4 @@
+import FullPageBackground from '@/components/ui/full-page-background';
 import { Link } from 'react-router-dom';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -64,7 +65,7 @@ const Creating = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 "></div>
@@ -267,7 +268,7 @@ const Creating = () => {
           </div>
         </div>
       </section>
-    </div>
+    </FullPageBackground>
   );
 };
 

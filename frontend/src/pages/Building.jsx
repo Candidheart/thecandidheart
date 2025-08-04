@@ -1,3 +1,4 @@
+import FullPageBackground from '@/components/ui/full-page-background';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
@@ -146,7 +147,7 @@ const Building = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -163,7 +164,7 @@ const Building = () => {
           </div>
         </div>
       </section>
-    </div>
+    </FullPageBackground>
   );
 };
 

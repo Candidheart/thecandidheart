@@ -7,6 +7,7 @@ import { Checkbox } from '../components/ui/checkbox';
 import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import { Label } from '../components/ui/label';
 import { Heart, Users, Send, CheckCircle } from 'lucide-react';
+import FullPageBackground from '@/components/ui/full-page-background';
 
 const CandidHeartInterest = () => {
   const [formData, setFormData] = useState({
@@ -74,7 +75,8 @@ const CandidHeartInterest = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center ">
+      <FullPageBackground>
+        <div className="min-h-screen flex items-center justify-center ">
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
             <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -100,11 +102,13 @@ const CandidHeartInterest = () => {
           </CardContent>
         </Card>
       </div>
-    );
+    </FullPageBackground>
+  );
   }
 
   return (
-    <div className="min-h-screen py-12 ">
+    <FullPageBackground>
+      <div className="min-h-screen py-12 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -368,7 +372,7 @@ const CandidHeartInterest = () => {
           </p>
         </div>
       </div>
-    </div>
+    </FullPageBackground>
   );
 };
 
