@@ -52,7 +52,7 @@ const Home = () => {
               </div>
               
               <div className="relative z-30">
-                <div className="bg-white rounded-2xl p-8 h-96 flex items-center justify-center border-2 border-sage-300 shadow-2xl">
+                <div className="bg-white/20 backdrop-blur-md rounded-2xl p-8 h-96 flex items-center justify-center border border-white/30 shadow-2xl">
                   <div className="text-center">
                     <div className="flex justify-center space-x-4 mb-6">
                       <Heart className="h-12 w-12 text-sage-500" />
