@@ -76,13 +76,12 @@ const CandidHeartInterest = () => {
 
   if (submitted) {
     return (
-      <>
+      <FullPageBackground>
         <Helmet>
           <title>Thank You | The Candid Heart Project</title>
           <meta name="description" content="Thank you for joining The Candid Heart Project. Your care and support help create healing communities for women." />
           <link rel="canonical" href="https://thecandidheart.com/candid-heart-interest" />
         </Helmet>
-        <FullPageBackground>
         <div className="min-h-screen flex items-center justify-center ">
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
@@ -110,12 +109,11 @@ const CandidHeartInterest = () => {
         </Card>
       </div>
     </FullPageBackground>
-    </>
   );
 }
 
   return (
-    <>
+    <FullPageBackground>
       <Helmet>
         <title>Join The Candid Heart Project | Community Care Initiative</title>
         <meta name="description" content="Join The Candid Heart Project and help create healing communities for women. Volunteer your time, skills, or resources to support trauma survivors." />
@@ -133,7 +131,6 @@ const CandidHeartInterest = () => {
         <meta name="twitter:title" content="Join The Candid Heart Project | Community Care Initiative" />
         <meta name="twitter:description" content="Join The Candid Heart Project and help create healing communities for women." />
       </Helmet>
-      <FullPageBackground>
       <div className="min-h-screen py-12 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -398,8 +395,8 @@ const CandidHeartInterest = () => {
           </p>
         </div>
       </div>
+      </div>
     </FullPageBackground>
-    </>
   );
 };
 

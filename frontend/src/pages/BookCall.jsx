@@ -130,6 +130,7 @@ const BookCall = () => {
             </CardContent>
           </Card>
         </div>
+        </div>
       </FullPageBackground>
     );
   }
@@ -402,6 +403,7 @@ const BookCall = () => {
             </CardContent>
           </Card>
         </div>
+      </div>
       </div>
     </FullPageBackground>
   );
