@@ -64,27 +64,27 @@ const StartHere = () => {
           <Card className="border-2 border-primary/20">
             <CardContent className="p-12 text-center">
               <Heart className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
+              <h1 className="font-serif text-3xl font-semibold text-sage-800 mb-6">
                 Thank you for beginning.
               </h1>
-              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-sage-700 mb-6 leading-relaxed">
                 I'll review your reflection and be in touch within 2-3 business days with either:
               </p>
               <div className="space-y-3 text-left max-w-md mx-auto mb-8">
-                <p className="font-sans text-foreground flex items-start">
+                <p className="font-sans text-sage-700 flex items-start">
                   <span className="text-primary mr-2">•</span>
                   An invitation to complete the full brand reflection form
                 </p>
-                <p className="font-sans text-foreground flex items-start">
+                <p className="font-sans text-sage-700 flex items-start">
                   <span className="text-primary mr-2">•</span>
                   A call to explore working together
                 </p>
-                <p className="font-sans text-foreground flex items-start">
+                <p className="font-sans text-sage-700 flex items-start">
                   <span className="text-primary mr-2">•</span>
                   A gentle note if we're not aligned right now
                 </p>
               </div>
-              <p className="font-serif text-foreground italic">
+              <p className="font-serif text-sage-700 italic">
                 "You don't have to have it all figured out. Just begin."
               </p>
             </CardContent>
@@ -103,14 +103,14 @@ const StartHere = () => {
             <Heart className="h-6 w-6 text-primary" />
             <Sparkles className="h-5 w-5 text-accent" />
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-sage-800 mb-6">
             Begin Your Reflection
           </h1>
-          <p className="font-sans text-xl text-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-sage-700 mb-4 leading-relaxed max-w-2xl mx-auto">
             This is a first step toward a potential collaboration — a gentle way for us to see 
             if we're aligned before diving deeper.
           </p>
-          <p className="font-serif text-lg text-foreground italic">
+          <p className="font-serif text-lg text-sage-700 italic">
             "You don't have to have it all figured out. Just begin."
           </p>
         </div>
@@ -122,13 +122,13 @@ const StartHere = () => {
               
               {/* Name & Brand */}
               <div className="space-y-6">
-                <h2 className="font-serif text-2xl font-semibold text-foreground">
+                <h2 className="font-serif text-2xl font-semibold text-sage-800">
                   Let's start with the basics
                 </h2>
                 
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label className="block font-sans text-sm font-medium text-foreground mb-2">
+                    <label className="block font-sans text-sm font-medium text-sage-700 mb-2">
                       Your name
                     </label>
                     <Input
@@ -140,7 +140,7 @@ const StartHere = () => {
                   </div>
                   
                   <div>
-                    <label className="block font-sans text-sm font-medium text-foreground mb-2">
+                    <label className="block font-sans text-sm font-medium text-sage-700 mb-2">
                       Brand or business name
                     </label>
                     <Input
@@ -155,7 +155,7 @@ const StartHere = () => {
 
               {/* Support Type */}
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-foreground">
+                <h3 className="font-serif text-xl font-semibold text-sage-800">
                   What kind of support are you seeking?
                 </h3>
                 <p className="font-sans text-sm text-foreground">

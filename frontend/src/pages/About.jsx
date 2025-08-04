@@ -84,7 +84,7 @@ const About = () => {
         background={false}
         badge={{ icon: Sparkles, text: "Your Story Matters" }}
       >
-        <div className="space-y-6 text-lg text-foreground leading-relaxed max-w-4xl mx-auto mb-12">
+        <div className="space-y-6 text-lg text-sage-700 leading-relaxed max-w-4xl mx-auto mb-12">
           <p>
             I didn't set out to do this work. I walked through fire, asked hard questions, and followed the breadcrumbs of grace until the pieces began to form a map. A map for rebuilding — not just businesses, but identities. Not just systems, but stories.
           </p>
@@ -105,10 +105,10 @@ const About = () => {
         className=""
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             What I Believe
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             These aren't just words on a page. They're the principles that guide every conversation, 
             every strategy session, every piece of content I create.
           </p>
@@ -135,10 +135,10 @@ const About = () => {
         className=""
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             My Journey
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             This is the story of how I became who I am — and how that becoming shapes the work I do today.
           </p>
         </div>
@@ -166,10 +166,10 @@ const About = () => {
                       {item.year}
                     </span>
                   </div>
-                  <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                  <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                     {item.title}
                   </h3>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground leading-relaxed`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
                     {item.description}
                   </p>
                 </div>
@@ -186,10 +186,10 @@ const About = () => {
         className=""
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Ready to Begin Your Story?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto`}>
             Whether you're in the wilderness of healing or ready to build something beautiful, 
             I'm here to walk alongside you. Your story isn't over — it's just beginning.
           </p>
