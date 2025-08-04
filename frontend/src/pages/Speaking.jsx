@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Mic, Users, Lightbulb, Heart, ArrowRight, Calendar, MapPin, Cpu } from 'lucide-react';
@@ -109,7 +110,25 @@ const Speaking = () => {
   ];
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Speaking & Workshops | Samantha Josette - Keynotes & Strategy Sessions</title>
+        <meta name="description" content="Book Samantha Josette for inspiring keynotes, strategy sessions, and workshops. Transform your organization with trauma-informed leadership and authentic business strategy." />
+        <meta name="keywords" content="Samantha Josette speaking, keynote speaker, business strategy speaker, trauma-informed leadership, workshop facilitator, corporate speaking, conference speaker" />
+        <link rel="canonical" href="https://thecandidheart.com/speaking" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Speaking & Workshops | Samantha Josette - Keynotes & Strategy Sessions" />
+        <meta property="og:description" content="Book Samantha Josette for inspiring keynotes, strategy sessions, and workshops." />
+        <meta property="og:url" content="https://thecandidheart.com/speaking" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Speaking & Workshops | Samantha Josette - Keynotes & Strategy Sessions" />
+        <meta name="twitter:description" content="Book Samantha Josette for inspiring keynotes, strategy sessions, and workshops." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <section className="relative py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 "></div>
@@ -417,6 +436,7 @@ const Speaking = () => {
         </div>
       </section>
     </FullPageBackground>
+    </>
   );
 };
 

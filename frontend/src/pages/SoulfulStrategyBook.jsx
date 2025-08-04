@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -64,7 +65,25 @@ const SoulfulStrategyBook = () => {
   ];
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Soulful Strategy Book | Business Strategy for Conscious Entrepreneurs</title>
+        <meta name="description" content="Transform your business with soulful strategy. Samantha Josette's comprehensive guide for conscious entrepreneurs who want to build profitable, purpose-driven businesses." />
+        <meta name="keywords" content="business strategy, conscious entrepreneurship, soulful business, purpose-driven business, business coaching, entrepreneur guide, business transformation" />
+        <link rel="canonical" href="https://thecandidheart.com/soulful-strategy-book" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Soulful Strategy Book | Business Strategy for Conscious Entrepreneurs" />
+        <meta property="og:description" content="Transform your business with soulful strategy. Comprehensive guide for conscious entrepreneurs." />
+        <meta property="og:url" content="https://thecandidheart.com/soulful-strategy-book" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Soulful Strategy Book | Business Strategy for Conscious Entrepreneurs" />
+        <meta name="twitter:description" content="Transform your business with soulful strategy. Comprehensive guide for conscious entrepreneurs." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 "></div>
@@ -367,6 +386,7 @@ const SoulfulStrategyBook = () => {
         </div>
       </section>
     </FullPageBackground>
+    </>
   );
 };
 
