@@ -91,7 +91,7 @@ const Healing = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-lg hover:shadow-xl transition-all duration-300"
+              className="bg-sage-600 hover:bg-sage-700 text-sage-900 font-sans shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Link to="/contact">
                 Start Your Healing Journey
@@ -172,7 +172,7 @@ const Healing = () => {
                       {offering.available ? (
                         <Button 
                           asChild 
-                          className="w-full bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-md hover:shadow-lg transition-all duration-300"
+                          className="bg-sage-600 hover:bg-sage-700 text-sage-900 font-sans shadow-md hover:shadow-lg transition-all duration-300"
                         >
                           <Link to={offering.buttonLink}>{offering.buttonText}</Link>
                         </Button>
@@ -180,14 +180,14 @@ const Healing = () => {
                         <div className="space-y-3">
                           <Button 
                             disabled 
-                            className="w-full bg-sage-200 text-sage-500 font-sans cursor-not-allowed"
+                            className="bg-sage-200 text-sage-500 font-sans cursor-not-allowed"
                           >
                             Coming Soon
                           </Button>
                           <Button 
                             asChild 
                             variant="outline" 
-                            className="w-full border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
+                            className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans transition-all duration-300"
                           >
                             <Link to={offering.buttonLink}>{offering.buttonText}</Link>
                           </Button>
@@ -276,7 +276,7 @@ const Healing = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-sage-600 hover:bg-sage-700 text-white font-sans shadow-lg hover:shadow-xl transition-all duration-300"
+                className="bg-sage-600 hover:bg-sage-700 text-sage-900 font-sans shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 <Link to="/contact">Start Your Journey</Link>
               </Button>
