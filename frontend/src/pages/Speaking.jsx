@@ -115,10 +115,10 @@ const Speaking = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <Mic className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
+            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-sage-800 mb-6 leading-tight">
               Speaking & Workshops
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-sage-700 max-w-3xl mx-auto leading-relaxed">
               Keynotes and strategy sessions for conscious companies, plus creative team intensives 
               and narrative leadership events that inspire authentic, ethical innovation.
             </p>
@@ -130,10 +130,10 @@ const Speaking = () => {
       <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               Speaking That Moves Beyond Information
             </h2>
-            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
               I don't just share information — I create experiences that shift perspectives, 
               inspire action, and leave audiences with practical tools they can implement immediately. 
               Every talk is designed to honor both the strategic mind and the human heart.
@@ -145,10 +145,10 @@ const Speaking = () => {
               <div className="">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Story-Driven Content
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 Every presentation weaves together personal narrative, practical strategy, 
                 and actionable insights that resonate on both intellectual and emotional levels.
               </p>
@@ -157,10 +157,10 @@ const Speaking = () => {
               <div className="">
                 <Lightbulb className="h-8 w-8 text-accent" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Practical Implementation
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 Audiences leave with concrete frameworks, tools, and next steps they can 
                 implement immediately to create meaningful change in their organizations.
               </p>
@@ -169,10 +169,10 @@ const Speaking = () => {
               <div className="">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Interactive Experience
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 Engaging, participatory sessions that create space for reflection, 
                 discussion, and collaborative problem-solving among participants.
               </p>

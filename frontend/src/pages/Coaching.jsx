@@ -144,10 +144,10 @@ const Coaching = () => {
         decorativeElements={optionsDecorativeElements}
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Choose Your Path
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             From group programs to intensive one-on-one sessions, find the support that fits your unique needs and timeline.
           </p>
         </div>
@@ -160,7 +160,7 @@ const Coaching = () => {
                   <div className="flex-1">
                     <div className="flex items-start justify-between mb-4">
                       <div>
-                        <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-2`}>
+                        <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-2`}>
                           {option.title}
                         </h3>
                         <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-primary font-medium mb-2`}>
@@ -174,24 +174,24 @@ const Coaching = () => {
                       </div>
                     </div>
                     
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-6`}>
+                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-6`}>
                       {option.description}
                     </p>
 
                     <div className="grid md:grid-cols-2 gap-6 mb-6">
                       <div>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600 mb-1`}>
                           Duration
                         </p>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-sage-700`}>
                           {option.duration}
                         </p>
                       </div>
                       <div>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground mb-1`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600 mb-1`}>
                           Format
                         </p>
-                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-foreground`}>
+                        <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-sage-700`}>
                           {option.format}
                         </p>
                       </div>
@@ -201,7 +201,7 @@ const Coaching = () => {
                       {option.includes.map((item, idx) => (
                         <li key={idx} className="flex items-start">
                           <CheckCircle className="h-4 w-4 text-primary mr-2 mt-1 flex-shrink-0" />
-                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
+                          <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-700`}>
                             {item}
                           </span>
                         </li>
@@ -214,12 +214,12 @@ const Coaching = () => {
                       <p className={`font-sans ${DESIGN_SYSTEM.typography.body} font-semibold text-primary mb-4`}>
                         {option.pricing}
                       </p>
-                      <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans mb-3">
+                      <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans mb-3">
                         <Link to={option.link}>
                           {option.cta}
                         </Link>
                       </Button>
-                      <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                      <Button asChild variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
                         <Link to="/contact">
                           Ask Questions
                         </Link>
@@ -241,10 +241,10 @@ const Coaching = () => {
         className="bg-gradient-to-br from-secondary/20 to-accent/20"
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             My Approach
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             Every coaching relationship is built on these foundational principles that honor both your humanity and your goals.
           </p>
         </div>
@@ -255,10 +255,10 @@ const Coaching = () => {
               <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
                 <item.icon className="h-8 w-8 text-primary" />
               </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                 {item.title}
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700`}>
                 {item.description}
               </p>
             </div>
@@ -273,10 +273,10 @@ const Coaching = () => {
         className="bg-card/50"
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             What Women Are Saying
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             Real stories from women who have transformed their lives through our work together.
           </p>
         </div>
@@ -290,14 +290,14 @@ const Coaching = () => {
                     <Star key={i} className="h-4 w-4 text-primary fill-current" />
                   ))}
                 </div>
-                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-foreground italic mb-4`}>
+                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-sage-700 italic mb-4`}>
                   "{testimonial.quote}"
                 </blockquote>
                 <div>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-foreground`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-sage-700`}>
                     {testimonial.author}
                   </p>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600`}>
                     {testimonial.role}
                   </p>
                 </div>
@@ -314,10 +314,10 @@ const Coaching = () => {
         className="bg-gradient-to-br from-primary/10 to-secondary/20"
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Ready to Begin Your Transformation?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto`}>
             Whether you're ready to join a group program or prefer one-on-one support, 
             let's find the perfect path for your unique journey.
           </p>
@@ -325,7 +325,7 @@ const Coaching = () => {
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
               <Link to="/book-call">Book a Discovery Call</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+            <Button asChild variant="outline" size="lg" className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans">
               <Link to="/contact">Send Me a Message</Link>
             </Button>
           </div>
