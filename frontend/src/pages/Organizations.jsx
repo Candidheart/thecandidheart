@@ -91,10 +91,10 @@ const Organizations = () => {
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <Building2 className="h-16 w-16 text-primary mx-auto mb-6" />
-            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-6 leading-tight">
+            <h1 className="font-serif text-4xl md:text-6xl font-semibold text-sage-800 mb-6 leading-tight">
               For Organizations
             </h1>
-            <p className="font-sans text-xl md:text-2xl text-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-xl md:text-2xl text-sage-700 max-w-3xl mx-auto leading-relaxed">
               Consulting services for conscious companies ready to prioritize human experience, 
               ethical AI implementation, and authentic brand communication.
             </p>
@@ -106,10 +106,10 @@ const Organizations = () => {
       <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               Human-Centered Business Consulting
             </h2>
-            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="font-sans text-lg text-sage-700 max-w-3xl mx-auto leading-relaxed">
               I work with organizations that understand business success and human flourishing aren't 
               mutually exclusive. Together, we create systems, strategies, and cultures that honor 
               both profit and people.
@@ -121,10 +121,10 @@ const Organizations = () => {
               <div className="">
                 <Search className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Empathy-Driven Analysis
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 We examine your organization through the lens of human experience, 
                 understanding how your brand and systems feel to real people.
               </p>
@@ -133,10 +133,10 @@ const Organizations = () => {
               <div className="">
                 <Cpu className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Ethical Technology
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 Navigate AI and automation implementation while maintaining human connection, 
                 ethical standards, and authentic communication.
               </p>
@@ -145,10 +145,10 @@ const Organizations = () => {
               <div className="">
                 <Users className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
+              <h3 className="font-serif text-xl font-semibold text-sage-800 mb-3">
                 Inclusive Communication
               </h3>
-              <p className="font-sans text-foreground">
+              <p className="font-sans text-sage-700">
                 Develop authentic brand voice and inclusive practices that honor diversity 
                 and build genuine connection with all stakeholders.
               </p>

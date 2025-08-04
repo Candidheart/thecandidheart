@@ -104,25 +104,25 @@ const BookCall = () => {
           <Card className="">
             <CardContent className="p-12 text-center">
               <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
-              <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
+              <h1 className="font-serif text-3xl font-semibold text-sage-800 mb-6">
                 Your call is being scheduled!
               </h1>
-              <p className="font-sans text-lg text-foreground mb-6 leading-relaxed">
+              <p className="font-sans text-lg text-sage-700 mb-6 leading-relaxed">
                 I've opened Google Calendar for you to add this event. Please save it to your calendar, 
                 and I'll send you a confirmation email with the Zoom link within 24 hours.
               </p>
               <div className="">
-                <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
+                <h3 className="font-serif text-lg font-semibold text-sage-800 mb-2">
                   What happens next:
                 </h3>
-                <ul className="text-left space-y-2 text-sm text-foreground">
+                <ul className="text-left space-y-2 text-sm text-sage-700">
                   <li>• You'll receive a confirmation email within 24 hours</li>
                   <li>• Zoom link and prep materials will be included</li>
                   <li>• Calendar reminder will be sent 24 hours before</li>
                   <li>• Feel free to email me with any questions</li>
                 </ul>
               </div>
-              <p className="font-serif text-foreground italic">
+              <p className="font-serif text-sage-700 italic">
                 "Thank you for trusting me with your time and your vision."
               </p>
             </CardContent>
@@ -141,14 +141,14 @@ const BookCall = () => {
             <Calendar className="h-6 w-6 text-primary" />
             <Sparkles className="h-5 w-5 text-accent" />
           </div>
-          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-foreground mb-6">
+          <h1 className="font-serif text-4xl md:text-5xl font-semibold text-sage-800 mb-6">
             Book Your Call
           </h1>
-          <p className="font-sans text-xl text-foreground mb-4 leading-relaxed max-w-2xl mx-auto">
+          <p className="font-sans text-xl text-sage-700 mb-4 leading-relaxed max-w-2xl mx-auto">
             Let's explore how we can work together. Choose your session type and 
             find a time that works for both of us.
           </p>
-          <p className="font-serif text-lg text-foreground italic">
+          <p className="font-serif text-lg text-sage-700 italic">
             "Every conversation begins with curiosity."
           </p>
         </div>
@@ -160,7 +160,7 @@ const BookCall = () => {
               
               {/* Service Selection */}
               <div className="space-y-6">
-                <h2 className="font-serif text-2xl font-semibold text-foreground">
+                <h2 className="font-serif text-2xl font-semibold text-sage-800">
                   Choose Your Session
                 </h2>
                 
@@ -185,14 +185,14 @@ const BookCall = () => {
                             }`}>
                               <CardContent className="p-6">
                                 <div className="flex justify-between items-start mb-3">
-                                  <h3 className="font-serif text-lg font-semibold text-foreground">
+                                  <h3 className="font-serif text-lg font-semibold text-sage-800">
                                     {service.name}
                                   </h3>
                                   <div className="text-right">
                                     <div className="font-serif text-xl font-bold text-primary">
                                       {service.price}
                                     </div>
-                                    <div className="font-sans text-sm text-foreground">
+                                    <div className="font-sans text-sm text-sage-600">
                                       {service.duration}
                                     </div>
                                   </div>
