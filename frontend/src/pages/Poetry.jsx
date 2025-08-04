@@ -207,10 +207,10 @@ const Poetry = () => {
         className=""
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Why Poetry?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-12 max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-12 max-w-3xl mx-auto`}>
             Poetry has been my companion through every season of healing and becoming. 
             It's how I process, how I remember, how I find my way back to myself.
           </p>
@@ -220,10 +220,10 @@ const Poetry = () => {
               <div className="">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                 Healing Tool
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700`}>
                 Poetry provides a safe space to explore complex emotions and experiences that might be difficult to express otherwise.
               </p>
             </div>
@@ -232,10 +232,10 @@ const Poetry = () => {
               <div className="">
                 <PenTool className="h-8 w-8 text-accent" />
               </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                 Creative Expression
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700`}>
                 Writing poetry helps you find your voice and reclaim your story in a way that feels authentic and empowering.
               </p>
             </div>
@@ -244,10 +244,10 @@ const Poetry = () => {
               <div className="">
                 <Star className="h-8 w-8 text-primary" />
               </div>
-              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+              <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                 Connection
               </h3>
-              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+              <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700`}>
                 Poetry creates bridges between experiences, helping you feel less alone in your journey of healing and growth.
               </p>
             </div>
@@ -262,10 +262,10 @@ const Poetry = () => {
         className=""
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Ready to Explore Poetry Together?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto`}>
             Whether you're looking for healing through words or want to explore your own creative expression, 
             poetry can be a powerful companion on your journey.
           </p>
