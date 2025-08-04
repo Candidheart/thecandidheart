@@ -4,6 +4,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Book, Star, Download, Play, CheckCircle, Users, Clock, ArrowRight, Heart, Lightbulb, Target } from 'lucide-react';
+import FullPageBackground from '@/components/ui/full-page-background';
 
 const SoulfulStrategyBook = () => {
   const modules = [
@@ -63,7 +64,7 @@ const SoulfulStrategyBook = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0 "></div>
@@ -365,7 +366,7 @@ const SoulfulStrategyBook = () => {
           </p>
         </div>
       </section>
-    </div>
+    </FullPageBackground>
   );
 };
 

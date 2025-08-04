@@ -6,6 +6,7 @@ import { Textarea } from '../components/ui/textarea';
 import { RadioGroup, RadioGroupItem } from '../components/ui/radio-group';
 import { Label } from '../components/ui/label';
 import { Calendar, Clock, Heart, Sparkles, CheckCircle, ArrowRight } from 'lucide-react';
+import FullPageBackground from '@/components/ui/full-page-background';
 
 const BookCall = () => {
   const [selectedService, setSelectedService] = useState('');
@@ -99,7 +100,8 @@ const BookCall = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen ">
+      <FullPageBackground>
+        <div className="min-h-screen ">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <Card className="">
             <CardContent className="p-12 text-center">
@@ -128,12 +130,13 @@ const BookCall = () => {
             </CardContent>
           </Card>
         </div>
-      </div>
+      </FullPageBackground>
     );
   }
 
   return (
-    <div className="min-h-screen ">
+    <FullPageBackground>
+      <div className="min-h-screen ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -400,7 +403,7 @@ const BookCall = () => {
           </Card>
         </div>
       </div>
-    </div>
+    </FullPageBackground>
   );
 };
 

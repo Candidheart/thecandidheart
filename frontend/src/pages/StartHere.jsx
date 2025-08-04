@@ -5,6 +5,7 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Checkbox } from '../components/ui/checkbox';
 import { Heart, Sparkles } from 'lucide-react';
+import FullPageBackground from '@/components/ui/full-page-background';
 
 const StartHere = () => {
   const [formData, setFormData] = useState({
@@ -59,7 +60,8 @@ const StartHere = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen ">
+      <FullPageBackground>
+        <div className="min-h-screen ">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <Card className="border-2 border-primary/20">
             <CardContent className="p-12 text-center">
@@ -90,12 +92,13 @@ const StartHere = () => {
             </CardContent>
           </Card>
         </div>
-      </div>
+      </FullPageBackground>
     );
   }
 
   return (
-    <div className="min-h-screen ">
+    <FullPageBackground>
+      <div className="min-h-screen ">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -269,7 +272,7 @@ const StartHere = () => {
           </CardContent>
         </Card>
       </div>
-    </div>
+    </FullPageBackground>
   );
 };
 

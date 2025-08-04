@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Building2, Search, Cpu, Users, ArrowRight, CheckCircle } from 'lucide-react';
+import FullPageBackground from '@/components/ui/full-page-background';
 
 const Organizations = () => {
   const organizationServices = [
@@ -84,7 +85,7 @@ const Organizations = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <section className="relative py-12 lg:py-20 overflow-hidden">
         <div className="absolute inset-0 "></div>
@@ -363,7 +364,7 @@ const Organizations = () => {
 
         </div>
       </section>
-    </div>
+    </FullPageBackground>
   );
 };
 

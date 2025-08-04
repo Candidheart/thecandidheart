@@ -7,6 +7,7 @@ import { Heart, Users, Calendar, MessageCircle, Video, Mail, CheckCircle, ArrowR
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
 import ContentCard from '@/components/ui/content-card';
+import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Coaching = () => {
@@ -127,7 +128,7 @@ const Coaching = () => {
   ];
 
   return (
-    <div className="min-h-screen">
+    <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Sacred Coaching for Healing & Growth"
@@ -331,7 +332,7 @@ const Coaching = () => {
           </div>
         </div>
       </Section>
-    </div>
+    </FullPageBackground>
   );
 };
 
