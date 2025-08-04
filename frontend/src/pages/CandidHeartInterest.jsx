@@ -74,7 +74,7 @@ const CandidHeartInterest = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <div className="min-h-screen flex items-center justify-center ">
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
             <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -90,7 +90,7 @@ const CandidHeartInterest = () => {
             <div className="mt-8">
               <Button 
                 asChild 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                className=""
               >
                 <a href="/candid-heart-project">
                   Back to Project Page
@@ -104,7 +104,7 @@ const CandidHeartInterest = () => {
   }
 
   return (
-    <div className="min-h-screen py-12 bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen py-12 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -219,7 +219,7 @@ const CandidHeartInterest = () => {
                         id={option.id}
                         checked={formData.careTypes.includes(option.id)}
                         onCheckedChange={(checked) => handleCareTypeChange(option.id, checked)}
-                        className="border-primary/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary"
+                        className=""
                       />
                       <Label 
                         htmlFor={option.id} 
@@ -348,7 +348,7 @@ const CandidHeartInterest = () => {
                 <Button 
                   type="submit" 
                   size="lg" 
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg"
+                  className=""
                 >
                   <Send className="mr-2 h-5 w-5" />
                   Join The Movement

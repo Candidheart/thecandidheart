@@ -87,7 +87,7 @@ const Organizations = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-12 lg:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/20"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <Building2 className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -103,7 +103,7 @@ const Organizations = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-12 lg:py-16 bg-card/50">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -118,7 +118,7 @@ const Organizations = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Search className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -130,7 +130,7 @@ const Organizations = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Cpu className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -142,7 +142,7 @@ const Organizations = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Users className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -172,7 +172,7 @@ const Organizations = () => {
 
           <div className="space-y-8">
             {organizationServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <div className="grid lg:grid-cols-3 gap-8">
                     <div className="lg:col-span-2">
@@ -189,7 +189,7 @@ const Organizations = () => {
                       </div>
 
                       {service.keyQuestion && (
-                        <div className="bg-primary/10 border-l-4 border-primary p-4 mb-6">
+                        <div className="">
                           <p className="font-serif text-lg text-foreground italic">
                             "{service.keyQuestion}"
                           </p>
@@ -231,7 +231,7 @@ const Organizations = () => {
                     </div>
 
                     <div className="lg:col-span-1">
-                      <div className="bg-gray-50 rounded-lg p-6 h-full flex flex-col justify-between">
+                      <div className="">
                         <div>
                           <div className="mb-4">
                             <span className="font-sans text-sm text-foreground">Investment</span>
@@ -248,7 +248,7 @@ const Organizations = () => {
                         </div>
                         <Button 
                           asChild 
-                          className="w-full bg-primary hover:bg-primary/90 text-primary-foreground"
+                          className=""
                         >
                           <Link to="/contact">
                             Get Started
@@ -265,7 +265,7 @@ const Organizations = () => {
       </section>
 
       {/* Ideal Clients Section */}
-      <section className="py-12 lg:py-16 bg-secondary/30">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -303,7 +303,7 @@ const Organizations = () => {
 
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
+              <div className="">
                 1
               </div>
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
@@ -314,7 +314,7 @@ const Organizations = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
+              <div className="">
                 2
               </div>
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
@@ -325,7 +325,7 @@ const Organizations = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
+              <div className="">
                 3
               </div>
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
@@ -336,7 +336,7 @@ const Organizations = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary text-primary-foreground rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-4 font-serif text-xl font-semibold">
+              <div className="">
                 4
               </div>
               <h3 className="font-serif text-lg font-semibold text-foreground mb-3">
@@ -351,7 +351,7 @@ const Organizations = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="py-12 lg:py-16 bg-card/50">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Ready to Align Your Organization?

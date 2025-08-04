@@ -99,9 +99,9 @@ const BookCall = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <div className="min-h-screen ">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
-          <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+          <Card className="">
             <CardContent className="p-12 text-center">
               <CheckCircle className="h-12 w-12 text-primary mx-auto mb-6" />
               <h1 className="font-serif text-3xl font-semibold text-foreground mb-6">
@@ -111,7 +111,7 @@ const BookCall = () => {
                 I've opened Google Calendar for you to add this event. Please save it to your calendar, 
                 and I'll send you a confirmation email with the Zoom link within 24 hours.
               </p>
-              <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 mb-8">
+              <div className="">
                 <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
                   What happens next:
                 </h3>
@@ -133,7 +133,7 @@ const BookCall = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -154,7 +154,7 @@ const BookCall = () => {
         </div>
 
         {/* Booking Form */}
-        <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+        <Card className="">
           <CardContent className="p-8 md:p-12">
             <form onSubmit={handleSubmit} className="space-y-8">
               
@@ -359,7 +359,7 @@ const BookCall = () => {
                   <Button 
                     type="submit"
                     size="lg"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+                    className=""
                   >
                     Schedule My Call
                     <ArrowRight className="ml-2 h-5 w-5" />
@@ -376,7 +376,7 @@ const BookCall = () => {
 
         {/* Additional Info */}
         <div className="mt-12 text-center">
-          <Card className="border border-primary/20 bg-[#FDFBF7]">
+          <Card className="">
             <CardContent className="p-8">
               <Heart className="h-8 w-8 text-primary mx-auto mb-4" />
               <h3 className="font-serif text-xl font-semibold text-foreground mb-4">

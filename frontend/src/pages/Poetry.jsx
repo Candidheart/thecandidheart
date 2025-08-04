@@ -10,19 +10,7 @@ import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Poetry = () => {
-  const heroDecorativeElements = [
-    { icon: <Heart className="h-12 w-12" />, position: 'top-20 left-16', color: 'text-primary/30', delay: 1 },
-    { icon: <PenTool className="h-12 w-12" />, position: 'top-40 right-20', color: 'text-accent/30', delay: 2 },
-    { icon: <Star className="h-12 w-12" />, position: 'bottom-40 left-1/4', color: 'text-primary/20', delay: 1.5 }
-  ];
 
-  const collectionsDecorativeElements = [
-    { icon: <BookOpen className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-primary/20', delay: 1.5 }
-  ];
-
-  const featuredDecorativeElements = [
-    { icon: <Quote className="h-16 w-16" />, position: 'bottom-20 left-20', color: 'text-accent/20', delay: 1 }
-  ];
 
   const poetryCollections = [
     {
@@ -78,7 +66,6 @@ const Poetry = () => {
       <Hero
         title="Poetry as Medicine"
         subtitle="Words have power to heal, to clarify, to transform. These poems are my prayers, my protests, my proof of life."
-        decorativeElements={heroDecorativeElements}
         size="large"
         background={false}
         badge={{ icon: PenTool, text: "Creative Expression" }}
@@ -88,7 +75,6 @@ const Poetry = () => {
       <Section 
         size="large" 
         background={true}
-        decorativeElements={featuredDecorativeElements}
       >
         <div className="text-center mb-16">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -101,10 +87,10 @@ const Poetry = () => {
 
         <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
           {featuredPoems.map((poem, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+            <Card key={index} className="">
               <CardContent className="p-8">
                 <div className="mb-4">
-                  <Badge className="bg-primary/10 text-primary border-primary/20 mb-3">
+                  <Badge className="">
                     {poem.theme}
                   </Badge>
                   <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
@@ -120,7 +106,7 @@ const Poetry = () => {
                   <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
                     {poem.readTime}
                   </span>
-                  <Button asChild variant="outline" size="sm" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                  <Button asChild variant="outline" size="sm" className="">
                     <Link to="/poetry/read">Read Full Poem</Link>
                   </Button>
                 </div>
@@ -134,8 +120,7 @@ const Poetry = () => {
       <Section 
         size="large" 
         background={false}
-        decorativeElements={collectionsDecorativeElements}
-        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+        className=""
       >
         <div className="text-center mb-16">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -148,7 +133,7 @@ const Poetry = () => {
 
         <div className="space-y-8">
           {poetryCollections.map((collection, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 border-2 hover:border-primary/30 bg-card">
+            <Card key={index} className="">
               <CardContent className="p-8">
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="flex-1">
@@ -186,22 +171,22 @@ const Poetry = () => {
                   </div>
 
                   <div className="lg:w-64 flex-shrink-0">
-                    <div className="bg-gradient-to-br from-primary/10 to-secondary/10 rounded-lg p-6 text-center">
+                    <div className="">
                       {collection.available ? (
                         <div className="space-y-3">
-                          <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+                          <Button asChild className="">
                             <Link to="/poetry/collections">Read Collection</Link>
                           </Button>
-                          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                          <Button asChild variant="outline" className="">
                             <Link to="/contact">Get Notified</Link>
                           </Button>
                         </div>
                       ) : (
                         <div className="space-y-3">
-                          <Button disabled className="w-full bg-muted text-foreground font-sans cursor-not-allowed">
+                          <Button disabled className="">
                             Coming Soon
                           </Button>
-                          <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans">
+                          <Button asChild variant="outline" className="">
                             <Link to="/contact">Join Waitlist</Link>
                           </Button>
                         </div>
@@ -219,7 +204,7 @@ const Poetry = () => {
       <Section 
         size="large" 
         background={true}
-        className="bg-card/50"
+        className=""
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -232,7 +217,7 @@ const Poetry = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
@@ -244,7 +229,7 @@ const Poetry = () => {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="">
                 <PenTool className="h-8 w-8 text-accent" />
               </div>
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
@@ -256,7 +241,7 @@ const Poetry = () => {
             </div>
 
             <div>
-              <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-6">
+              <div className="">
                 <Star className="h-8 w-8 text-primary" />
               </div>
               <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
@@ -274,7 +259,7 @@ const Poetry = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-primary/10 to-secondary/20"
+        className=""
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -285,10 +270,10 @@ const Poetry = () => {
             poetry can be a powerful companion on your journey.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+            <Button asChild size="lg" className="">
               <Link to="/poetry/read">Read More Poems</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+            <Button asChild variant="outline" size="lg" className="">
               <Link to="/contact">Share Your Poetry</Link>
             </Button>
           </div>

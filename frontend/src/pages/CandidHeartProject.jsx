@@ -24,7 +24,7 @@ const CandidHeartProject = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-background to-secondary/10"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <div className="flex items-center justify-center space-x-2 mb-6">
@@ -77,7 +77,7 @@ const CandidHeartProject = () => {
               </div>
             </div>
 
-            <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-6 text-center">
                   Simple Ways to Care
@@ -85,7 +85,7 @@ const CandidHeartProject = () => {
                 <div className="space-y-4">
                   {careExamples.map((example, index) => (
                     <div key={index} className="flex items-center space-x-4">
-                      <div className="rounded-full w-10 h-10 flex items-center justify-center bg-primary/10">
+                      <div className="">
                         <example.icon className={`h-5 w-5 ${example.color}`} />
                       </div>
                       <span className="font-sans text-foreground">
@@ -106,7 +106,7 @@ const CandidHeartProject = () => {
       </section>
 
       {/* Our Communities */}
-      <section className="py-16 lg:py-24 bg-secondary/20">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <MapPin className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -122,7 +122,7 @@ const CandidHeartProject = () => {
               <Badge 
                 key={index} 
                 variant="outline" 
-                className="border-primary/30 text-primary bg-background hover:bg-primary/10 text-sm px-4 py-2"
+                className=""
               >
                 {community}
               </Badge>
@@ -148,9 +148,9 @@ const CandidHeartProject = () => {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card className="text-center border border-primary/20 hover:border-primary/40 transition-colors bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
+                <div className="">
                   <Heart className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
@@ -163,9 +163,9 @@ const CandidHeartProject = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border border-accent/20 hover:border-accent/40 transition-colors bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-accent/10">
+                <div className="">
                   <Users className="h-8 w-8 text-accent" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
@@ -178,9 +178,9 @@ const CandidHeartProject = () => {
               </CardContent>
             </Card>
 
-            <Card className="text-center border border-secondary/40 hover:border-secondary/60 transition-colors bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
-                <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-secondary/20">
+                <div className="">
                   <HandHeart className="h-8 w-8 text-secondary-foreground" />
                 </div>
                 <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
@@ -197,7 +197,7 @@ const CandidHeartProject = () => {
       </section>
 
       {/* How Organizations Can Help */}
-      <section className="py-16 lg:py-24 bg-primary/5">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -279,7 +279,7 @@ const CandidHeartProject = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+              className=""
             >
               <Link to="/candid-heart-interest">
                 Join the Movement <ArrowRight className="ml-2 h-5 w-5" />
@@ -289,7 +289,7 @@ const CandidHeartProject = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+              className=""
             >
               <Link to="/contact">
                 Ask Questions
@@ -300,7 +300,7 @@ const CandidHeartProject = () => {
       </section>
 
       {/* Mission Statement */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-16 lg:py-24 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="mb-8">
             <Heart className="h-16 w-16 text-primary mx-auto mb-6" />

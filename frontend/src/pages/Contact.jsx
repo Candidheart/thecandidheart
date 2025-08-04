@@ -42,14 +42,7 @@ const Contact = () => {
     // You would integrate with your backend or email service here
   };
 
-  const heroDecorativeElements = [
-    { icon: <Heart className="h-12 w-12" />, position: 'top-20 right-20', color: 'text-primary/30', delay: 1 },
-    { icon: <Mail className="h-12 w-12" />, position: 'bottom-20 left-20', color: 'text-accent/30', delay: 2 }
-  ];
 
-  const servicesDecorativeElements = [
-    { icon: <MessageCircle className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-primary/20', delay: 1.5 }
-  ];
 
   return (
     <FullPageBackground>
@@ -57,7 +50,7 @@ const Contact = () => {
       <Hero
         title="Let's Connect"
         subtitle="This is your digital front porch — a safe space where healing meets strategy and every conversation begins with understanding your unique story."
-        decorativeElements={heroDecorativeElements}
+
         size="medium"
         background={false}
         badge={{ icon: Heart, text: "Ready to Begin" }}
@@ -67,7 +60,7 @@ const Contact = () => {
       <Section 
         size="medium" 
         background={true}
-        decorativeElements={servicesDecorativeElements}
+
       >
         <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
           {/* Book a Call */}
@@ -77,7 +70,7 @@ const Contact = () => {
             description="Ready to explore working together? Let's have a conversation about your goals, challenges, and how I might support your journey."
             variant="primary"
           >
-            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground mb-3">
+            <Button asChild className="">
               <Link to="/book-call">Schedule Now</Link>
             </Button>
             <p className="font-sans text-xs text-foreground text-center">
@@ -93,7 +86,7 @@ const Contact = () => {
             description="Have questions, want to share your story, or explore collaboration? I read every message personally and respond thoughtfully."
             variant="accent"
           >
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground mb-3">
+            <Button asChild className="">
               <Link to="#contact-form">Send Message</Link>
             </Button>
             <p className="font-sans text-xs text-foreground text-center">
@@ -109,7 +102,7 @@ const Contact = () => {
             description="Prefer to email? I'm available at samantha@thecandidheart.com for direct communication about your needs and projects."
             variant="primary"
           >
-            <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground mb-3">
+            <Button asChild variant="outline" className="">
               <a href="mailto:samantha@thecandidheart.com">Send Email</a>
             </Button>
             <p className="font-sans text-xs text-foreground text-center">
@@ -124,7 +117,7 @@ const Contact = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-card/50"
+        className=""
       >
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
@@ -137,7 +130,7 @@ const Contact = () => {
             </p>
           </div>
 
-          <Card className="bg-card border border-border/50 shadow-lg">
+          <Card className="">
             <CardHeader>
               <CardTitle className="font-serif text-2xl font-semibold text-foreground text-center">
                 Let's Start a Conversation
@@ -216,7 +209,7 @@ const Contact = () => {
                   <Button 
                     type="submit" 
                     size="lg" 
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans px-8"
+                    className=""
                   >
                     Send Message <Send className="ml-2 h-4 w-4" />
                   </Button>
@@ -238,7 +231,7 @@ const Contact = () => {
       <Section 
         size="medium" 
         background={false}
-        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+        className=""
       >
         <div className="max-w-4xl mx-auto text-center">
           <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-6`}>
@@ -246,7 +239,7 @@ const Contact = () => {
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
             <div>
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Clock className="h-6 w-6 text-primary" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Quick Response</h4>
@@ -255,7 +248,7 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Heart className="h-6 w-6 text-accent" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Personal Touch</h4>
@@ -264,7 +257,7 @@ const Contact = () => {
               </p>
             </div>
             <div>
-              <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
               <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Safe Space</h4>

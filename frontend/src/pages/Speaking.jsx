@@ -111,7 +111,7 @@ const Speaking = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-12 lg:py-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/20"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <Mic className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -127,7 +127,7 @@ const Speaking = () => {
       </section>
 
       {/* Speaking Philosophy Section */}
-      <section className="py-12 lg:py-16 bg-card/50">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -142,7 +142,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -154,7 +154,7 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-accent/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Lightbulb className="h-8 w-8 text-accent" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -166,7 +166,7 @@ const Speaking = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Users className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -196,7 +196,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
             {speakingServices.map((service, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <service.icon className="h-8 w-8 text-primary mr-3" />
@@ -243,7 +243,7 @@ const Speaking = () => {
                     </span>
                     <Button 
                       asChild 
-                      className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                      className=""
                     >
                       <Link to="/contact">
                         Book Now
@@ -258,7 +258,7 @@ const Speaking = () => {
       </section>
 
       {/* Topics Section */}
-      <section className="py-12 lg:py-16 bg-gradient-to-br from-primary/5 to-accent/5">
+      <section className="py-12 lg:py-16 ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -272,10 +272,10 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {speakingTopics.map((topic, index) => (
-              <Card key={index} className="hover:shadow-lg transition-all-smooth bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
-                    <div className="bg-primary/10 rounded-full w-12 h-12 flex items-center justify-center mr-4">
+                    <div className="">
                       <topic.icon className="h-6 w-6 text-primary" />
                     </div>
                     <h3 className="font-serif text-xl font-semibold text-foreground">
@@ -319,7 +319,7 @@ const Speaking = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {testimonials.map((testimonial, index) => (
-              <Card key={index} className="border-2 border-primary/20 bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <blockquote className="font-serif text-lg text-foreground italic mb-6 leading-relaxed">
                     "{testimonial.quote}"
@@ -343,7 +343,7 @@ const Speaking = () => {
       </section>
 
       {/* Booking Information Section */}
-      <section className="py-12 lg:py-16 bg-card/50">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -392,7 +392,7 @@ const Speaking = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
+              className=""
             >
               <Link to="/contact">
                 Discuss Your Event

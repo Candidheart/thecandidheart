@@ -66,19 +66,7 @@ const About = () => {
     }
   ];
 
-  const heroDecorativeElements = [
-    { icon: <Heart className="h-12 w-12" />, position: 'top-20 left-16', color: 'text-primary/30', delay: 1 },
-    { icon: <Star className="h-12 w-12" />, position: 'top-40 right-20', color: 'text-accent/30', delay: 2 },
-    { icon: <Sparkles className="h-12 w-12" />, position: 'bottom-40 left-1/4', color: 'text-primary/20', delay: 1.5 }
-  ];
 
-  const valuesDecorativeElements = [
-    { icon: <Feather className="h-16 w-16" />, position: 'top-20 right-32', color: 'text-accent/20', delay: 1.5 }
-  ];
-
-  const timelineDecorativeElements = [
-    { icon: <BookOpen className="h-16 w-16" />, position: 'bottom-20 left-20', color: 'text-primary/20', delay: 1 }
-  ];
 
   return (
     <FullPageBackground>
@@ -91,7 +79,7 @@ const About = () => {
           </>
         }
         subtitle=""
-        decorativeElements={heroDecorativeElements}
+
         size="xlarge"
         background={false}
         badge={{ icon: Sparkles, text: "Your Story Matters" }}
@@ -113,8 +101,8 @@ const About = () => {
       <Section 
         size="large" 
         background={true}
-        decorativeElements={valuesDecorativeElements}
-        className="bg-card/50"
+
+        className=""
       >
         <div className="text-center mb-16">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -143,8 +131,8 @@ const About = () => {
       <Section 
         size="large" 
         background={false}
-        decorativeElements={timelineDecorativeElements}
-        className="bg-gradient-to-br from-secondary/20 to-accent/20"
+
+        className=""
       >
         <div className="text-center mb-16">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -160,13 +148,13 @@ const About = () => {
             <div key={index} className="relative">
               {/* Timeline connector */}
               {index < timeline.length - 1 && (
-                <div className="absolute left-8 top-16 w-0.5 h-12 bg-border/50"></div>
+                <div className=""></div>
               )}
               
               <div className="flex items-start space-x-6">
                 {/* Icon */}
                 <div className="flex-shrink-0">
-                  <div className="w-16 h-16 bg-primary/10 rounded-full flex items-center justify-center">
+                  <div className="">
                     <item.icon className="h-8 w-8 text-primary" />
                   </div>
                 </div>
@@ -174,7 +162,7 @@ const About = () => {
                 {/* Content */}
                 <div className="flex-1">
                   <div className="mb-2">
-                    <span className="font-sans text-sm font-medium text-primary bg-primary/10 px-3 py-1 rounded-full">
+                    <span className="">
                       {item.year}
                     </span>
                   </div>
@@ -195,7 +183,7 @@ const About = () => {
       <Section 
         size="large" 
         background={false}
-        className="bg-gradient-to-br from-primary/10 to-secondary/20"
+        className=""
       >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
@@ -206,10 +194,10 @@ const About = () => {
             I'm here to walk alongside you. Your story isn't over — it's just beginning.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
+            <Button asChild size="lg" className="">
               <Link to="/contact">Start Your Journey</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+            <Button asChild variant="outline" size="lg" className="">
               <Link to="/healing">Explore Healing</Link>
             </Button>
           </div>

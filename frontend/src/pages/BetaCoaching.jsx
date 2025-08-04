@@ -79,10 +79,10 @@ const BetaCoaching = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 text-sm font-sans">
+            <Badge className="">
               Beta Program • Limited Spots Available
             </Badge>
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-8 leading-tight">
@@ -111,7 +111,7 @@ const BetaCoaching = () => {
             
             {/* Pricing Alert */}
             <div className="max-w-2xl mx-auto mb-8">
-              <Card className="border-2 border-primary/30 bg-primary/5">
+              <Card className="">
                 <CardContent className="p-6 text-center">
                   <Gift className="h-8 w-8 text-primary mx-auto mb-4" />
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
@@ -121,7 +121,7 @@ const BetaCoaching = () => {
                     <strong>First 20 participants:</strong> Completely free<br />
                     <strong>Next 30 participants:</strong> Pay what you can (donation-based)
                   </p>
-                  <Badge className="bg-accent/10 text-accent border-accent/20">
+                  <Badge className="">
                     Limited Time • Beta Testing Phase
                   </Badge>
                 </CardContent>
@@ -132,7 +132,7 @@ const BetaCoaching = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="/beta-coaching-signup">
                   Join the Beta Program <ArrowRight className="ml-2 h-5 w-5" />
@@ -142,7 +142,7 @@ const BetaCoaching = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="/contact">Ask Questions</Link>
               </Button>
@@ -168,7 +168,7 @@ const BetaCoaching = () => {
             {programElements.map((element, index) => (
               <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg">
                 <CardContent className="p-8 text-center">
-                  <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
+                  <div className="">
                     <element.icon className={`h-8 w-8 ${element.color}`} />
                   </div>
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-2">
@@ -188,7 +188,7 @@ const BetaCoaching = () => {
       </section>
 
       {/* 6-Week Journey */}
-      <section className="py-16 lg:py-24 bg-secondary/20">
+      <section className="">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -205,7 +205,7 @@ const BetaCoaching = () => {
               <Card key={index} className={`border-2 ${week.color} transition-all hover:shadow-lg`}>
                 <CardContent className="p-6">
                   <div className="flex items-center mb-4">
-                    <Badge className="bg-primary/10 text-primary border-primary/20 mr-3">
+                    <Badge className="">
                       Week {week.week}
                     </Badge>
                     <h3 className="font-serif text-lg font-semibold text-foreground">
@@ -273,23 +273,23 @@ const BetaCoaching = () => {
                 </div>
                 <div className="space-y-3">
                   <div className="flex">
-                    <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Mon</Badge>
+                    <Badge className="">Mon</Badge>
                     <p className="font-sans text-sm text-foreground">"What's one gut feeling you've ignored that proved true?"</p>
                   </div>
                   <div className="flex">
-                    <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Tue</Badge>
+                    <Badge className="">Tue</Badge>
                     <p className="font-sans text-sm text-foreground">"When did you first silence yourself to avoid conflict?"</p>
                   </div>
                   <div className="flex">
-                    <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Wed</Badge>
+                    <Badge className="">Wed</Badge>
                     <p className="font-sans text-sm text-foreground">"Your needs are not too much. What do you need today?"</p>
                   </div>
                   <div className="flex">
-                    <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Thu</Badge>
+                    <Badge className="">Thu</Badge>
                     <p className="font-sans text-sm text-foreground">"Tonight we gather. Bring your breath and your truth."</p>
                   </div>
                   <div className="flex">
-                    <Badge className="bg-accent/10 text-accent border-accent/20 mr-3 text-xs">Fri</Badge>
+                    <Badge className="">Fri</Badge>
                     <p className="font-sans text-sm text-foreground">"What part of you are you learning to trust again?"</p>
                   </div>
                 </div>
@@ -300,7 +300,7 @@ const BetaCoaching = () => {
       </section>
 
       {/* Zoom Circle Details */}
-      <section className="py-16 lg:py-24 bg-primary/5">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Video className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -419,7 +419,7 @@ const BetaCoaching = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-16 lg:py-24 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Users className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -434,7 +434,7 @@ const BetaCoaching = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+              className=""
             >
               <Link to="/beta-coaching-signup">
                 Join the Beta Program
@@ -444,7 +444,7 @@ const BetaCoaching = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+              className=""
             >
               <Link to="/contact">
                 Ask Questions First

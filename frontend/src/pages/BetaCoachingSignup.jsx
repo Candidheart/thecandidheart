@@ -134,7 +134,7 @@ const BetaCoachingSignup = () => {
 
   if (submitted) {
     return (
-      <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <div className="min-h-screen flex items-center justify-center ">
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
             <CheckCircle className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -152,7 +152,7 @@ const BetaCoachingSignup = () => {
             <div className="space-y-4">
               <Button 
                 asChild 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                className=""
               >
                 <a href="/beta-coaching">
                   Back to Program Details
@@ -166,7 +166,7 @@ const BetaCoachingSignup = () => {
   }
 
   return (
-    <div className="min-h-screen py-12 bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen py-12 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
@@ -222,7 +222,7 @@ const BetaCoachingSignup = () => {
               
               {/* Error Display */}
               {error && (
-                <div className="bg-red-50 border border-red-200 rounded-md p-4">
+                <div className="">
                   <p className="text-red-800 text-sm">{error}</p>
                 </div>
               )}
@@ -557,7 +557,7 @@ const BetaCoachingSignup = () => {
                     id="commitment"
                     checked={formData.commitment}
                     onCheckedChange={handleCheckboxChange}
-                    className="border-primary/30 data-[state=checked]:bg-primary data-[state=checked]:border-primary mt-1"
+                    className=""
                   />
                   <Label htmlFor="commitment" className="font-sans text-sm text-foreground cursor-pointer leading-relaxed">
                     I understand this is a 6-week commitment and I'm ready to show up for my healing 
@@ -572,7 +572,7 @@ const BetaCoachingSignup = () => {
                   type="submit" 
                   size="lg" 
                   disabled={!formData.commitment || pricingTier.tier === 'full' || loading}
-                  className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg disabled:opacity-50"
+                  className=""
                 >
                   <Send className="mr-2 h-5 w-5" />
                   {loading ? 'Submitting...' : (pricingTier.tier === 'full' ? 'Join Waitlist' : 'Submit Application')}

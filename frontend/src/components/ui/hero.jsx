@@ -31,8 +31,8 @@ const Hero = ({
         </>
       ) : background && (
         <>
-          <div className="absolute inset-0 bg-gradient-to-br from-secondary/20 via-background to-accent/10"></div>
-          <div className="absolute inset-0 bg-hexagons gentle-pulse"></div>
+    
+          
         </>
       )}
       

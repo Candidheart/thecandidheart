@@ -59,7 +59,7 @@ const StartHere = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <div className="min-h-screen ">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <Card className="border-2 border-primary/20">
             <CardContent className="p-12 text-center">
@@ -95,7 +95,7 @@ const StartHere = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen ">
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -169,7 +169,7 @@ const StartHere = () => {
                         id={option}
                         checked={formData.supportType.includes(option)}
                         onCheckedChange={(checked) => handleSupportChange(option, checked)}
-                        className="border-primary/50 data-[state=checked]:bg-primary"
+                        className=""
                       />
                       <label 
                         htmlFor={option}
@@ -199,7 +199,7 @@ const StartHere = () => {
                         checked={formData.brandPersonality.includes(option)}
                         onCheckedChange={(checked) => handlePersonalityChange(option, checked)}
                         disabled={formData.brandPersonality.length >= 3 && !formData.brandPersonality.includes(option)}
-                        className="border-primary/50 data-[state=checked]:bg-primary"
+                        className=""
                       />
                       <label 
                         htmlFor={option}
@@ -256,7 +256,7 @@ const StartHere = () => {
                 <Button 
                   type="submit"
                   size="lg"
-                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+                  className=""
                 >
                   Begin My Reflection
                 </Button>

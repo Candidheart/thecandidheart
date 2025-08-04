@@ -66,10 +66,10 @@ const SoulfulStrategyBook = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 text-sm font-sans">
+            <Badge className="">
               Book + Mini-Course
             </Badge>
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-8 leading-tight">
@@ -104,7 +104,7 @@ const SoulfulStrategyBook = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="/book-call">
                   Get Instant Access - $67 <ArrowRight className="ml-2 h-5 w-5" />
@@ -114,7 +114,7 @@ const SoulfulStrategyBook = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="#preview">Preview Chapters</Link>
               </Button>
@@ -141,11 +141,11 @@ const SoulfulStrategyBook = () => {
 
           <div className="space-y-6">
             {modules.map((module, index) => (
-              <Card key={index} className="border-2 border-primary/20 hover:border-primary/40 transition-all hover:shadow-lg bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <div className="flex items-start space-x-6">
                     <div className="flex-shrink-0">
-                      <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                      <div className="">
                         <span className="font-serif text-lg font-semibold text-primary">
                           {module.number}
                         </span>
@@ -178,7 +178,7 @@ const SoulfulStrategyBook = () => {
       </section>
 
       {/* Bonus Materials */}
-      <section className="py-16 lg:py-24 bg-secondary/20">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -191,9 +191,9 @@ const SoulfulStrategyBook = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             {bonuses.map((bonus, index) => (
-              <Card key={index} className="border border-primary/20 text-center bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
-                  <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6 bg-primary/10">
+                  <div className="">
                     <bonus.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-4">
@@ -217,7 +217,7 @@ const SoulfulStrategyBook = () => {
           </h2>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border border-primary/20 bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -234,7 +234,7 @@ const SoulfulStrategyBook = () => {
               </CardContent>
             </Card>
 
-            <Card className="border border-primary/20 bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -255,7 +255,7 @@ const SoulfulStrategyBook = () => {
       </section>
 
       {/* About the Author */}
-      <section className="py-16 lg:py-24 bg-primary/5">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -263,7 +263,7 @@ const SoulfulStrategyBook = () => {
             </h2>
           </div>
           
-          <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+          <Card className="">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
@@ -292,7 +292,7 @@ const SoulfulStrategyBook = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-16 lg:py-24 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Book className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -303,7 +303,7 @@ const SoulfulStrategyBook = () => {
             between success and staying true to yourself.
           </p>
           
-          <div className="bg-white/50 backdrop-blur-sm rounded-lg p-8 mb-8 border border-primary/20">
+          <div className="">
             <div className="flex items-center justify-center mb-4">
               <CheckCircle className="h-6 w-6 text-primary mr-2" />
               <span className="font-sans text-lg font-semibold text-foreground">
@@ -342,7 +342,7 @@ const SoulfulStrategyBook = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+              className=""
             >
               <Link to="/book-call">
                 Get Instant Access - $67
@@ -352,7 +352,7 @@ const SoulfulStrategyBook = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+              className=""
             >
               <Link to="/contact">
                 Have Questions?

@@ -51,10 +51,10 @@ const SayItBrave = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-accent/10"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
-            <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 text-sm font-sans">
+            <Badge className="">
               School Assembly Program
             </Badge>
             <h1 className="font-serif text-4xl md:text-6xl font-semibold text-foreground mb-8 leading-tight">
@@ -69,7 +69,7 @@ const SayItBrave = () => {
                 family changes, and the overwhelming pressure to fit in. This isn't a lecture. 
                 It's a mirror—reflecting back the truth that their feelings matter and their voice has power.
               </p>
-              <div className="bg-primary/5 rounded-lg p-6 mb-8">
+              <div className="">
                 <p className="font-serif text-xl text-foreground italic leading-relaxed">
                   "Made for them and the ones who love them."
                 </p>
@@ -80,7 +80,7 @@ const SayItBrave = () => {
               <Button 
                 asChild 
                 size="lg" 
-                className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="/book-call">
                   Request Assembly <ArrowRight className="ml-2 h-5 w-5" />
@@ -90,7 +90,7 @@ const SayItBrave = () => {
                 asChild 
                 variant="outline" 
                 size="lg"
-                className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+                className=""
               >
                 <Link to="#details">
                   <Download className="mr-2 h-5 w-5" />
@@ -116,7 +116,7 @@ const SayItBrave = () => {
 
           <div className="grid md:grid-cols-2 gap-6">
             {takeaways.map((takeaway, index) => (
-              <div key={index} className="flex items-start space-x-4 p-6 bg-primary/5 rounded-lg">
+              <div key={index} className="">
                 <CheckCircle className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                 <p className="font-sans text-foreground leading-relaxed">
                   {takeaway}
@@ -128,7 +128,7 @@ const SayItBrave = () => {
       </section>
 
       {/* Assembly Details */}
-      <section id="details" className="py-16 lg:py-24 bg-secondary/20">
+      <section id="details" className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -141,9 +141,9 @@ const SayItBrave = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {assemblyDetails.map((detail, index) => (
-              <Card key={index} className="border border-primary/20 text-center bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-6">
-                  <div className="rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4 bg-primary/10">
+                  <div className="">
                     <detail.icon className="h-8 w-8 text-primary" />
                   </div>
                   <h3 className="font-serif text-lg font-semibold text-foreground mb-2">
@@ -157,7 +157,7 @@ const SayItBrave = () => {
             ))}
           </div>
 
-          <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+          <Card className="">
             <CardContent className="p-8">
               <div className="text-center mb-6">
                 <Mic className="h-12 w-12 text-primary mx-auto mb-4" />
@@ -217,7 +217,7 @@ const SayItBrave = () => {
             </h2>
           </div>
           
-                                     <Card className="border-2 border-primary/20 bg-[#FDFBF7]">
+                                     <Card className="">
             <CardContent className="p-8 md:p-12">
               <div className="text-center mb-8">
                 <h3 className="font-serif text-2xl font-semibold text-foreground mb-4">
@@ -252,7 +252,7 @@ const SayItBrave = () => {
       </section>
 
       {/* Local Districts */}
-      <section className="py-16 lg:py-24 bg-primary/5">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
             Serving Northwest Ohio
@@ -263,7 +263,7 @@ const SayItBrave = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
             {localDistricts.map((district, index) => (
-              <Badge key={index} className="bg-primary/10 text-primary border-primary/20 text-sm font-sans py-2 px-4">
+              <Badge key={index} className="">
                 {district}
               </Badge>
             ))}
@@ -285,7 +285,7 @@ const SayItBrave = () => {
           </div>
           
           <div className="grid md:grid-cols-2 gap-8">
-            <Card className="border border-primary/20 bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -302,7 +302,7 @@ const SayItBrave = () => {
               </CardContent>
             </Card>
 
-            <Card className="border border-primary/20 bg-[#FDFBF7]">
+            <Card className="">
               <CardContent className="p-8">
                 <div className="flex items-center mb-4">
                   {[...Array(5)].map((_, i) => (
@@ -323,7 +323,7 @@ const SayItBrave = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-16 lg:py-24 bg-gradient-to-br from-primary/5 via-background to-accent/5">
+      <section className="py-16 lg:py-24 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <School className="h-12 w-12 text-primary mx-auto mb-6" />
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -338,7 +338,7 @@ const SayItBrave = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans text-lg px-12 py-3"
+              className=""
             >
               <Link to="/book-call">
                 Request Assembly
@@ -348,7 +348,7 @@ const SayItBrave = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-primary text-primary hover:bg-primary hover:text-primary-foreground font-sans text-lg px-8 py-3"
+              className=""
             >
               <Link to="/contact">
                 Ask Questions

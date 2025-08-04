@@ -137,7 +137,7 @@ const DeepDive = () => {
 
   if (isSubmitted) {
     return (
-      <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+      <div className="min-h-screen ">
         <div className="max-w-2xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <Card className="border-2 border-primary/20">
             <CardContent className="p-12 text-center">
@@ -239,7 +239,7 @@ const DeepDive = () => {
                       id={option}
                       checked={formData.motivation.includes(option)}
                       onCheckedChange={(checked) => handleArrayChange('motivation', option, checked)}
-                      className="border-primary/50 data-[state=checked]:bg-primary mt-1"
+                      className=""
                     />
                     <label htmlFor={option} className="font-sans text-sm text-foreground cursor-pointer leading-relaxed">
                       {option}
@@ -314,7 +314,7 @@ const DeepDive = () => {
                       id={option}
                       checked={formData.brandVoice.includes(option)}
                       onCheckedChange={(checked) => handleArrayChange('brandVoice', option, checked)}
-                      className="border-primary/50 data-[state=checked]:bg-primary"
+                      className=""
                     />
                     <label htmlFor={option} className="font-sans text-sm text-foreground cursor-pointer">
                       {option}
@@ -395,7 +395,7 @@ const DeepDive = () => {
                       id={option}
                       checked={formData.currentTools.includes(option)}
                       onCheckedChange={(checked) => handleArrayChange('currentTools', option, checked)}
-                      className="border-primary/50 data-[state=checked]:bg-primary"
+                      className=""
                     />
                     <label htmlFor={option} className="font-sans text-sm text-foreground cursor-pointer">
                       {option}
@@ -424,7 +424,7 @@ const DeepDive = () => {
                       id={option}
                       checked={formData.automationNeeds.includes(option)}
                       onCheckedChange={(checked) => handleArrayChange('automationNeeds', option, checked)}
-                      className="border-primary/50 data-[state=checked]:bg-primary"
+                      className=""
                     />
                     <label htmlFor={option} className="font-sans text-sm text-foreground cursor-pointer">
                       {option}
@@ -519,7 +519,7 @@ const DeepDive = () => {
                       id={option}
                       checked={formData.supportNeeds.includes(option)}
                       onCheckedChange={(checked) => handleArrayChange('supportNeeds', option, checked)}
-                      className="border-primary/50 data-[state=checked]:bg-primary"
+                      className=""
                     />
                     <label htmlFor={option} className="font-sans text-sm text-foreground cursor-pointer">
                       {option}
@@ -585,7 +585,7 @@ const DeepDive = () => {
               />
             </div>
 
-            <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 text-center">
+            <div className="">
               <p className="font-serif text-lg text-foreground mb-4">
                 Thank you for sharing your story, your truth, and your clarity-in-progress.
               </p>
@@ -603,7 +603,7 @@ const DeepDive = () => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-primary/5 via-background to-secondary/10">
+    <div className="min-h-screen ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
         {/* Header */}
         <div className="text-center mb-12">
@@ -653,9 +653,9 @@ const DeepDive = () => {
               );
             })}
           </div>
-          <div className="w-full bg-secondary/30 rounded-full h-2">
+          <div className="">
             <div 
-              className="bg-primary h-2 rounded-full transition-all duration-300"
+              className=""
               style={{ width: `${((currentSection + 1) / sections.length) * 100}%` }}
             ></div>
           </div>
@@ -674,7 +674,7 @@ const DeepDive = () => {
                   variant="outline"
                   onClick={() => setCurrentSection(prev => Math.max(0, prev - 1))}
                   disabled={currentSection === 0}
-                  className="border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                  className=""
                 >
                   Previous
                 </Button>
@@ -687,14 +687,14 @@ const DeepDive = () => {
                   <Button
                     type="button"
                     onClick={() => setCurrentSection(prev => prev + 1)}
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground"
+                    className=""
                   >
                     Continue
                   </Button>
                 ) : (
                   <Button
                     type="submit"
-                    className="bg-primary hover:bg-primary/90 text-primary-foreground font-medium px-8"
+                    className=""
                   >
                     I'm Ready
                   </Button>

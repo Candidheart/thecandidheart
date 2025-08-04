@@ -4,14 +4,11 @@ import { Card, CardContent } from '@/components/ui/card';
 import { Heart, BookOpen, PenTool, Shield, MapPin, Star, Sparkles, Users, Home } from 'lucide-react';
 import Hero from '@/components/ui/hero';
 import Section from '@/components/ui/section';
+import FullPageBackground from '@/components/ui/full-page-background';
 import { DESIGN_SYSTEM } from '@/lib/design-system';
 
 const Healing = () => {
-  const heroDecorativeElements = [
-    { icon: <Heart className="h-12 w-12" />, position: 'top-20 left-16', color: 'text-sage-400', delay: 1 },
-    { icon: <Star className="h-12 w-12" />, position: 'top-40 right-20', color: 'text-pink-300', delay: 2 },
-    { icon: <Sparkles className="h-12 w-12" />, position: 'bottom-40 left-1/4', color: 'text-sage-300', delay: 1.5 }
-  ];
+
 
   const healingOfferings = [
     {
@@ -81,27 +78,12 @@ const Healing = () => {
   ];
 
   return (
-    <div className="min-h-screen relative">
-      {/* Full Page Background */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-90"
-        style={{
-          backgroundImage: `url('/healing-sanctuary-background.png')`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center'
-        }}
-      ></div>
-
-      {/* Subtle overlay for content readability */}
-      <div className="absolute inset-0 bg-white/20"></div>
-
-      {/* Content */}
-      <div className="relative z-10">
+    <FullPageBackground>
         {/* Hero Section */}
         <Hero
           title="Healing & Wholeness"
           subtitle="From poetry to practical tools, these offerings are designed to support your healing journey and help you reclaim your voice and power."
-          decorativeElements={heroDecorativeElements}
+
           size="large"
           badge={{ icon: Heart, text: "Your Healing Matters" }}
         >
@@ -309,8 +291,7 @@ const Healing = () => {
             </div>
           </div>
         </Section>
-      </div>
-    </div>
+    </FullPageBackground>
   );
 };
 

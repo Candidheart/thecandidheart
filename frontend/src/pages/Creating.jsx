@@ -67,7 +67,7 @@ const Creating = () => {
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-background to-secondary/20"></div>
+        <div className="absolute inset-0 "></div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center animate-fade-in">
             <Palette className="h-16 w-16 text-primary mx-auto mb-6" />
@@ -80,7 +80,7 @@ const Creating = () => {
             </p>
             
             {/* Note about projects */}
-            <div className="bg-primary/10 border border-primary/20 rounded-lg p-6 max-w-2xl mx-auto mb-8">
+            <div className="">
               <div className="flex items-start space-x-3">
                 <Lightbulb className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                 <div className="text-left">
@@ -102,7 +102,7 @@ const Creating = () => {
       </section>
 
       {/* Philosophy Section */}
-      <section className="py-8 lg:py-12 bg-card/50">
+      <section className="">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
@@ -117,7 +117,7 @@ const Creating = () => {
 
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Heart className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -129,7 +129,7 @@ const Creating = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Smartphone className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -141,7 +141,7 @@ const Creating = () => {
               </p>
             </div>
             <div className="text-center">
-              <div className="bg-primary/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+              <div className="">
                 <Palette className="h-8 w-8 text-primary" />
               </div>
               <h3 className="font-serif text-xl font-semibold text-foreground mb-3">
@@ -171,7 +171,7 @@ const Creating = () => {
 
           <div className="grid md:grid-cols-2 gap-8">
             {creativeProjects.map((project, index) => (
-              <Card key={index} className="group hover:shadow-lg transition-all-smooth border-2 hover:border-primary/30 bg-[#FDFBF7]">
+              <Card key={index} className="">
                 <CardContent className="p-8">
                   <div className="flex items-center mb-6">
                     <project.icon className="h-8 w-8 text-primary mr-3" />
@@ -186,10 +186,10 @@ const Creating = () => {
                   </div>
                   
                   <div className="flex items-center justify-between mb-4">
-                    <span className="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="">
                       {project.category}
                     </span>
-                    <span className="bg-secondary/50 text-foreground px-3 py-1 rounded-full text-xs font-medium">
+                    <span className="">
                       {project.status}
                     </span>
                   </div>
@@ -207,7 +207,7 @@ const Creating = () => {
                   <Button 
                     asChild 
                     variant="outline"
-                    className="w-full border-primary text-primary hover:bg-primary hover:text-primary-foreground"
+                    className=""
                   >
                     <Link to="/contact">
                       Learn More & Collaborate
@@ -221,7 +221,7 @@ const Creating = () => {
       </section>
 
       {/* Vision Section */}
-      <section className="py-16 lg:py-24 bg-secondary/30">
+      <section className="">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-8">
             The Bigger Vision
@@ -252,7 +252,7 @@ const Creating = () => {
             <Button 
               asChild 
               size="lg" 
-              className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans"
+              className=""
             >
               <Link to="/contact">Let's Create Together</Link>
             </Button>
@@ -260,7 +260,7 @@ const Creating = () => {
               asChild 
               variant="outline" 
               size="lg"
-              className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans"
+              className=""
             >
               <Link to="/about">Learn My Story</Link>
             </Button>
