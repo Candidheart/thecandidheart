@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -45,7 +46,25 @@ const Contact = () => {
 
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Contact Samantha Josette | The Candid Heart</title>
+        <meta name="description" content="Get in touch with Samantha Josette for coaching, speaking, or collaboration. Whether you have questions or are ready to work together, I'd love to hear from you." />
+        <meta name="keywords" content="contact Samantha Josette, coaching inquiry, speaking request, collaboration, get in touch, trauma-informed coaching" />
+        <link rel="canonical" href="https://thecandidheart.com/contact" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Contact Samantha Josette | The Candid Heart" />
+        <meta property="og:description" content="Get in touch with Samantha Josette for coaching, speaking, or collaboration." />
+        <meta property="og:url" content="https://thecandidheart.com/contact" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Contact Samantha Josette | The Candid Heart" />
+        <meta name="twitter:description" content="Get in touch with Samantha Josette for coaching, speaking, or collaboration." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Let's Connect"
@@ -269,6 +288,7 @@ const Contact = () => {
         </div>
       </Section>
     </FullPageBackground>
+    </>
   );
 };
 

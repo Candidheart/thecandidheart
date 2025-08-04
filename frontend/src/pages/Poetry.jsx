@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
@@ -61,7 +62,25 @@ const Poetry = () => {
   ];
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Poetry for Healing | The Candid Heart with Samantha Josette</title>
+        <meta name="description" content="Discover healing poetry and creative expression for trauma recovery. Samantha Josette's poetry offers comfort, clarity, and connection for women on their healing journey." />
+        <meta name="keywords" content="healing poetry, trauma poetry, women's poetry, creative expression, poetry therapy, healing through writing, trauma recovery poetry" />
+        <link rel="canonical" href="https://thecandidheart.com/poetry" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Poetry for Healing | The Candid Heart with Samantha Josette" />
+        <meta property="og:description" content="Discover healing poetry and creative expression for trauma recovery. Poetry that offers comfort, clarity, and connection." />
+        <meta property="og:url" content="https://thecandidheart.com/poetry" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Poetry for Healing | The Candid Heart with Samantha Josette" />
+        <meta name="twitter:description" content="Discover healing poetry and creative expression for trauma recovery. Poetry that offers comfort, clarity, and connection." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Poetry as Medicine"
@@ -280,6 +299,7 @@ const Poetry = () => {
         </div>
       </Section>
     </FullPageBackground>
+    </>
   );
 };
 

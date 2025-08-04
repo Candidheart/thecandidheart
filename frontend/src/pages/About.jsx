@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, Lightbulb, Feather, ArrowRight, Quote, Star, Sparkles, BookOpen, Users, Target } from 'lucide-react';
@@ -69,7 +70,25 @@ const About = () => {
 
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>About Samantha Josette | The Candid Heart</title>
+        <meta name="description" content="Meet Samantha Josette - poet, strategist, and trauma-informed coach helping women heal from betrayal trauma and build soulful businesses with authentic voice." />
+        <meta name="keywords" content="Samantha Josette, betrayal trauma coach, poet, business strategist, trauma-informed coaching, women's healing, authentic business building" />
+        <link rel="canonical" href="https://thecandidheart.com/about" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="About Samantha Josette | The Candid Heart" />
+        <meta property="og:description" content="Meet Samantha Josette - poet, strategist, and trauma-informed coach helping women heal from betrayal trauma and build soulful businesses." />
+        <meta property="og:url" content="https://thecandidheart.com/about" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="About Samantha Josette | The Candid Heart" />
+        <meta name="twitter:description" content="Meet Samantha Josette - poet, strategist, and trauma-informed coach helping women heal from betrayal trauma and build soulful businesses." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title={
@@ -204,6 +223,7 @@ const About = () => {
         </div>
       </Section>
     </FullPageBackground>
+    </>
   );
 };
 

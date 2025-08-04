@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '@/components/ui/button';
 import { Heart, Lightbulb, Feather, ArrowRight, Quote, Sparkles, Star } from 'lucide-react';
 import Hero from '@/components/ui/hero';
@@ -11,7 +12,25 @@ const Home = () => {
 
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>The Candid Heart | Healing, Poetry & Strategy with Samantha Josette</title>
+        <meta name="description" content="Samantha Josette helps women heal from betrayal trauma through poetry, coaching, and soulful business strategy. Transform your pain into power with trauma-informed support." />
+        <meta name="keywords" content="betrayal trauma healing, women's healing, poetry therapy, trauma-informed coaching, business strategy, soulful entrepreneurship" />
+        <link rel="canonical" href="https://thecandidheart.com/" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="The Candid Heart | Healing, Poetry & Strategy with Samantha Josette" />
+        <meta property="og:description" content="Samantha Josette helps women heal from betrayal trauma through poetry, coaching, and soulful business strategy." />
+        <meta property="og:url" content="https://thecandidheart.com/" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="The Candid Heart | Healing, Poetry & Strategy with Samantha Josette" />
+        <meta name="twitter:description" content="Samantha Josette helps women heal from betrayal trauma through poetry, coaching, and soulful business strategy." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Your message isn't missing—it's buried beneath what you were told to be."
@@ -168,6 +187,7 @@ const Home = () => {
         </div>
       </Section>
     </FullPageBackground>
+    </>
   );
 };
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
 import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
@@ -128,7 +129,25 @@ const Coaching = () => {
   ];
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Trauma-Informed Coaching | The Candid Heart with Samantha Josette</title>
+        <meta name="description" content="Transform your pain into power with trauma-informed coaching. Samantha Josette offers betrayal trauma recovery, identity rebuilding, and soulful business strategy." />
+        <meta name="keywords" content="trauma-informed coaching, betrayal trauma recovery, women's coaching, identity rebuilding, business coaching, healing coaching, trauma recovery support" />
+        <link rel="canonical" href="https://thecandidheart.com/coaching" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Trauma-Informed Coaching | The Candid Heart with Samantha Josette" />
+        <meta property="og:description" content="Transform your pain into power with trauma-informed coaching. Betrayal trauma recovery, identity rebuilding, and soulful business strategy." />
+        <meta property="og:url" content="https://thecandidheart.com/coaching" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Trauma-Informed Coaching | The Candid Heart with Samantha Josette" />
+        <meta name="twitter:description" content="Transform your pain into power with trauma-informed coaching. Betrayal trauma recovery, identity rebuilding, and soulful business strategy." />
+      </Helmet>
+      <FullPageBackground>
       {/* Hero Section */}
       <Hero
         title="Sacred Coaching for Healing & Growth"
@@ -333,6 +352,7 @@ const Coaching = () => {
         </div>
       </Section>
     </FullPageBackground>
+    </>
   );
 };
 

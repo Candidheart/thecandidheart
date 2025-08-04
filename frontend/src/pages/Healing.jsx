@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
 import { Heart, BookOpen, PenTool, Shield, MapPin, Star, Sparkles, Users, Home } from 'lucide-react';
@@ -78,7 +79,25 @@ const Healing = () => {
   ];
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Healing from Betrayal Trauma | The Candid Heart with Samantha Josette</title>
+        <meta name="description" content="Heal from betrayal trauma with trauma-informed coaching, poetry therapy, and community support. Samantha Josette helps women rebuild their identity and reclaim their voice." />
+        <meta name="keywords" content="betrayal trauma healing, trauma recovery, women's healing, poetry therapy, trauma-informed coaching, identity rebuilding, healing from infidelity" />
+        <link rel="canonical" href="https://thecandidheart.com/healing" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Healing from Betrayal Trauma | The Candid Heart with Samantha Josette" />
+        <meta property="og:description" content="Heal from betrayal trauma with trauma-informed coaching, poetry therapy, and community support." />
+        <meta property="og:url" content="https://thecandidheart.com/healing" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Healing from Betrayal Trauma | The Candid Heart with Samantha Josette" />
+        <meta name="twitter:description" content="Heal from betrayal trauma with trauma-informed coaching, poetry therapy, and community support." />
+      </Helmet>
+      <FullPageBackground>
         {/* Hero Section */}
         <Hero
           title="Healing & Wholeness"
@@ -292,6 +311,7 @@ const Healing = () => {
           </div>
         </Section>
     </FullPageBackground>
+    </>
   );
 };
 

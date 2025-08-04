@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Input } from '../components/ui/input';
@@ -75,7 +76,13 @@ const CandidHeartInterest = () => {
 
   if (submitted) {
     return (
-      <FullPageBackground>
+      <>
+        <Helmet>
+          <title>Thank You | The Candid Heart Project</title>
+          <meta name="description" content="Thank you for joining The Candid Heart Project. Your care and support help create healing communities for women." />
+          <link rel="canonical" href="https://thecandidheart.com/candid-heart-interest" />
+        </Helmet>
+        <FullPageBackground>
         <div className="min-h-screen flex items-center justify-center ">
         <Card className="max-w-2xl mx-4 border-2 border-primary/20">
           <CardContent className="p-12 text-center">
@@ -103,11 +110,30 @@ const CandidHeartInterest = () => {
         </Card>
       </div>
     </FullPageBackground>
+    </>
   );
 }
 
   return (
-    <FullPageBackground>
+    <>
+      <Helmet>
+        <title>Join The Candid Heart Project | Community Care Initiative</title>
+        <meta name="description" content="Join The Candid Heart Project and help create healing communities for women. Volunteer your time, skills, or resources to support trauma survivors." />
+        <meta name="keywords" content="community care, volunteer opportunities, women's support, healing communities, trauma support, community service" />
+        <link rel="canonical" href="https://thecandidheart.com/candid-heart-interest" />
+        
+        {/* Open Graph */}
+        <meta property="og:title" content="Join The Candid Heart Project | Community Care Initiative" />
+        <meta property="og:description" content="Join The Candid Heart Project and help create healing communities for women." />
+        <meta property="og:url" content="https://thecandidheart.com/candid-heart-interest" />
+        <meta property="og:type" content="website" />
+        
+        {/* Twitter */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Join The Candid Heart Project | Community Care Initiative" />
+        <meta name="twitter:description" content="Join The Candid Heart Project and help create healing communities for women." />
+      </Helmet>
+      <FullPageBackground>
       <div className="min-h-screen py-12 ">
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         
@@ -283,7 +309,7 @@ const CandidHeartInterest = () => {
                       id="twice-month"
                       className="border-primary/30 text-primary"
                     />
-                    <Label htmlFor="twice-month" className="font-sans text-sm text-foreground cursor-pointer">
+                    <Label htmlFor="twice-month" className="font-sans text-sm text-sage-700 cursor-pointer">
                       Twice a month
                     </Label>
                   </div>
@@ -293,7 +319,7 @@ const CandidHeartInterest = () => {
                       id="weekly"
                       className="border-primary/30 text-primary"
                     />
-                    <Label htmlFor="weekly" className="font-sans text-sm text-foreground cursor-pointer">
+                    <Label htmlFor="weekly" className="font-sans text-sm text-sage-700 cursor-pointer">
                       Weekly
                     </Label>
                   </div>
@@ -303,7 +329,7 @@ const CandidHeartInterest = () => {
                       id="one-time"
                       className="border-primary/30 text-primary"
                     />
-                    <Label htmlFor="one-time" className="font-sans text-sm text-foreground cursor-pointer">
+                    <Label htmlFor="one-time" className="font-sans text-sm text-sage-700 cursor-pointer">
                       One-time only
                     </Label>
                   </div>
@@ -312,10 +338,10 @@ const CandidHeartInterest = () => {
 
               {/* Updates */}
               <div className="space-y-4">
-                <Label className="font-sans text-sm font-medium text-foreground block">
+                <Label className="font-sans text-sm font-medium text-sage-700 block">
                   Would you like to receive occasional updates or volunteer requests? *
                 </Label>
-                <p className="font-sans text-xs text-foreground italic">
+                <p className="font-sans text-xs text-sage-600 italic">
                   We'll only reach out when there's a genuine need or to share impact stories.
                 </p>
                 
@@ -330,7 +356,7 @@ const CandidHeartInterest = () => {
                       id="updates-yes"
                       className="border-primary/30 text-primary"
                     />
-                    <Label htmlFor="updates-yes" className="font-sans text-sm text-foreground cursor-pointer">
+                    <Label htmlFor="updates-yes" className="font-sans text-sm text-sage-700 cursor-pointer">
                       Yes, keep me connected
                     </Label>
                   </div>
@@ -340,7 +366,7 @@ const CandidHeartInterest = () => {
                       id="updates-no"
                       className="border-primary/30 text-primary"
                     />
-                    <Label htmlFor="updates-no" className="font-sans text-sm text-foreground cursor-pointer">
+                    <Label htmlFor="updates-no" className="font-sans text-sm text-sage-700 cursor-pointer">
                       No, just this one offering
                     </Label>
                   </div>
@@ -357,7 +383,7 @@ const CandidHeartInterest = () => {
                   <Send className="mr-2 h-5 w-5" />
                   Join The Movement
                 </Button>
-                <p className="font-sans text-xs text-foreground text-center mt-4">
+                <p className="font-sans text-xs text-sage-600 text-center mt-4">
                   Your information is kept private and will only be used to coordinate care within our community.
                 </p>
               </div>
@@ -367,12 +393,13 @@ const CandidHeartInterest = () => {
 
         {/* Footer Message */}
         <div className="text-center mt-12">
-          <p className="font-serif text-lg text-foreground italic">
+          <p className="font-serif text-lg text-sage-700 italic">
             "We believe healing happens in circles, not systems."
           </p>
         </div>
       </div>
     </FullPageBackground>
+    </>
   );
 };
 

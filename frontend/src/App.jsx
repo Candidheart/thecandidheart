@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { Helmet, HelmetProvider } from 'react-helmet-async';
 import Navigation from './components/Navigation';
 import ScrollToTop from './components/ScrollToTop';
 import Home from './pages/Home';
@@ -21,30 +22,36 @@ import './App.css';
 function App() {
   return (
     <Router>
-      <ScrollToTop />
-      <div className="min-h-screen bg-background">
-        <Navigation />
-        <main>
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/healing" element={<Healing />} />
-            <Route path="/building" element={<Building />} />
-            <Route path="/creating" element={<Creating />} />
-            <Route path="/organizations" element={<Organizations />} />
-            <Route path="/speaking" element={<Speaking />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/book-call" element={<BookCall />} />
-            <Route path="/schedule" element={<BookCall />} />
-            <Route path="/soulful-strategy-book" element={<SoulfulStrategyBook />} />
-            <Route path="/coaching" element={<Coaching />} />
-            <Route path="/say-it-brave" element={<SayItBrave />} />
-            <Route path="/candid-heart-project" element={<CandidHeartProject />} />
-            <Route path="/candid-heart-interest" element={<CandidHeartInterest />} />
-          </Routes>
-        </main>
-        <Footer />
-      </div>
+      <HelmetProvider>
+        <ScrollToTop />
+        <div className="min-h-screen bg-background">
+          <header role="banner">
+            <Navigation />
+          </header>
+          <main role="main">
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/healing" element={<Healing />} />
+              <Route path="/building" element={<Building />} />
+              <Route path="/creating" element={<Creating />} />
+              <Route path="/organizations" element={<Organizations />} />
+              <Route path="/speaking" element={<Speaking />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/contact" element={<Contact />} />
+              <Route path="/book-call" element={<BookCall />} />
+              <Route path="/schedule" element={<BookCall />} />
+              <Route path="/soulful-strategy-book" element={<SoulfulStrategyBook />} />
+              <Route path="/coaching" element={<Coaching />} />
+              <Route path="/say-it-brave" element={<SayItBrave />} />
+              <Route path="/candid-heart-project" element={<CandidHeartProject />} />
+              <Route path="/candid-heart-interest" element={<CandidHeartInterest />} />
+            </Routes>
+          </main>
+          <footer role="contentinfo">
+            <Footer />
+          </footer>
+        </div>
+      </HelmetProvider>
     </Router>
   );
 }
