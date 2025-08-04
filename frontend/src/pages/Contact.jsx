@@ -121,10 +121,10 @@ const Contact = () => {
       >
         <div className="max-w-2xl mx-auto">
           <div className="text-center mb-12">
-            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+            <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
               Send Me a Message
             </h2>
-            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground`}>
+            <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700`}>
               Whether you have questions, want to share your story, or are ready to explore working together, 
               I'd love to hear from you. Every message is read personally and responded to thoughtfully.
             </p>
@@ -132,7 +132,7 @@ const Contact = () => {
 
           <Card className="">
             <CardHeader>
-              <CardTitle className="font-serif text-2xl font-semibold text-foreground text-center">
+              <CardTitle className="font-serif text-2xl font-semibold text-sage-800 text-center">
                 Let's Start a Conversation
               </CardTitle>
             </CardHeader>
@@ -140,7 +140,7 @@ const Contact = () => {
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-6">
                   <div>
-                    <label htmlFor="name" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <label htmlFor="name" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Name *
                     </label>
                     <Input
@@ -155,7 +155,7 @@ const Contact = () => {
                     />
                   </div>
                   <div>
-                    <label htmlFor="email" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <label htmlFor="email" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Email *
                     </label>
                     <Input
@@ -172,7 +172,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="inquiryType" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                  <label htmlFor="inquiryType" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                     What brings you here? *
                   </label>
                   <Select value={formData.inquiryType} onValueChange={handleSelectChange} required>
@@ -190,7 +190,7 @@ const Contact = () => {
                 </div>
 
                 <div>
-                  <label htmlFor="message" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                  <label htmlFor="message" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                     Your Message *
                   </label>
                   <Textarea
@@ -216,7 +216,7 @@ const Contact = () => {
                 </div>
 
                 <div className="text-center">
-                  <p className="font-sans text-xs text-foreground">
+                  <p className="font-sans text-xs text-sage-600">
                     <Shield className="h-3 w-3 inline mr-1" />
                     Your information is secure and will never be shared without your permission.
                   </p>
@@ -234,7 +234,7 @@ const Contact = () => {
         className=""
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-6`}>
+          <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-6`}>
             What to Expect
           </h3>
           <div className="grid md:grid-cols-3 gap-8">
@@ -242,8 +242,8 @@ const Contact = () => {
               <div className="">
                 <Clock className="h-6 w-6 text-primary" />
               </div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Quick Response</h4>
-              <p className="font-sans text-sm text-foreground">
+              <h4 className="font-serif text-lg font-semibold text-sage-800 mb-2">Quick Response</h4>
+              <p className="font-sans text-sm text-sage-700">
                 I typically respond within 24 hours, often much sooner.
               </p>
             </div>
@@ -251,8 +251,8 @@ const Contact = () => {
               <div className="">
                 <Heart className="h-6 w-6 text-accent" />
               </div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Personal Touch</h4>
-              <p className="font-sans text-sm text-foreground">
+              <h4 className="font-serif text-lg font-semibold text-sage-800 mb-2">Personal Touch</h4>
+              <p className="font-sans text-sm text-sage-700">
                 Every message is read personally, not by an assistant or bot.
               </p>
             </div>
@@ -260,8 +260,8 @@ const Contact = () => {
               <div className="">
                 <Shield className="h-6 w-6 text-primary" />
               </div>
-              <h4 className="font-serif text-lg font-semibold text-foreground mb-2">Safe Space</h4>
-              <p className="font-sans text-sm text-foreground">
+              <h4 className="font-serif text-lg font-semibold text-sage-800 mb-2">Safe Space</h4>
+              <p className="font-sans text-sm text-sage-700">
                 Your story is sacred. I hold everything you share with care and confidentiality.
               </p>
             </div>

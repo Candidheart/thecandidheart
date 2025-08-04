@@ -77,10 +77,10 @@ const Poetry = () => {
         background={true}
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Featured Poems
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             A selection of poems that have resonated deeply with readers on their own healing journeys.
           </p>
         </div>
@@ -93,17 +93,17 @@ const Poetry = () => {
                   <Badge className="">
                     {poem.theme}
                   </Badge>
-                  <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-4`}>
+                  <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-4`}>
                     {poem.title}
                   </h3>
                 </div>
                 
-                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-foreground italic mb-6 leading-relaxed`}>
+                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-sage-700 italic mb-6 leading-relaxed`}>
                   "{poem.excerpt}"
                 </blockquote>
                 
                 <div className="flex items-center justify-between">
-                  <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-foreground`}>
+                  <span className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600`}>
                     {poem.readTime}
                   </span>
                   <Button asChild variant="outline" size="sm" className="">
@@ -123,10 +123,10 @@ const Poetry = () => {
         className=""
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Poetry Collections
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             Curated collections designed to support your healing journey through the power of words and creative expression.
           </p>
         </div>
@@ -138,7 +138,7 @@ const Poetry = () => {
                 <div className="flex flex-col lg:flex-row gap-8">
                   <div className="flex-1">
                     <div className="mb-4">
-                      <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-foreground mb-2`}>
+                      <h3 className={`font-serif ${DESIGN_SYSTEM.typography.h3} font-semibold text-sage-800 mb-2`}>
                         {collection.title}
                       </h3>
                       <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-primary font-medium mb-4`}>
@@ -152,12 +152,12 @@ const Poetry = () => {
                       </Badge>
                     </div>
                     
-                    <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-6`}>
-                      {collection.description}
-                    </p>
+                                          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-6`}>
+                        {collection.description}
+                      </p>
 
                     <div className="mb-6">
-                      <h4 className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-foreground mb-3`}>
+                      <h4 className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-sage-700 mb-3`}>
                         Themes Explored:
                       </h4>
                       <div className="flex flex-wrap gap-2">

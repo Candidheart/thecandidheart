@@ -30,16 +30,16 @@ const Home = () => {
           <div className={DESIGN_SYSTEM.layouts.hero.content}>
             <div className={DESIGN_SYSTEM.layouts.grid.twoCol}>
               <div className="animate-slide-up">
-                <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+                <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
                   I'm a writer, strategist, and survivor of betrayal trauma.
                 </h2>
                 <div className="space-y-4">
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground leading-relaxed`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
                     I spent nearly a decade as a stay-at-home mom, and when my world fell apart, 
                     I didn't just rebuild — I wrote, I healed, and I built systems to support 
                     the woman I was becoming.
                   </p>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground leading-relaxed`}>
+                  <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 leading-relaxed`}>
                     This is the merging of my two worlds: healing through poetry and personal coaching, 
                     and empowerment through copywriting, AI automations, and clarity-first strategy.
                   </p>
@@ -77,10 +77,10 @@ const Home = () => {
         className=""
       >
         <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Two Paths, One Journey
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground max-w-3xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
             Whether you're seeking healing and clarity or building systems for growth, 
             I meet you where you are and guide you where you're going.
           </p>
@@ -94,13 +94,13 @@ const Home = () => {
             description="Betrayal trauma coaching, devotionals, and story-based content for the woman who's ready to rebuild her identity and reclaim her voice."
             variant="primary"
           >
-            <ul className="font-sans text-sm text-foreground space-y-2 mb-8">
+            <ul className="font-sans text-sm text-sage-700 space-y-2 mb-8">
               <li>• Betrayal trauma recovery</li>
               <li>• Identity rebuilding</li>
               <li>• Journaling frameworks</li>
               <li>• Poetry for healing</li>
             </ul>
-            <Button asChild className="w-full bg-primary hover:bg-primary/90 text-primary-foreground">
+            <Button asChild className="bg-primary hover:bg-primary/90 text-primary-foreground">
               <Link to="/healing">Start Healing</Link>
             </Button>
           </ContentCard>
@@ -112,13 +112,13 @@ const Home = () => {
             description="Copywriting, AI automation, and clarity mapping for the business owner who wants to scale with integrity and authentic voice."
             variant="accent"
           >
-            <ul className="font-sans text-sm text-foreground space-y-2 mb-8">
+            <ul className="font-sans text-sm text-sage-700 space-y-2 mb-8">
               <li>• Strategic copywriting</li>
               <li>• AI automation systems</li>
               <li>• Clarity mapping</li>
               <li>• Voice-led strategy</li>
             </ul>
-            <Button asChild className="w-full bg-accent hover:bg-accent/90 text-accent-foreground">
+            <Button asChild className="bg-accent hover:bg-accent/90 text-accent-foreground">
               <Link to="/building">Build Systems</Link>
             </Button>
           </ContentCard>
@@ -150,10 +150,10 @@ const Home = () => {
         className=""
       >
         <div className="max-w-4xl mx-auto text-center">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-foreground mb-6`}>
+          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
             Ready to Begin?
           </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-foreground mb-8 max-w-2xl mx-auto`}>
+          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 mb-8 max-w-2xl mx-auto`}>
             This is your digital front porch — a sacred creative studio where trauma survivors 
             feel safe to explore healing and business owners feel grounded enough to hire strategy.
           </p>
@@ -161,7 +161,7 @@ const Home = () => {
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground font-sans">
               <Link to="/contact">Start Here</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-foreground text-foreground hover:bg-foreground hover:text-background font-sans">
+            <Button asChild variant="outline" size="lg" className="border-sage-500 text-sage-600 hover:bg-sage-50 hover:text-sage-700 font-sans">
               <Link to="/about">Learn My Story</Link>
             </Button>
           </div>
