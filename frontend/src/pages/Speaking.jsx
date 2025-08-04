@@ -186,10 +186,10 @@ const Speaking = () => {
       <section className="py-12 lg:py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
               Speaking Services
             </h2>
-            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
+            <p className="font-sans text-lg text-sage-700 max-w-3xl mx-auto">
               From inspiring keynotes to intensive workshops, I offer a range of speaking services 
               designed to meet your organization's unique needs and goals.
             </p>
@@ -202,7 +202,7 @@ const Speaking = () => {
                   <div className="flex items-center mb-6">
                     <service.icon className="h-8 w-8 text-primary mr-3" />
                     <div>
-                      <h3 className="font-serif text-2xl font-semibold text-foreground">
+                      <h3 className="font-serif text-2xl font-semibold text-sage-800">
                         {service.title}
                       </h3>
                       <p className="font-sans text-sm text-accent">
@@ -211,7 +211,7 @@ const Speaking = () => {
                     </div>
                   </div>
 
-                  <p className="font-sans text-foreground mb-6 leading-relaxed">
+                  <p className="font-sans text-sage-700 mb-6 leading-relaxed">
                     {service.description}
                   </p>
 

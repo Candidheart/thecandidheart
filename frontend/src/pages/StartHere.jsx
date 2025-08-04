@@ -161,7 +161,7 @@ const StartHere = () => {
                 <h3 className="font-serif text-xl font-semibold text-sage-800">
                   What kind of support are you seeking?
                 </h3>
-                <p className="font-sans text-sm text-foreground">
+                <p className="font-sans text-sm text-sage-600">
                   Select all that resonate
                 </p>
                 
@@ -187,10 +187,10 @@ const StartHere = () => {
 
               {/* Brand Personality */}
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-foreground">
+                <h3 className="font-serif text-xl font-semibold text-sage-800">
                   How would you describe your brand's personality?
                 </h3>
-                <p className="font-sans text-sm text-foreground">
+                <p className="font-sans text-sm text-sage-600">
                   Choose up to 3 that feel most true
                 </p>
                 
@@ -222,10 +222,10 @@ const StartHere = () => {
 
               {/* Current Challenge */}
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-foreground">
+                <h3 className="font-serif text-xl font-semibold text-sage-800">
                   What's feeling unclear or overwhelming right now?
                 </h3>
-                <p className="font-sans text-sm text-foreground">
+                <p className="font-sans text-sm text-sage-600">
                   Share what brought you here today
                 </p>
                 
@@ -240,7 +240,7 @@ const StartHere = () => {
 
               {/* Email */}
               <div className="space-y-4">
-                <h3 className="font-serif text-xl font-semibold text-foreground">
+                <h3 className="font-serif text-xl font-semibold text-sage-800">
                   How can I reach you?
                 </h3>
                 
@@ -264,7 +264,7 @@ const StartHere = () => {
                   Begin My Reflection
                 </Button>
                 
-                <p className="font-sans text-sm text-foreground mt-4">
+                <p className="font-sans text-sm text-sage-600 mt-4">
                   This takes courage. Thank you for trusting the process.
                 </p>
               </div>

@@ -104,7 +104,7 @@ const CandidHeartInterest = () => {
       </div>
     </FullPageBackground>
   );
-  }
+}
 
   return (
     <FullPageBackground>
@@ -143,7 +143,7 @@ const CandidHeartInterest = () => {
               <div className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="name" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <Label htmlFor="name" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Your Name *
                     </Label>
                     <Input
@@ -158,7 +158,7 @@ const CandidHeartInterest = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="organization" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <Label htmlFor="organization" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Organization (if applicable)
                     </Label>
                     <Input
@@ -175,7 +175,7 @@ const CandidHeartInterest = () => {
 
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
-                    <Label htmlFor="town" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <Label htmlFor="town" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Town or Village *
                     </Label>
                     <Input
@@ -190,7 +190,7 @@ const CandidHeartInterest = () => {
                     />
                   </div>
                   <div>
-                    <Label htmlFor="contact" className="font-sans text-sm font-medium text-foreground mb-2 block">
+                    <Label htmlFor="contact" className="font-sans text-sm font-medium text-sage-700 mb-2 block">
                       Email or Phone *
                     </Label>
                     <Input
@@ -209,10 +209,10 @@ const CandidHeartInterest = () => {
 
               {/* Care Types */}
               <div className="space-y-4">
-                <Label className="font-sans text-sm font-medium text-foreground block">
+                <Label className="font-sans text-sm font-medium text-sage-700 block">
                   What type of care can you offer? *
                 </Label>
-                <p className="font-sans text-xs text-foreground italic">
+                <p className="font-sans text-xs text-sage-600 italic">
                   Check all that apply. Every offering matters, no matter how small.
                 </p>
                 
@@ -227,7 +227,7 @@ const CandidHeartInterest = () => {
                       />
                       <Label 
                         htmlFor={option.id} 
-                        className="font-sans text-sm text-foreground cursor-pointer"
+                        className="font-sans text-sm text-sage-700 cursor-pointer"
                       >
                         {option.label}
                       </Label>

@@ -282,7 +282,7 @@ const SoulfulStrategyBook = () => {
                   deepest values. She's helped hundreds of entrepreneurs create businesses that feel 
                   as good as they look on paper.
                 </p>
-                <p className="font-sans text-foreground leading-relaxed">
+                <p className="font-sans text-sage-700 leading-relaxed">
                   This book distills years of experience helping values-driven entrepreneurs build 
                   strategies that support both their mission and their well-being.
                 </p>
@@ -296,10 +296,10 @@ const SoulfulStrategyBook = () => {
       <section className="py-16 lg:py-24 ">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <Book className="h-12 w-12 text-primary mx-auto mb-6" />
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
+          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-6">
             Ready to Build Your Soulful Strategy?
           </h2>
-          <p className="font-sans text-lg text-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="font-sans text-lg text-sage-700 mb-8 max-w-2xl mx-auto leading-relaxed">
             Join thousands of entrepreneurs who've discovered that you don't have to choose 
             between success and staying true to yourself.
           </p>
@@ -307,34 +307,34 @@ const SoulfulStrategyBook = () => {
           <div className="">
             <div className="flex items-center justify-center mb-4">
               <CheckCircle className="h-6 w-6 text-primary mr-2" />
-              <span className="font-sans text-lg font-semibold text-foreground">
+              <span className="font-sans text-lg font-semibold text-sage-800">
                 Complete Package Includes:
               </span>
             </div>
             <div className="grid md:grid-cols-2 gap-4 text-left max-w-2xl mx-auto">
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">200+ page comprehensive guide</span>
+                <span className="font-sans text-sage-700">200+ page comprehensive guide</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">5 video modules (4+ hours)</span>
+                <span className="font-sans text-sage-700">5 video modules (4+ hours)</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">Strategic planning templates</span>
+                <span className="font-sans text-sage-700">Strategic planning templates</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">Values alignment audit</span>
+                <span className="font-sans text-sage-700">Values alignment audit</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">Private community access</span>
+                <span className="font-sans text-sage-700">Private community access</span>
               </div>
               <div className="flex items-center">
                 <CheckCircle className="h-4 w-4 text-primary mr-2 flex-shrink-0" />
-                <span className="font-sans text-foreground">Lifetime updates</span>
+                <span className="font-sans text-sage-700">Lifetime updates</span>
               </div>
             </div>
           </div>
@@ -361,7 +361,7 @@ const SoulfulStrategyBook = () => {
             </Button>
           </div>
 
-          <p className="font-sans text-sm text-foreground italic">
+          <p className="font-sans text-sm text-sage-600 italic">
             30-day money-back guarantee • Instant digital delivery
           </p>
         </div>
