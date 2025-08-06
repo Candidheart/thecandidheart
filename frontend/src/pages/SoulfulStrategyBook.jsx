@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 import { Button } from '../components/ui/button';
@@ -6,8 +6,28 @@ import { Card, CardContent } from '../components/ui/card';
 import { Badge } from '../components/ui/badge';
 import { Book, Star, Download, Play, CheckCircle, Users, Clock, ArrowRight, Heart, Lightbulb, Target } from 'lucide-react';
 import FullPageBackground from '@/components/ui/full-page-background';
+import StripeCheckout from '@/components/StripeCheckout';
 
 const SoulfulStrategyBook = () => {
+  const [checkoutOpen, setCheckoutOpen] = useState(false);
+  const [purchaseSuccess, setPurchaseSuccess] = useState(false);
+
+  const soulfulStrategyService = {
+    title: "Soulful Strategy Book + Mini-Course",
+    price: "$67",
+    description: "Complete package including 200+ page guide, 5 video modules, templates, and community access"
+  };
+
+  const handlePurchase = () => {
+    setCheckoutOpen(true);
+  };
+
+  const handleCheckoutSuccess = (result) => {
+    setPurchaseSuccess(true);
+    console.log('Purchase successful:', result);
+    // Here you would typically send the result to your backend
+  };
+
   const modules = [
     {
       number: 1,
@@ -121,14 +141,12 @@ const SoulfulStrategyBook = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-8">
-              <Button 
-                asChild 
+                              <Button 
                 size="lg" 
                 className=""
+                onClick={handlePurchase}
               >
-                <Link to="/book-call">
-                  Get Instant Access - $67 <ArrowRight className="ml-2 h-5 w-5" />
-                </Link>
+                Get Instant Access - $67 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <Button 
                 asChild 
@@ -229,50 +247,7 @@ const SoulfulStrategyBook = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="font-serif text-3xl md:text-4xl font-semibold text-sage-800 mb-12">
-            What Readers Are Saying
-          </h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="font-serif text-lg text-sage-700 italic mb-4 leading-relaxed">
-                  "Finally, a business book that doesn't ask me to compromise my values. 
-                  Samantha's approach helped me build a strategy that feels authentic and sustainable."
-                </blockquote>
-                <p className="font-sans text-sm text-sage-600">
-                  — Sarah M., Creative Entrepreneur
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="font-serif text-lg text-sage-700 italic mb-4 leading-relaxed">
-                  "The mini-course videos brought the concepts to life. I implemented the 
-                  strategies immediately and saw results within weeks."
-                </blockquote>
-                <p className="font-sans text-sm text-sage-600">
-                  — Marcus T., Coach & Consultant
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* About the Author */}
       <section className="">
@@ -360,13 +335,11 @@ const SoulfulStrategyBook = () => {
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
             <Button 
-              asChild 
               size="lg" 
               className=""
+              onClick={handlePurchase}
             >
-              <Link to="/book-call">
-                Get Instant Access - $67
-              </Link>
+              Get Instant Access - $67
             </Button>
             <Button 
               asChild 
@@ -385,6 +358,12 @@ const SoulfulStrategyBook = () => {
           </p>
         </div>
       </section>
+      <StripeCheckout
+        isOpen={checkoutOpen}
+        onClose={() => setCheckoutOpen(false)}
+        onSuccess={handleCheckoutSuccess}
+        service={soulfulStrategyService}
+      />
     </FullPageBackground>
     </>
   );

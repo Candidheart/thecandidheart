@@ -89,26 +89,7 @@ const Coaching = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      quote: "Samantha helped me see that my trauma wasn't a weakness in business—it was my superpower. Her approach is gentle but transformative.",
-      author: "Rachel M.",
-      role: "Creative Entrepreneur",
-      rating: 5
-    },
-    {
-      quote: "The Reclaim & Rebuild program gave me the structure I needed to heal while building my business. The daily texts kept me grounded.",
-      author: "Jennifer L.",
-      role: "Coach & Consultant",
-      rating: 5
-    },
-    {
-      quote: "Working with Samantha 1:1 was life-changing. She understands the intersection of healing and business like no one else.",
-      author: "Maria S.",
-      role: "Service Provider",
-      rating: 5
-    }
-  ];
+
 
   const approach = [
     {
@@ -286,46 +267,7 @@ const Coaching = () => {
         </div>
       </Section>
 
-      {/* Testimonials */}
-      <Section 
-        size="large" 
-        background={true}
-        className="bg-card/50"
-      >
-        <div className="text-center mb-16">
-          <h2 className={`font-serif ${DESIGN_SYSTEM.typography.h2} font-semibold text-sage-800 mb-6`}>
-            What Women Are Saying
-          </h2>
-          <p className={`font-sans ${DESIGN_SYSTEM.typography.body} text-sage-700 max-w-3xl mx-auto`}>
-            Real stories from women who have transformed their lives through our work together.
-          </p>
-        </div>
 
-        <div className={DESIGN_SYSTEM.layouts.grid.threeCol}>
-          {testimonials.map((testimonial, index) => (
-            <Card key={index} className="bg-card border border-border/50 shadow-sm">
-              <CardContent className="p-6">
-                <div className="flex mb-4">
-                  {[...Array(testimonial.rating)].map((_, i) => (
-                    <Star key={i} className="h-4 w-4 text-primary fill-current" />
-                  ))}
-                </div>
-                <blockquote className={`font-serif ${DESIGN_SYSTEM.typography.body} text-sage-700 italic mb-4`}>
-                  "{testimonial.quote}"
-                </blockquote>
-                <div>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} font-semibold text-sage-700`}>
-                    {testimonial.author}
-                  </p>
-                  <p className={`font-sans ${DESIGN_SYSTEM.typography.small} text-sage-600`}>
-                    {testimonial.role}
-                  </p>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-      </Section>
 
       {/* CTA Section */}
       <Section 

@@ -94,20 +94,7 @@ const Speaking = () => {
     }
   ];
 
-  const testimonials = [
-    {
-      quote: "Samantha's approach to ethical AI implementation transformed how our team thinks about technology. She helped us create frameworks that honor both innovation and humanity.",
-      author: "Sarah Chen",
-      title: "CTO, TechForward Inc.",
-      company: "Fortune 500 Technology Company"
-    },
-    {
-      quote: "The trauma-informed systems workshop was exactly what our organization needed. Samantha created a safe space for difficult conversations and gave us practical tools for change.",
-      author: "Marcus Rodriguez",
-      title: "Head of People Operations",
-      company: "Growing Healthcare Startup"
-    }
-  ];
+
 
   return (
     <>
@@ -324,43 +311,7 @@ const Speaking = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-12 lg:py-16">
-        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              What Audiences Say
-            </h2>
-            <p className="font-sans text-lg text-foreground max-w-3xl mx-auto">
-              Feedback from organizations and leaders who have experienced the impact 
-              of these speaking engagements firsthand.
-            </p>
-          </div>
 
-          <div className="grid md:grid-cols-2 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <Card key={index} className="">
-                <CardContent className="p-8">
-                  <blockquote className="font-serif text-lg text-foreground italic mb-6 leading-relaxed">
-                    "{testimonial.quote}"
-                  </blockquote>
-                  <div>
-                    <p className="font-sans font-semibold text-foreground">
-                      {testimonial.author}
-                    </p>
-                    <p className="font-sans text-sm text-foreground">
-                      {testimonial.title}
-                    </p>
-                    <p className="font-sans text-sm text-accent">
-                      {testimonial.company}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* Booking Information Section */}
       <section className="">

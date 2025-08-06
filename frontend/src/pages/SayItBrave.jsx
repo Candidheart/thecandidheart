@@ -276,52 +276,7 @@ const SayItBrave = () => {
         </div>
       </section>
 
-      {/* Testimonials */}
-      <section className="py-16 lg:py-24">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="font-serif text-3xl md:text-4xl font-semibold text-foreground mb-6">
-              What Educators Are Saying
-            </h2>
-          </div>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <Card className="">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="font-serif text-lg text-foreground italic mb-4 leading-relaxed">
-                  "Our students were completely engaged. Samantha's approach made difficult topics 
-                  accessible and gave our kids practical tools they could use immediately."
-                </blockquote>
-                <p className="font-sans text-sm text-foreground">
-                  — Sarah M., Middle School Counselor
-                </p>
-              </CardContent>
-            </Card>
 
-            <Card className="">
-              <CardContent className="p-8">
-                <div className="flex items-center mb-4">
-                  {[...Array(5)].map((_, i) => (
-                    <Star key={i} className="h-5 w-5 text-yellow-400 fill-current" />
-                  ))}
-                </div>
-                <blockquote className="font-serif text-lg text-foreground italic mb-4 leading-relaxed">
-                  "The feedback from both students and parents was overwhelmingly positive. 
-                  This is exactly the kind of programming our students need."
-                </blockquote>
-                <p className="font-sans text-sm text-foreground">
-                  — Michael T., High School Principal
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
 
       {/* Final CTA */}
       <section className="py-16 lg:py-24 ">
