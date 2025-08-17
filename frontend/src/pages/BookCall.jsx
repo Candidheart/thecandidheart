@@ -75,7 +75,7 @@ const BookCall = () => {
     '9:00 AM', '10:00 AM', '11:00 AM', '1:00 PM', '2:00 PM', '3:00 PM', '4:00 PM'
   ];
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     
     // Create Google Calendar event URL
@@ -87,13 +87,29 @@ const BookCall = () => {
     // Open Google Calendar in new tab
     window.open(googleCalendarUrl, '_blank');
     
-    // You would also send this data to your backend here
-    console.log('Booking submitted:', {
-      service: selectedService,
-      date: selectedDate,
-      time: selectedTime,
-      ...formData
-    });
+    // Send booking data to backend
+    try {
+      const response = await fetch('/api/forms/book-call', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          selectedService,
+          selectedDate,
+          selectedTime,
+          ...formData
+        })
+      });
+      
+      const result = await response.json();
+      
+      if (!result.success) {
+        console.error('Booking submission error:', result.error);
+      }
+    } catch (error) {
+      console.error('Error submitting booking:', error);
+    }
     
     setIsSubmitted(true);
   };
