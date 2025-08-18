@@ -13,7 +13,7 @@ services:
     name: candid-heart-backend
     env: python
     buildCommand: cd backend && pip install -r requirements.txt
-    startCommand: cd backend && uvicorn src.main:app --host 0.0.0.0 --port $PORT
+    startCommand: cd backend && python -m src.main
     envVars:
       - key: PYTHON_VERSION
         value: 3.11.0 
